@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+/*ini*/
+body {
+  font-family: Helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
+  font-feature-settings: "palt";
+  background: url("../img/bg.png") repeat 0 0;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+  object-fit: cover;
+}
+ul,
+li {
+  list-style-type: none;
+}
+/*pc*/
+header {
+  padding: 40px 0 48px 0;
+  text-align: center;
+}
+header #mv {
+  max-width: 526px;
+  margin: 0 auto;
+}
+header #mv img {
+  width: 100%;
+  height: auto;
+}
+main {
+  /*720base*/
+  max-width: 784px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+main hr {
+  margin: 16px auto;
+  background: url("../img/stl.png") no-repeat center top;
+  background-size: cover;
+  max-width: 720px;
+  height: 16px;
+  border: none;
+}
+main #overview {
+  max-width: 640px;
+  margin: 0 auto;
+}
+main #overview .txt {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 0 32px 0;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+main #overview .step {
+  max-width: 502px;
+  margin: 0 auto;
+}
+main #overview .step img {
+    width: 100%;
+    height: auto;
+}
+main #overview .postcard {
+  margin:40px auto;
+  padding: 0 32px;
+  border: solid 2px #F32840;
+  border-radius : 8px;
+  max-width: 560px;
+}
+main #overview .postcard .txt {
+  max-width: 560px;
+  margin:32px 0 24px 0;
+  padding: 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #F32840;
+}
+main #overview .postcard .txt br {}
+main #overview .postcard .img {
+  max-width: 440px;
+  margin: 0 auto 40px auto;
+}
+main #overview .postcard img {
+  width: 100%;
+  height: auto;
+}
+main #message {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #333333;
+  letter-spacing: 0.075em;
+  line-height: 1.75;
+  padding: 16px 0;
+}
+main #message .bold {
+  font-weight: 600;
+}
+main #participation {
+  max-width: 560px;
+  margin: 0 auto;
+}
+main #participation .st_participation {
+  padding:24px 0 0 0;
+  text-align:center;
+}
+main #participation .st_participation img {
+  width: 144px;
+  height: auto;
+  vertical-align:top;
+}
+main #participation .tag {
+  padding-top:32px;
+}
+main #participation .tag .img {
+  max-width: 560px;
+  border: solid 2px #F32840;
+  border-radius : 8px;
+}
+main #participation .tag .img img {
+  width: 100%;
+  height: auto;
+}
+main #participation .tag .txt {
+  margin-top:4px;
+  color: #666666;
+  font-size: 14px;
+}
+main #participation #ex {
+  position:relative;
+  max-width: 560px;
+  height: 175px;
+  margin: 40px auto 0 auto;
+  border: solid 2px #DADEE0;
+  border-radius : 8px;
+}
+main #participation #ex .st img {
+  width: 88px;
+  height: auto;
+  position: absolute;
+  top: -18px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+main #participation #ex ul {
+  max-width: 240px;
+  font-size: 22px;
+  color: #333;
+  font-weight: 600;
+  margin: 32px auto 0 auto;
+  padding: 0;
+}
+main #participation #ex ul li {
+  margin-bottom:8px;
+}
+main #participation .ex_txt {
+  margin-top:8px;
+  padding: 0 0 0 22px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #F32840;
+  background: url("../img/icon_alert.png") no-repeat left center;
+  background-size: 18px 18px;
+}
+main #note {
+  margin-top:40px;
+  text-align:center;
+}
+main #note .st_note img {
+  width: 144px;
+  height: auto;
+  vertical-align:top;
+}
+main #note .stage {
+  overflow: hidden;
+  max-width: 560px;
+  margin: 32px auto 80px auto;
+  color: #666666;
+  text-align: left;
+  background-color: #fff;
+  border-radius :8px;
+}
+main #note .stage ul {
+  margin: 0;
+  padding: 32px 40px 24px 40px;
+}
+main #note .stage ul li {
+  margin-bottom:8px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #666;
+}
+main #note .stage ul li p::before{
+  content:"※";
+	position:absolute;
+	left:0;
+	top:0;
+}
+main #note .stage ul li p {
+  padding-left:1em;
+	position:relative;
+}
+
+/*sp*/
+@media screen and (max-width: 640px) {
+  header {
+    padding: 32px 8px 32px 8px;
+    text-align: center;
+  }
+  main #overview .postcard .txt br {
+    display: none;
+  }
+  main #overview .txt {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 16px 0 32px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+  }
+  main #overview .postcard .txt {
+    max-width: 560px;
+    margin:32px 0 16px 0;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #F32840;
+  }
+  main #message {
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0.075em;
+    line-height: 1.75;
+    padding: 16px 0;
+  }
+  main #participation #ex ul {
+    max-width: 240px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    margin: 40px auto 0 auto;
+    padding: 0;
+  }
+}
