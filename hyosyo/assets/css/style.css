@@ -118,12 +118,14 @@ main #participation .tag {
   padding-top:32px;
 }
 main #participation .tag .img {
+  padding: 32px 56px;
   max-width: 560px;
+  text-align: center;
   border: solid 2px #F32840;
   border-radius : 8px;
 }
 main #participation .tag .img img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 main #participation .tag .txt {
@@ -244,6 +246,13 @@ main #note .stage ul li p {
     letter-spacing: 0.075em;
     line-height: 1.75;
     padding: 16px 0;
+  }
+  main #participation .tag .img {
+    padding: 24px 16px;
+    max-width: 560px;
+    text-align: center;
+    border: solid 2px #F32840;
+    border-radius : 8px;
   }
   main #participation #ex ul {
     max-width: 240px;
