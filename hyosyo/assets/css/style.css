@@ -14,9 +14,13 @@ ul,
 li {
   list-style-type: none;
 }
+
+li img {
+  vertical-align:top;
+}
 /*pc*/
 header {
-  padding: 40px 0 48px 0;
+  padding: 40px 0 24px 0;
   text-align: center;
 }
 header #mv {
@@ -26,8 +30,30 @@ header #mv {
 header #mv img {
   width: 100%;
   height: auto;
+  vertical-align:top;
 }
+#sns {
+  max-width: 192px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-bottom: 16px;
+}
+#sns ul {
+  margin: 0;
+  padding: 0;
+}
+#sns ul li {
+  float: left;
+  margin: 0 12px
+}
+#sns ul li img {
+  width: 40px;
+  height: auto;
+  vertical-align:top;
+}
+
 main {
+  clear: both;
   /*720base*/
   max-width: 784px;
   margin: 0 auto;
@@ -41,6 +67,7 @@ main hr {
   height: 16px;
   border: none;
 }
+
 main #overview {
   max-width: 640px;
   margin: 0 auto;
@@ -63,6 +90,7 @@ main #overview .step {
 main #overview .step img {
     width: 100%;
     height: auto;
+    vertical-align:top;
 }
 main #overview .postcard {
   margin:40px auto;
@@ -90,6 +118,7 @@ main #overview .postcard .img {
 main #overview .postcard img {
   width: 100%;
   height: auto;
+  vertical-align:top;
 }
 main #message {
   max-width: 640px;
@@ -129,6 +158,7 @@ main #participation .tag .img {
 main #participation .tag .img img {
   max-width: 100%;
   height: auto;
+  vertical-align:top;
 }
 main #participation .tag .txt {
   margin-top:4px;
@@ -151,6 +181,7 @@ main #participation #ex .st img {
   left: 0;
   right: 0;
   margin: auto;
+  vertical-align:top;
 }
 main #participation #ex ul {
   max-width: 240px;
