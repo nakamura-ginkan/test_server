@@ -149,7 +149,7 @@ main #participation .tag {
   padding-top:32px;
 }
 main #participation .tag .img {
-  padding: 32px 56px;
+  padding: 48px 56px;
   max-width: 560px;
   text-align: center;
   border: solid 2px #F32840;
@@ -283,7 +283,7 @@ main #note .stage ul li p {
     padding: 16px 0;
   }
   main #participation .tag .img {
-    padding: 32px 24px;
+    padding: 40px 16px;
     max-width: 560px;
     text-align: center;
     border: solid 2px #F32840;
