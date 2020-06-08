@@ -456,6 +456,14 @@ footer .sns ul li img {
     letter-spacing: 0;
     color: #F32840;
   }
+  main #overview #ex {
+    position:relative;
+    max-width: 560px;
+    height: 175px;
+    margin: 16px auto 32px auto;
+    border: solid 2px #DADEE0;
+    border-radius : 8px;
+  }
   main #message {
     max-width: 640px;
     margin: 0 auto;
@@ -544,6 +552,7 @@ footer .sns ul li img {
     line-height: 40px;
     color: #aaaaaa;
     float: none;
+    margin: 0;
     text-align: center;
   }
 }
