@@ -33,27 +33,38 @@ header #mv img {
   height: auto;
   vertical-align:top;
 }
-#os {
-  max-width: 318px;
-  overflow: hidden;
-  margin: 0 auto;
-  padding-top: 32px;
-  padding-bottom: 24px;
+#install {
+  max-width: 247px;
+  margin: 40px auto 0 auto;
 }
-#os ul {
+#install #qrcode {
+  float: left;
+  max-width: 96px;
+  margin-right: 16px;
+}
+#install #qrcode img {
+  width: 100%;
+  height: auto;
+}
+#install #os {
+  float: left;
+  max-width: 135px;
+  overflow: hidden;
+}
+#install #os ul {
   margin: 0;
   padding: 0;
 }
-#os ul li {
-  float: left;
-  margin: 0 12px
+#install #os ul li {
+  margin: 0 0 16px 0;
 }
-#os ul li img {
+#install #os ul li img {
   width: 135px;
   height: auto;
   vertical-align:top;
 }
 #sns {
+  clear: both;
   max-width: 192px;
   overflow: hidden;
   margin: 0 auto;
@@ -92,15 +103,19 @@ main #overview {
   margin: 0 auto;
 }
 main #overview .txt {
-  max-width: 640px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 24px 0 32px 0;
-  font-size: 22px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0.025em;
-  color: #333333;
-  text-align: center;
+  padding: 24px 0 0 0;
+}
+main #overview .txt .pc {
+  display: block;
+}
+main #overview .txt .sp {
+  display: none;
+}
+main #overview .txt img {
+  width: 100%;
+  height: auto;
 }
 main #overview .step {
   max-width: 502px;
@@ -273,7 +288,6 @@ main #note .stage ul li p {
   padding-left:1em;
 	position:relative;
 }
-/*-------------------------*/
 #about {
 width:100%;
 padding: 64px 0 64px 0;
@@ -282,19 +296,22 @@ background-size: 134px 240px;
 
 }
 #about .st {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 800;
   color: #fff;
   padding-bottom:24px;
   text-align: center;
+  letter-spacing:0.1rem;
 }
 #about .txt {
-  font-size: 16px;
+  font-size: 24px;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.6;
   color: #fff;
+  font-weight: 600;
   margin-bottom:24px;
   padding: 0 24px;
+  letter-spacing:0.1rem;
 }
 #about .btn {
   margin: 0 auto;
@@ -341,7 +358,7 @@ background-size: 134px 240px;
 }
 #app .stage .position .set {
   max-width: 350px;
-  height: 250px;
+  height: 300px;
   position: absolute;
   top: 0;
   right: 24px;
@@ -363,17 +380,27 @@ background-size: 134px 240px;
   line-height: 1.6;
   color: #fff;
   font-weight: 600;
-  margin-bottom:16px;
+  margin-bottom:24px;
 }
+#app .stage .position .set .qrcode {
+  float: left;
+  width: 96px;
+  padding-left:50px;
+}
+#app .stage .position .set .qrcode img {
+  width: 100%;
+  height: auto;
+}
+
 #app .stage .position .set .os {
   overflow: hidden;
   padding: 0 16px;
 }
 
 #app .stage .position .set .os .img {
-  max-width: 135px;
   float: left;
-  padding: 0 12px;
+  max-width: 135px;
+  padding: 0 0 16px 0;
 }
 #app .stage .position .set .os .img img {
   width: 100%;
@@ -415,35 +442,87 @@ footer .sns ul li img {
 }
 
 
+
+
+
+
+
 /*sp*/
 @media screen and (max-width: 640px) {
   header {
     padding: 32px 8px 0 8px;
     text-align: center;
   }
-  #os ul li {
-    float: none;
-    max-width: 240px;
-    margin: 0 auto;
+
+  #install {
+    max-width: 311px;
+    margin: 40px auto 0 auto;
   }
-  #os ul li img {
+  #install #qrcode {
+    display: none;
+  }
+  #install #os {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 0 32px 0;
+  }
+  #install #os ul {
+    margin: 0;
+    padding: 0;
+  }
+  #install #os ul li {
+    margin: 0;
+    padding: 0 32px;
+  }
+  #install #os ul li img {
     width: 100%;
     height: auto;
     vertical-align:top;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   main #overview .postcard .txt br {
     display: none;
   }
   main #overview .txt {
-    max-width: 640px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 16px 0 32px 0;
+    padding: 0 0 32px 0;
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
     letter-spacing: 0.12em;
     color: #333333;
     text-align: center;
+  }
+  main #overview .txt .pc {
+    display: none;
+  }
+  main #overview .txt .sp {
+    display:block;
+    padding-bottom:16px;
   }
   main #overview .postcard .txt {
     max-width: 560px;
@@ -516,7 +595,6 @@ footer .sns ul li img {
     height: auto;
     overflow: hidden;
     position: relative;
-    /*base672*/
     max-width: 100%;
     padding: 0;
     margin: 0;
@@ -534,6 +612,9 @@ footer .sns ul li img {
     height: auto;
     margin:64px 0 32px 0;
     padding: 0 24px 0 24px;
+  }
+  #app .stage .position .set .qrcode {
+    display: none;
   }
   #app .stage .position .set .os .img {
     max-width: 200px;
