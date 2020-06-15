@@ -667,10 +667,6 @@ body,
   .shops__circle {
     width: 230px;
     height: 230px;
-    /*
-    width: 61.6vw;
-    height: 61.6vw;
-    */
   }
 }
 
@@ -768,9 +764,6 @@ body,
 
 @media only screen and (max-width: 767px) {
   .entry__flow_cont {
-    /*
-    width: calc(100% - 39%);
-    */
     float: left;
     width: 100%;
     text-align: left;
@@ -892,9 +885,6 @@ body,
 }
 
 .entry__stores_link {
-  /*
-width: 7.6rem;
-  */
   max-width: 135px;
 }
 
@@ -1677,7 +1667,6 @@ width: 7.6rem;
 }
 
 .modal__wrap {
-  /*width: 96rem;*/
   width: calc(100% - 80px);
   max-width: 960px;
   height: 85vh;
@@ -1868,9 +1857,8 @@ width: 7.6rem;
     display: none;
   }
 }
-/*animation*/
 .anired {
-  transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55), background-position 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 500ms linear;
+  transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55), background-position 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .anired:hover {
   transform: scale(1.1);

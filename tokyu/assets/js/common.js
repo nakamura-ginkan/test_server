@@ -3,10 +3,7 @@ function modal() {
     var modal = $('.modal');
     var close = $('.modal__close');
     var target = $('html,body');
-
-    //conf
-
-
+    
     btn.on('click', function() {
         modal.fadeIn();
         target.css('overflow','hidden');
