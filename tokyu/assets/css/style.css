@@ -97,7 +97,7 @@ body {
   padding: 0;
   font-family: Helvetica,"Helvetica Neue", arial, "ヒラギノ角ゴシック W3", "Hiragino Kaku Gothic W3", "游ゴシック体", "Yu Gothic", YuGothic, 'メイリオ', Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   text-align: center;
-  color: #565656;
+  color: #333;
 }
 
 @media only screen and (max-width: 767px) {
@@ -263,6 +263,7 @@ body {
 
 .btn_app.show, .btn_play.show {
   display: block;
+  margin:8px 0;
 }
 
 body,
@@ -701,7 +702,7 @@ body,
 @media only screen and (max-width: 767px) {
   .shops__list_item {
     padding: 1rem 0;
-    border-top: 1px solid #EDEDED;
+    border-top: 1px solid #ededed;
     border-bottom: 0;
   }
 }
@@ -1147,10 +1148,10 @@ body,
 }
 
 .prize__item_cont {
-  background: #F32840;
+  background: #f32840;
   position: relative;
   font-weight: 600;
-  color: #FFF;
+  color: #fff;
 }
 
 @media only screen and (max-width: 767px) {

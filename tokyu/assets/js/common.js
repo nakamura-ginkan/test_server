@@ -3,7 +3,7 @@ function modal() {
     var modal = $('.modal');
     var close = $('.modal__close');
     var target = $('html,body');
-    
+
     btn.on('click', function() {
         modal.fadeIn();
         target.css('overflow','hidden');
@@ -27,7 +27,7 @@ function changeBtn() {
     } else if (ua.indexOf('Android') > 0) {
         play.each( function() {
             $(this).addClass('show');
-        });
+        })
     } else {
         app.addClass('show');
         play.addClass('show');
