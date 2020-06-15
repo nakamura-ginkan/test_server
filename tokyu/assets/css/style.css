@@ -263,7 +263,12 @@ body {
 
 .btn_app.show, .btn_play.show {
   display: block;
-  margin:8px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .btn_app.show, .btn_play.show {
+    margin: 8px 0;
+  }
 }
 
 body,
