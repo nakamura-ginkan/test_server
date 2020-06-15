@@ -2,13 +2,19 @@ function modal() {
     var btn = $('.btn__modal');
     var modal = $('.modal');
     var close = $('.modal__close');
+    var target = $('html,body');
+
+    //conf
+
 
     btn.on('click', function() {
         modal.fadeIn();
-    });
+        target.css('overflow','hidden');
+    })
 
     close.on('click', function() {
         modal.fadeOut();
+        target.css('overflow','auto');
     })
 }
 
