@@ -1677,12 +1677,14 @@ width: 7.6rem;
 }
 
 .modal__wrap {
-  width: 96rem;
+  /*width: 96rem;*/
+  width: calc(100% - 80px);
+  max-width: 960px;
   height: 85vh;
   padding: 0 0 9rem;
   box-sizing: border-box;
   border-radius: 4px;
-  background: #FFF;
+  background: #fff;
   overflow: hidden;
   position: absolute;
   top: 50%;
