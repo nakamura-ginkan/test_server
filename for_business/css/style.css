@@ -28,6 +28,10 @@ body {
 	margin: 0 auto;
 }
 
+.base_box .title {
+	font-feature-settings: "palt";
+}
+
 /*
 DEFAULT
 ***************************************************************************/
@@ -206,6 +210,7 @@ CONTENTS
 	font-size:4rem;
 	color:#FFF;
 	margin:0 0 40px;
+	font-feature-settings: "palt";
 	letter-spacing:0.06em;
 }
 #results_sec .title span{color:#FFC031;}
@@ -289,6 +294,7 @@ CONTENTS
 	font-size:3.6rem;
 	margin:0 0 20px;
 	text-align:center;
+	font-feature-settings: "palt";
 }
 #award_sec .txt{
 	text-align:center;
@@ -326,6 +332,7 @@ CONTENTS
 	font-size: 3.6rem;
 	color: #F32840;
 	letter-spacing:0.04em;
+	font-feature-settings: "palt";
 }
 
 #point_sec .inner { margin: 0 140px; }
@@ -395,6 +402,7 @@ CONTENTS
 	color:#FFF;
 	font-size:4.6rem;
 	line-height:1.4;
+	font-feature-settings: "palt";
 }
 #pointtxt_sec .img{
 	flex:0 1 550px;
@@ -415,6 +423,7 @@ CONTENTS
 	font-weight: bold;
 	color: #fff;
 	font-size:2rem;
+	font-feature-settings: "palt";
 }
 
 #cost_sec .title {
@@ -443,6 +452,7 @@ CONTENTS
 	font-size:3.6rem;
 	letter-spacing:0.04em;
 	margin:0 0 30px;
+	font-feature-settings: "palt";
 }
 #operation_sec .txt span{color:#F32840;}
 #operation_sec .img{ flex:0 1 466px; }
@@ -516,6 +526,7 @@ CONTENTS
 	line-height:1.4;
 	text-shadow:0 0 6px rgba(0,0,0,0.3);
 	margin:0 0 40px;
+	font-feature-settings: "palt";
 }
 
 /* ▼DOWNLOAD▼ */

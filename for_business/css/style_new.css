@@ -934,7 +934,6 @@ section#userVoice a.loadMoreBtn:hover {
   width: 250px;
   position: absolute;
   top: 35px;
-  /*top: 11px;*/
   left: 24px;
   z-index: 1;
 }
@@ -942,7 +941,6 @@ section#userVoice a.loadMoreBtn:hover {
 @media (max-width: 767px) {
   .header__logo {
     width: 16.8rem;
-    /*margin-left: 5.33%;*/
     left: 24px;
   }
 }
