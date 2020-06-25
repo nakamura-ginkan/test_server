@@ -998,7 +998,6 @@ section#userVoice a.loadMoreBtn:hover {
 #topimg .mv__sign {
   width: 61.8%;
   min-width: 803px;
-  /*padding: 138px 0 247px;*/
   padding: 128px 0 247px;
   background: url(../images/mv_bg.png) 100% 50% no-repeat;
   background-size: cover;
@@ -1028,7 +1027,8 @@ section#userVoice a.loadMoreBtn:hover {
 #topimg .mv__sign_copy {
   width: calc(100% - 38px);
   margin-right: 38px;
-  padding: 21px 24px;
+  /*padding: 21px 24px;*/
+  padding: 32px;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.9);
 }
@@ -1043,8 +1043,9 @@ section#userVoice a.loadMoreBtn:hover {
 }
 
 #topimg .mv__sign_ttl {
-  margin: 0;
-  line-height: 96px;
+  margin: 0 0 16px 0;
+  /*line-height: 96px;*/
+  line-height: 80px;
   font-size: 60px;
   font-weight: 600;
   color: #C0331C;
@@ -1224,7 +1225,6 @@ section#userVoice a.loadMoreBtn:hover {
 #topimg .mv__form_submit {
   display: block;
   width: 100%;
-  /*padding: 25.5px 0 16px;*/
   padding: 18px 0 16px;
   border-radius: 100px;
   border: 1px solid #FFF;

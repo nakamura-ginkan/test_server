@@ -432,6 +432,7 @@ CONTENTS
 	margin-bottom: 20px;
 	font-size: 4.1rem;
 	line-height:1.6;
+	font-feature-settings: "palt";
 }
 
 /* ▼OPERATION▼ */
