@@ -935,14 +935,15 @@ section#userVoice a.loadMoreBtn:hover {
   position: absolute;
   top: 35px;
   /*top: 11px;*/
-  left: 0;
+  left: 24px;
   z-index: 1;
 }
 
 @media (max-width: 767px) {
   .header__logo {
     width: 16.8rem;
-    margin-left: 5.33%;
+    /*margin-left: 5.33%;*/
+    left: 24px;
   }
 }
 
@@ -1048,6 +1049,7 @@ section#userVoice a.loadMoreBtn:hover {
   font-size: 60px;
   font-weight: 600;
   color: #C0331C;
+  font-feature-settings: "palt";
 }
 
 @media (max-width: 767px) {
@@ -1089,7 +1091,7 @@ section#userVoice a.loadMoreBtn:hover {
 #topimg .mv__form {
   width: 38.2%;
   min-width: 563px;
-  margin-top:-104px;
+  margin-top:-120px;
 }
 
 @media (max-width: 767px) {
@@ -1120,6 +1122,7 @@ section#userVoice a.loadMoreBtn:hover {
   font-size: 28px;
   font-weight: 600;
   color: #000;
+  font-feature-settings: "palt";
 }
 
 @media (max-width: 767px) {
