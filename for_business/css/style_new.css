@@ -759,6 +759,7 @@ section#userVoice h2 {
   font-size: 30px;
   color: var(--color-red);
   text-align: center;
+  font-feature-settings: "palt";
 }
 
 @media (max-width: 767px) {

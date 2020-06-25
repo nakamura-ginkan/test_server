@@ -192,6 +192,7 @@ CONTENTS
 	font-size:2.8rem;
 	color:#FFF;
 	margin:0 0 40px;
+	font-feature-settings: "palt";
 }
 #results_sec .title span{color:#FFC031;}
 #results_sec dl{
@@ -250,7 +251,9 @@ CONTENTS
 	margin:0 auto;
 	letter-spacing:0.06em;
 	text-align: center;
+	font-feature-settings: "palt";
 }
+
 #member_sec .title span{color:#FFC031;}
 
 #member_sec ul{
@@ -281,6 +284,7 @@ CONTENTS
 	font-size:2.8rem;
 	margin:40px 0 20px;
 	text-align:center;
+	font-feature-settings: "palt";
 }
 #award_sec .txt{
 	text-align:center;
@@ -316,6 +320,7 @@ CONTENTS
 	text-align: center;
 	font-size: 2.8rem;
 	color: #F32840;
+	font-feature-settings: "palt";
 }
 
 
@@ -412,6 +417,7 @@ CONTENTS
 	color:#F32840;
 	font-size:2.8rem;
 	margin:0 0 20px;
+	font-feature-settings: "palt";
 }
 #operation_sec .txt span{color:#F32840;}
 #operation_sec .img{ margin-top:50px;}
@@ -433,6 +439,7 @@ CONTENTS
 	font-size: 2.8rem;
 	color: #F32840;
 	letter-spacing:0.04em;
+	font-feature-settings: "palt";
 }
 #flow_sec .img{
 	position:relative;

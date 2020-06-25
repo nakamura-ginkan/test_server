@@ -262,6 +262,7 @@ CONTENTS
 	margin:0 auto;
 	letter-spacing:0.06em;
 	text-align: center;
+	font-feature-settings: "palt";
 }
 #member_sec .title span{color:#FFC031;}
 
@@ -551,6 +552,7 @@ CONTENTS
 	text-align: center;
 	font-size: 3rem;
 	color: #F32840;
+	font-feature-settings: "palt";
 }
 #media_sec ul{
 	width:956px;
