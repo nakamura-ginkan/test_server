@@ -937,6 +937,8 @@ section#userVoice a.loadMoreBtn:hover {
   top: 35px;
   left: 24px;
   z-index: 1;
+  background-color: #fff;
+  padding: 16px 16px 16px 0;
 }
 
 @media (max-width: 767px) {
