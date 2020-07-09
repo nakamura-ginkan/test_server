@@ -1,0 +1,121 @@
+/* タブレット向けレイアウト */
+@media all and (max-width: 1000px) {
+	/*
+	GLOBAL
+	***************************************************************************/
+	body {
+		min-width: 0px;
+		font-size: 2.0rem;
+	}
+
+	.base_box {
+		width: 100%;
+	}
+
+	/*
+	HEADER
+	***************************************************************************/
+	.c_h_logo{
+		padding:10px 20px;
+		width: 100%;
+	}
+
+	.c_h_logo img {
+		width: 40%;
+	}
+
+	.hbtn_list {
+		display: none;
+	}
+
+	.new_years_notice_contact p {
+		padding-bottom: 12px;
+		text-align: center;
+		font-weight:bold;
+		font-size: 1.0rem;
+	}
+
+	/*
+	CONTENTS
+	***************************************************************************/
+	.contact_title_lf {
+		display: inline;
+	}
+
+	#contact_sec {
+		padding: 20px 0 30px;
+	}
+
+	#contact_sec .inner {
+		float: none;
+		width: 100%;
+		padding: 35px 10px 50px 10px;
+	}
+
+	#contact_sec dd {
+		padding-top: 10px;
+		width: 100%;
+	}
+
+	textarea {
+		padding: 10px;
+		width: 100%;
+		height: 300px;
+	}
+
+	#form_button {
+		width: 100%;
+	}
+
+	.fbtn_list img {
+		width: 100%;
+	}
+
+	.sp_button_list {
+		display: inline-block;
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	.sp_button_left{
+		float: left;
+		width: 50%;
+		text-align: center;
+	}
+
+	.sp_button_right{
+		float: right;
+		width: 50%;
+		text-align: center;
+	}
+
+	/*
+	FOOTER
+	***************************************************************************/
+	footer {
+		text-align: center;
+	}
+
+	footer .content {
+	    float: none;
+	    width: 100%;
+	    margin-top: 0px;
+		margin-bottom: 20px;
+	    text-align: center;
+	}
+
+	.footer_logo {
+		float: none;
+	}
+
+	.fnavi_list li {
+	    display: block;
+		margin-left: 0;
+	    margin-bottom: 10px;
+	}
+}
+
+/* モバイル向けレイアウト */
+@media (max-width: 670px) {
+
+}
