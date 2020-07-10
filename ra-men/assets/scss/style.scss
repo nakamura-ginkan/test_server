@@ -143,6 +143,10 @@
                 transition: .3s;
             }
         }
+
+        &_hide {
+            display: none;
+        }
     }
 }
 
@@ -549,10 +553,6 @@ body {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
-
-                @include media(sp) {
-                    display: none;
-                }
             }
 
             &::before {
@@ -856,14 +856,15 @@ body {
         }
 
         &_block {
-            width: 1016px;
+            max-width: 1016px;
+            width: 100%;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
 
             @include media(sp) {
-                width: 100%;
+                max-width: initial;
                 flex-direction: column;
             }
         }

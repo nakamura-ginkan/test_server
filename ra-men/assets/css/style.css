@@ -234,6 +234,10 @@ body {
   transition: .3s;
 }
 
+.btn__view_hide {
+  display: none;
+}
+
 body {
   background: #FDF9EE url(../img/bg_body.jpg) 50% 50% no-repeat;
   background-size: 100% 100%;
@@ -663,12 +667,6 @@ body::before {
   transform: translateY(-50%);
 }
 
-@media only screen and (max-width: 768px) {
-  .kuishinbo__block_inner::before, .kuishinbo__block_inner::after {
-    display: none;
-  }
-}
-
 .kuishinbo__block_inner::before {
   left: 0;
 }
@@ -1004,7 +1002,8 @@ body::before {
 }
 
 .footer__line_block {
-  width: 1016px;
+  max-width: 1016px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -1013,7 +1012,7 @@ body::before {
 
 @media only screen and (max-width: 768px) {
   .footer__line_block {
-    width: 100%;
+    max-width: initial;
     flex-direction: column;
   }
 }
