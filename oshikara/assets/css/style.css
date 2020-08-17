@@ -682,7 +682,7 @@ footer .sns ul li img {
     width: 40px;
     text-align: right;
     padding-right: 0;
-    font-size: 16px;
+    font-size: 14px;
   }
   #participate .hashgraphic .hotflavor {
     float: left;
@@ -719,14 +719,16 @@ footer .sns ul li img {
   }
   #participate .hashgraphic ul li .hashtag{
     float: left;
-    font-size: 16px;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
   }
   #participate .hashgraphic ul li .hashtag span.hsy {
     height: 48px;
     font-size: 10px;
     color: #666;
     font-weight: 300;
-    margin:0 0 0 4px;
+    /*margin:0 0 0 4px;*/
     vertical-align: top;
   }
   #participate .hashgraphic li.table_title .hashtag {
