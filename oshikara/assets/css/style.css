@@ -575,12 +575,15 @@ footer .sns ul li img {
     padding: 0 32px;
   }
   #message h3 {
-    font-size: 24px;
-    line-height: 48px;
+    font-size: 20px;
+    line-height: 32px;
     font-weight: 600;
   }
+  #message h3 br {
+    display: none;
+  }
   #message .txt {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     line-height: 32px;
     letter-spacing: 0.05em;
