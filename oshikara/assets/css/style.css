@@ -241,7 +241,7 @@ li img {
   color: #666;
   font-weight: 300;
   margin:0 0 0 8px;
-  vertical-align: top;/*隙間対応*/
+  vertical-align: top;
 }
 #participate .hashgraphic li.table_title .hashtag {
   max-width: 176px;
@@ -718,10 +718,10 @@ footer .sns ul li img {
     margin: 0 20px;
   }
   #participate .hashgraphic ul li .hashtag{
+    float: left;
     font-size: 16px;
   }
   #participate .hashgraphic ul li .hashtag span.hsy {
-    clear: both;
     height: 48px;
     font-size: 10px;
     color: #666;
@@ -746,7 +746,6 @@ footer .sns ul li img {
     background: url("../img/bg_item.png") repeat center top;
     background-size:159.5px 160px;
   }
-
   #present .txt {
     text-align: center;
     font-size: 14px;
