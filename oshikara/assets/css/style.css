@@ -699,7 +699,7 @@ footer .sns ul li img {
   }
   #participate .hashgraphic li .hotflavor .under_arrow {
     max-width: 32px;
-    padding: 0 20px;
+    padding: 0 16px;
   }
   #participate .hashgraphic li .hotflavor .under_arrow img {
     width: 100%;
@@ -715,10 +715,11 @@ footer .sns ul li img {
     width: 32px;
     height: 56px;
     display: block;
-    margin: 0 20px;
+    margin: 0 16px;
   }
-  #participate .hashgraphic ul li .hashtag{
+  #participate .hashgraphic ul li .hashtag {
     float: left;
+    display: block;
     font-size: 14px;
     margin: 0;
     padding: 0;
@@ -728,7 +729,7 @@ footer .sns ul li img {
     font-size: 10px;
     color: #666;
     font-weight: 300;
-    /*margin:0 0 0 4px;*/
+    margin: 0;
     vertical-align: top;
   }
   #participate .hashgraphic li.table_title .hashtag {
@@ -737,7 +738,8 @@ footer .sns ul li img {
   #participate .hashgraphic li.table_title .hashtag img {
     width: 100%;
     height: auto;
-    margin-top:64px;
+    margin:64px 0 0 0;
+    padding: 0;
   }
   #present {
     clear: both;
