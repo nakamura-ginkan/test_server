@@ -492,7 +492,7 @@ footer .sns ul li img {
 /*sp*/
 @media screen and (max-width: 640px) {
   #mv_stage {
-    padding:40px 0 0 0;
+    padding:40px 8px 0 8px;
     background: url("../img/bg_mv.png") repeat center top;
     background-size:500px 500px;
   }
@@ -665,11 +665,11 @@ footer .sns ul li img {
   }
   #participate .txt {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
   }
   #participate .txt span.large{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
   }
   #participate .txt br.sp_br {
@@ -678,9 +678,10 @@ footer .sns ul li img {
   #participate .hashgraphic .hotflavor_txt,
   #participate .hashgraphic li.table_title .hotflavor_txt {
     float:left;
-    width: 76px;
+    width: 40px;
     text-align: right;
     padding-right: 0;
+    font-size: 16px;
   }
   #participate .hashgraphic .hotflavor {
     float: left;
@@ -688,8 +689,7 @@ footer .sns ul li img {
   }
   #participate .hashgraphic li.table_title .hotflavor{
     max-width: 64px;
-    padding-right: 16px;
-    padding-top:16px;
+    padding: 16px 16px 16px 0;
   }
   #participate .hashgraphic li.table_title .hotflavor img {
     width: 100%;
@@ -716,23 +716,25 @@ footer .sns ul li img {
     display: block;
     margin: 0 20px;
   }
+  #participate .hashgraphic ul li .hashtag{
+    font-size: 16px;
+  }
   #participate .hashgraphic ul li .hashtag span.hsy {
     clear: both;
     height: 48px;
-    font-size: 12px;
+    font-size: 10px;
     color: #666;
     font-weight: 300;
     margin:0 0 0 8px;
     vertical-align: top;/*隙間対応*/
   }
   #participate .hashgraphic li.table_title .hashtag {
-    max-width: 176px;
+    max-width: 128px;
   }
   #participate .hashgraphic li.table_title .hashtag img {
     width: 100%;
     height: auto;
-    margin-top:40px;
-    margin-bottom:16px;
+    margin-top:64px;
   }
   #present {
     clear: both;
@@ -746,17 +748,24 @@ footer .sns ul li img {
 
   #present .txt {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
   }
   #present .txt span.large{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
   }
   #present .item_list {
     clear:both;
     width: 100%;
     margin-bottom: 40px;
+  }
+  #present .item_list .name {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding:0 40px 16px 40px;
+    letter-spacing: 0.05em;
   }
 
 }
