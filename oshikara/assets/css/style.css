@@ -492,7 +492,7 @@ footer .sns ul li img {
 /*sp*/
 @media screen and (max-width: 640px) {
   #mv_stage {
-    padding:40px 8px 0 8px;
+    padding:40px 0 0 0;
     background: url("../img/bg_mv.png") repeat center top;
     background-size:500px 500px;
   }
@@ -502,6 +502,7 @@ footer .sns ul li img {
   #mv_sp {
     display: block;
     margin: 0;
+    padding: 0 8px;
   }
   #mv_sp img {
     width: 100%;
@@ -725,8 +726,8 @@ footer .sns ul li img {
     font-size: 10px;
     color: #666;
     font-weight: 300;
-    margin:0 0 0 8px;
-    vertical-align: top;/*隙間対応*/
+    margin:0 0 0 4px;
+    vertical-align: top;
   }
   #participate .hashgraphic li.table_title .hashtag {
     max-width: 128px;
