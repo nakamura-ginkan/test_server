@@ -753,6 +753,11 @@ footer .sns ul li img {
     background: url("../img/bg_item.png") repeat center top;
     background-size:159.5px 160px;
   }
+  #present .st {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+  }
   #present .txt {
     text-align: center;
     font-size: 14px;
