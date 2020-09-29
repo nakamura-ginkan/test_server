@@ -137,8 +137,9 @@ li img {
   text-align: center;
   font-size: 24px;
   font-weight: 600;
+  line-height: 1.6;
   letter-spacing:0.05em;
-  padding: 24px 0;
+  padding: 24px 0 0 0;
 }
 #participate .txt span.large{
   font-size: 32px;
@@ -181,8 +182,9 @@ li img {
   text-align: center;
   font-size: 24px;
   font-weight: 600;
+  line-height: 1.6;
   letter-spacing:0.05em;
-  padding: 24px 0;
+  padding: 24px 0 0 0;
 }
 #present .txt span.large{
   font-size: 32px;
