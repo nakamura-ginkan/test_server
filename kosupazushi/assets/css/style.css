@@ -419,10 +419,19 @@ footer .sns ul li img {
 }
 /*sp*/
 @media screen and (max-width: 640px) {
+  #mv_stage #logo {
+    position: absolute;
+    top:24px;
+    left:24px;
+  }
+  #mv_stage #logo img{
+    width: 146px;
+    height: auto;
+  }
   #mv_stage {
-    padding:40px 0 0 0;
-    background: url("../img/bg_mv_sp.png") no-repeat center bottom;
-    background-size:110%;
+    padding:64px 0 0 0;
+    background: url("../img/bg_mv_sp.png") no-repeat center 288px;
+    background-size:130%;
   }
   #mv_pc {
     display: none;
@@ -464,6 +473,7 @@ footer .sns ul li img {
   #install_sp #sp_utility #os ul li {
     float: left;
     width: 159px;
+    line-height: 96px;
     margin: 0;
     padding: 24px 8px 0 0;
   }
@@ -547,6 +557,10 @@ footer .sns ul li img {
   #app .stage .position .set .qrcode {
     display: none;
   }
+  #app .stage .position .set .os{
+    height: 60px;
+    overflow: hidden;
+  }
   #app .stage .position .set .os .img {
     max-width: 200px;
     float: none;
@@ -575,8 +589,8 @@ footer .sns ul li img {
     background-size:420px 440px;
   }
   #sushi {
-    background: url("../img/bg_sushi_sp.png") no-repeat center 140px;
-    background-size:130%;
+    background: url("../img/bg_sushi_sp.png") no-repeat center 144px;
+    background-size:180%;
   }
   #participate {
     clear: both;
