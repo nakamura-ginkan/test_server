@@ -1,0 +1,57 @@
+.header {
+    width: 100%;
+    padding: 6.4rem 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include media(sp) {
+        padding: 3.2rem 0 0;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 124rem;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 2rem;
+        box-sizing: border-box;
+
+        @include media(sp) {
+            align-items: flex-end;
+        }
+    }
+
+    &__logo {
+        max-width: 23.5rem;
+        width: 100%;
+
+        @include media(sp) {
+            max-width: 15.2rem;
+        }
+
+        &_link {
+            display: block;
+        }
+    }
+
+    &__btn {
+        max-width: 20.8rem;
+        width: 100%;
+        padding: 1.5rem 0 1.6rem;
+        box-sizing: border-box;
+        line-height: 1;
+        font-size: 1.6rem;
+        font-weight: 700;
+
+        @include media(sp) {
+            max-width: 14.7rem;
+            padding: 1.1rem 0 1.2rem;
+            line-height: 1.5;
+            letter-spacing: .078rem;
+            font-size: 1.2rem;
+        }
+    }
+}
