@@ -138,6 +138,7 @@ li img {
   font-size: 24px;
   font-weight: 600;
   letter-spacing:0.05em;
+  padding: 24px 0;
 }
 #participate .txt span.large{
   font-size: 32px;
@@ -181,6 +182,7 @@ li img {
   font-size: 24px;
   font-weight: 600;
   letter-spacing:0.05em;
+  padding: 24px 0;
 }
 #present .txt span.large{
   font-size: 32px;
@@ -500,6 +502,14 @@ footer .sns ul li img {
     height: auto;
     vertical-align:top;
   }
+  #participate .st {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+  #present .st {
+    max-width: 240px;
+    margin: 0 auto;
+  }
   #message {
     color: #fff;
     background:#000 ;
@@ -574,8 +584,8 @@ footer .sns ul li img {
     overflow: hidden;
   }
   footer .copy {
-    font-size: 14px;
-    line-height: 40px;
+    font-size: 13px;
+    padding-top:8px;
     color: #aaaaaa;
     float: none;
     margin: 0;
