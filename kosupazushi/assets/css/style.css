@@ -123,7 +123,7 @@ li img {
   clear: both;
   width: 100%;
   overflow: hidden;
-  padding:80px 0 120px 0;
+  padding:80px 0 80px 0;
 }
 #participate .st {
   max-width: 328px;
@@ -167,7 +167,7 @@ li img {
   clear: both;
   width: 100%;
   overflow: hidden;
-  padding:80px 0 120px 0;
+  padding:0 0 120px 0;
   background-size:319px 320px;
 }
 #present .st {
