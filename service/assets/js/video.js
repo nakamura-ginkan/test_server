@@ -8,7 +8,7 @@ function onYouTubeIframeAPIReady() {
     player = new YT.Player( 'video', {
         height: '360',
         width: '640',
-        videoId: 'M7lc1UVf-VE',
+        videoId: 'r_j_k_1oyTQ',
         events: {
             'onReady': onPlayerReady,
         }
@@ -28,8 +28,12 @@ $(window).on('scroll', function() {
     var pos = offset - height + ( height / 4 );
 
     if ( scroll > pos ) {
-        player.playVideo();
-    } else {
-        player.pauseVideo();
+        if ( !video.hasClass('started') ) {
+            player.playVideo();
+
+            setTimeout( function() {
+                video.addClass('started');
+            }, 3000);
+        }
     }
 })
