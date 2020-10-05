@@ -25,20 +25,10 @@ function gridMasonry() {
         itemSelector: '.review__item',
         gutter: '.gutter-sizer',
         isFitWidth: true
-    })
+    });
 }
 
 $( function() {
     changeBtn();
-})
-
-$(window).on('load resize', function() {
-    var width = $(this).width();
-
-    if ( width > 768 ) {
-        gridMasonry();
-    } else {
-        $('.review__masonry').removeAttr('style');
-        $('.review_item').removeAttr('style');
-    }
+    gridMasonry();
 })

@@ -23,7 +23,7 @@
 
     &__block {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
 
         @include media(sp) {
@@ -31,29 +31,22 @@
         }
 
         &_img {
-            width: 52.1rem;
+            width: 42.1rem;
             text-align: right;
 
             @include media(sp) {
                 width: 100%;
                 margin: 0 auto 4rem;
             }
-
-            img {
-                width: 42.1rem;
-                margin: 0 0 0 auto;
-
-                @include media(sp) {
-                    width: 100%;
-                }
-            }
         }
 
         &_cont {
             width: 60rem;
+            margin-left: 10rem;
 
             @include media(sp) {
                 width: 100%;
+                margin: 0;
             }
         }
     }

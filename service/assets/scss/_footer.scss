@@ -1,8 +1,10 @@
 .footer {
+    background: #F32840;
+
     &__links {
         padding: 4rem 2rem;
         box-sizing: border-box;
-        background: $red;
+        background: rgba(177, 0, 21, .16);
 
         @include media(sp) {
             padding: 4rem 3.2rem;
@@ -101,6 +103,7 @@
                 }
 
                 .footer__links {
+
                     &_main,
                     &_sub {
                         color: #FFF;
@@ -117,6 +120,7 @@
 
     &__line {
         padding: 2.4rem 0;
+        background: #FFF;
 
         &_content {
             display: flex;
@@ -180,8 +184,6 @@
             background-repeat: no-repeat;
             background-size: 100%;
             transition: .6s ease-out;
-            text-indent: -9999px;
-            overflow: hidden;
         }
 
         &_fb {

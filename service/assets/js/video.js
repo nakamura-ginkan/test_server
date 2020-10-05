@@ -9,6 +9,9 @@ function onYouTubeIframeAPIReady() {
         height: '360',
         width: '640',
         videoId: 'r_j_k_1oyTQ',
+        playerVars: {
+            'rel': 0,
+        },
         events: {
             'onReady': onPlayerReady,
         }
