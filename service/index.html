@@ -8,17 +8,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script>
-$(document).ready(function(){
-  function gridMasonry() {
-      var grid = $('#review_grid');
+  window.onload = function () {
+        var grid = $('#review_grid');
 
-      grid.masonry({
-          itemSelector: '.review__item',
-          gutter: '.gutter-sizer',
-          isFitWidth: true
-      });
-  }gridMasonry();
-});
+        grid.masonry({
+            itemSelector: '.review__item',
+            gutter: '.gutter-sizer',
+            isFitWidth: true
+        });
+  };
   </script>
 
     <script src="assets/js/video.js"></script>
