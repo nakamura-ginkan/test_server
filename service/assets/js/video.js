@@ -10,10 +10,8 @@ function onYouTubeIframeAPIReady() {
         width: '640',
         videoId: 'r_j_k_1oyTQ',
         playerVars: {
+            'autoplay': 0,
             'rel': 0,
-        },
-        events: {
-            'onReady': onPlayerReady,
         }
     } );
 }
