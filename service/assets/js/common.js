@@ -18,6 +18,7 @@ function changeBtn() {
     }
 }
 
+/*
 function gridMasonry() {
     var grid = $('#review_grid');
 
@@ -27,6 +28,7 @@ function gridMasonry() {
         isFitWidth: true
     });
 }
+*/
 
 $( function() {
     changeBtn();
