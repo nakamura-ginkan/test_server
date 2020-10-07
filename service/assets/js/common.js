@@ -18,19 +18,6 @@ function changeBtn() {
     }
 }
 
-/*
-function gridMasonry() {
-    var grid = $('#review_grid');
-
-    grid.masonry({
-        itemSelector: '.review__item',
-        gutter: '.gutter-sizer',
-        isFitWidth: true
-    });
-}
-*/
-
 $( function() {
     changeBtn();
-    gridMasonry();
 })

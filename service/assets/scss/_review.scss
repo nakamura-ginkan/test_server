@@ -1,6 +1,11 @@
 .section {
     &__review {
         padding: 8rem 0 16rem;
+
+        @include media(sp) {
+            width: 100vw;
+            overflow: hidden;
+        }
     }
 }
 

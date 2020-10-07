@@ -5,10 +5,6 @@
     top: 0;
     left: 0;
 
-    @include media(sp) {
-        padding: 3.2rem 0 0;
-    }
-
     &__content {
         display: flex;
         justify-content: space-between;

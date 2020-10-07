@@ -564,12 +564,6 @@ body {
   left: 0;
 }
 
-@media only screen and (max-width: 768px) {
-  .header {
-    padding: 3.2rem 0 0;
-  }
-}
-
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -1092,6 +1086,13 @@ body {
 
 .section__review {
   padding: 8rem 0 16rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .section__review {
+    width: 100vw;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 768px) {
