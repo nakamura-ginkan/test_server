@@ -1,0 +1,84 @@
+.section {
+    &__download {
+        padding: 16.9rem 0 8rem;
+        background: linear-gradient(to bottom, #FF8673, #F32840);
+    }
+}
+
+.download {
+    &__block {
+        max-width: 48.4rem;
+        width: 100%;
+        margin: 5.6rem auto 0;
+
+        @include media(sp) {
+            max-width: 21.5rem;
+        }
+    }
+
+    &__ttl {
+        margin: 0 auto 2.4rem;
+        line-height: 1.5;
+        font-size: 3.2rem;
+        font-weight: 600;
+        color: #FFF;
+
+        @include media(sp) {
+            margin: 0 auto 1.6rem;
+            line-height: 1.6;
+            font-size: 2.4rem;
+        }
+    }
+
+    &__copy {
+        color: #FFF;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+
+        @include media(sp) {
+            flex-direction: column;
+        }
+
+        &_btns {
+            width: 28.6rem;
+
+            @include media(sp) {
+                width: 100%;
+            }
+        }
+
+        &_logo {
+            margin: 0 0 1.534rem;
+
+            @include media(sp) {
+                display: none;
+            }
+        }
+
+        &_code {
+            width: 16rem;
+            border-radius: 10px;
+            overflow: hidden;
+
+            @include media(sp) {
+                display: none;
+            }
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: space-between;
+
+        &_item {
+            width: 13.5rem;
+
+            @include media(sp) {
+                width: 100%;
+            }
+        }
+    }
+}

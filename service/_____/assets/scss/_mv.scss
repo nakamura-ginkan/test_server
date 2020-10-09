@@ -1,0 +1,67 @@
+.section {
+    &__mv {
+        background-image: url(../img/mv_bg.png);
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include media(sp) {
+            background-image: url(../img/mv_bg_sp.png);
+        }
+    }
+}
+
+.mv {
+    &__content {
+        max-width: 124rem;
+        width: 100%;
+        margin: 0 auto;
+        padding: 17.4rem 2rem 28.2rem;
+        box-sizing: border-box;
+        text-align: left;
+
+        @include media(sp) {
+            padding: 11.4rem 0 32.8rem 3.2rem;
+        }
+    }
+
+    &__copy {
+        margin: 0;
+        line-height: 1.83334;
+        letter-spacing: .0816rem;
+        font-size: 4.8rem;
+        font-weight: 800;
+        color: #FFF;
+
+        @include media(sp) {
+            line-height: 1.55;
+            font-size: 4rem;
+            font-weight: 600;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        margin: 3.2rem 0 0;
+
+        @include media(sp) {
+            flex-direction: column;
+        }
+
+        &_item {
+            width: 18.9rem;
+
+            @include media(sp) {
+                width: 18.9rem;
+            }
+
+            + .mv__btns_item {
+                margin-left: 3.2rem;
+
+                @include media(sp) {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
