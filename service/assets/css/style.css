@@ -406,6 +406,7 @@ body {
 
 .section__skewbg {
   position: relative;
+  z-index: 1;
 }
 
 .section__skewbg::before {
@@ -431,6 +432,19 @@ body {
 .section__skewbg_reverse-white::before {
   background-image: url(../img/bg_skew_white_return.svg);
   top: 0;
+}
+
+.section__skewbg_bottomwh::after {
+  content: "";
+  width: 100%;
+  height: 8rem;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../img/bg_skew_white.svg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .ttl__common_h2 {
@@ -564,6 +578,13 @@ body {
   left: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 6.6rem 0 0;
+    overflow-x: hidden;
+  }
+}
+
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -618,6 +639,7 @@ body {
 
 .footer {
   background: #F32840;
+  overflow-x: hidden;
 }
 
 .footer__links {
@@ -864,7 +886,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .mv__content {
-    padding: 11.4rem 0 32.8rem 3.2rem;
+    padding: 13.2rem 0 32.8rem 3.2rem;
   }
 }
 
@@ -1090,7 +1112,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .section__review {
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
   }
 }
@@ -1113,6 +1135,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .review__wrap {
+    width: 100%;
     height: auto;
     padding: 8rem 3.2rem 0;
   }

@@ -5,6 +5,11 @@
     top: 0;
     left: 0;
 
+    @include media(sp) {
+        padding: 6.6rem 0 0;
+        overflow-x: hidden;
+    }
+
     &__content {
         display: flex;
         justify-content: space-between;

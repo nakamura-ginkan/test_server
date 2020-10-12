@@ -3,7 +3,7 @@
         padding: 8rem 0 16rem;
 
         @include media(sp) {
-            width: 100vw;
+            width: 100%;
             overflow: hidden;
         }
     }
@@ -26,6 +26,7 @@
         overflow: hidden;
 
         @include media(sp) {
+            width: 100%;
             height: auto;
             padding: 8rem 3.2rem 0;
         }
