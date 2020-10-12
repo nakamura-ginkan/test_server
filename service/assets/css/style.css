@@ -572,7 +572,7 @@ body {
 
 .header {
   width: 100%;
-  padding: 6.4rem 0 0;
+  padding: 6.4rem 0 0 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -592,12 +592,13 @@ body {
   max-width: 124rem;
   width: 100%;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 4rem;
   box-sizing: border-box;
 }
 
 @media only screen and (max-width: 768px) {
   .header__content {
+    padding: 0 2rem;
     align-items: flex-end;
   }
 }
@@ -881,7 +882,8 @@ body {
   max-width: 124rem;
   width: 100%;
   margin: 0 auto;
-  padding: 17.4rem 2rem 28.2rem;
+  /*padding: 17.4rem 2rem 28.2rem;*/
+  padding: 17.4rem 4rem 28.2rem;
   box-sizing: border-box;
   text-align: left;
 }
