@@ -690,7 +690,7 @@ body {
   content: "";
   width: .8rem;
   height: 1.4rem;
-  background: url(../img/icon_arrow_red.svg);
+  background: url(../img/icon_arrow_red.svg) no-repeat;
   background-size: 100%;
   position: absolute;
   top: 50%;
