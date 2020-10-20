@@ -1,0 +1,99 @@
+.section {
+    &__more {
+        padding: 5.3rem 0 4rem;
+        background: url(../img/more_bg.png) 50% 50% no-repeat;
+        background-size: cover;
+        position: relative;
+
+        @include media(sp) {
+            padding: 11.2rem 0 2.4rem;
+        }
+    }
+}
+
+.more {
+    &__tips {
+        width: 12rem;
+        position: absolute;
+        top: -7.1rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include media(sp) {
+            width: 12rem;
+            top: -5.6rem;
+        }
+    }
+
+    &__content {
+        width: 20rem;
+        margin: 0 auto;
+        position: relative;
+
+        @include media(sp) {
+            width: 18rem;
+        }
+    }
+
+    &__device {
+        width: calc(100% + 4.4rem);
+        margin-left: -4.4rem;
+
+        @include media(sp) {
+            width: calc(100% + 4.2rem);
+            margin-left: -4.2rem;
+        }
+    }
+
+    &__copy {
+        width: 24.866rem;
+        position: absolute;
+        top: 0;
+        left: -29.974rem;
+
+        @include media(sp) {
+            width: 10.1rem;
+            top: auto;
+            left: -8.5rem;
+            bottom: -2.048rem;
+        }
+    }
+
+    &__sub {
+        width: 28rem;
+        position: absolute;
+        top: 0;
+        right: -25.8rem;
+
+        @include media(sp) {
+            width: 16rem;
+            top: -6.1rem;
+            right: -8.1rem;
+        }
+    }
+
+    &__product {
+        width: 32.6rem;
+        position: absolute;
+        right: -29.7rem;
+        bottom: -3.05rem;
+
+        @include media(sp) {
+            width: 21.9rem;
+            right: -8.3rem;
+            bottom: -4.688rem;
+        }
+    }
+
+    &__att {
+        margin: 3.05rem auto 0;
+        line-height: 1.6;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #510006;
+
+        @include media(sp) {
+            margin: 4.745rem auto 0;
+        }
+    }
+}

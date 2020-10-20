@@ -1,0 +1,147 @@
+.section {
+    &__photo {
+        padding: 8.6rem 0 8rem;
+        background: url(../img/photo_bg.png) 50% 50% no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+
+        @include media(sp) {
+            background: url(../img/photo_bg_sp.png) 50% 50% no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+.photo {
+    &__box {
+        max-width: 63.254rem;
+        width: 100%;
+        margin: 0 auto;
+        padding: 3.2rem 3.9rem 4rem;
+        box-sizing: border-box;
+        background: url(../img/photo_box_bg.png) 50% 50% no-repeat;
+        background-size: 100% 100%;
+
+        @include media(sp) {
+            max-width: 31.1rem;
+            padding: .9rem .6rem 4rem;
+        }
+    }
+
+    &__ttl {
+        width: 100%;
+        margin: 0 auto 3.5rem;
+
+        &_sub {
+            max-width: 12.8rem;
+            width: 100%;
+            margin: 0 auto 1.6rem;
+
+            @include media(sp) {
+                max-width: 8.4rem;
+                margin: 0 auto .8rem;
+            }
+        }
+    }
+
+    &__copy {
+        margin: 0 auto 2.4rem;
+        line-height: 1.333;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #FFF;
+
+        @include media(sp) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__hash {
+        max-width: 20rem;
+        width: 100%;
+        margin: 0 auto 4rem;
+    }
+
+    &__product {
+        max-width: 47.6rem;
+        width: 100%;
+        margin: 0 auto;
+
+        @include media(sp) {
+            max-width: 25.5rem;
+        }
+
+        &_item {
+            width: 24rem;
+
+            @include media(sp) {
+                width: 14.8rem;
+            }
+        }
+
+        &_text {
+            font-size: 1.6rem;
+
+            @include media(sp) {
+                font-size: 1.2rem;
+            }
+        }
+
+        &_gramprix {
+            width: 47.6rem;
+
+            @include media(sp) {
+                width: 25.5rem;
+            }
+
+            .photo__product {
+                &_img {
+                    width: calc(100% + 2rem);
+                    margin: 0 -1.4rem 0 -.6rem;
+
+                    @include media(sp) {
+                        width: calc(100% + 3.9rem);
+                        margin: 0 -3.3rem 0 -.6rem;
+                    }
+                }
+
+                &_text {
+                    font-size: 2rem;
+
+                    @include media(sp) {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+
+        &_cont {
+            margin: .75rem auto 0;
+            line-height: 1.6;
+            font-weight: 600;
+            color: #FFF;
+        }
+
+        &_flex {
+            display: flex;
+            justify-content: space-between;
+            width: calc(100% + 3.6rem);
+            margin: 1.6rem -1.8rem 0;
+
+            @include media(sp) {
+                width: calc(100% + 3.2rem);
+                margin: 1.6rem -2.8rem 0 -.6rem;
+
+                .photo__product_item {
+                    &:first-child {
+                        width: 14.8rem;
+                    }
+
+                    &:nth-child(2) {
+                        width: 15.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.section {
+    &__about {
+        padding: 4rem 0;
+        background: #000;
+        overflow-x: hidden;
+    }
+}
+
+.about {
+    &__img {
+        width: 26.8rem;
+        margin: 0 auto 1.6rem;
+
+        @include media(sp) {
+            margin: 0 auto 2.4rem;
+        }
+    }
+
+    &__copy {
+        margin: 0 auto 2.4rem;
+        line-height: 1.6;
+        font-size: 2rem;
+        font-weight: 300;
+        color: #FFF;
+
+        @include media(sp) {
+            font-feature-settings: 'palt';
+            font-size: 1.4rem;
+        }
+    }
+}
