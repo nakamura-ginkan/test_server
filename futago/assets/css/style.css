@@ -422,7 +422,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .header__copy {
-    width: 9rem;
+    width: 9.5rem;
     top: 10rem;
     left: -6.8rem;
   }
@@ -437,7 +437,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .header__copy_sub {
-    width: 7.5em;
+    width: 8.5em;
     top: 17.5rem;
     left: -4.5rem;
   }
