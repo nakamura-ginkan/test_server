@@ -931,6 +931,7 @@ body {
 @media only screen and (max-width: 768px) {
   .mv__btns_item {
     width: 18.9rem;
+    margin-bottom:1rem;
   }
 }
 
@@ -2091,5 +2092,6 @@ body {
 @media only screen and (max-width: 768px) {
   .download__btn_item {
     width: 100%;
+    padding:0 0.5rem;
   }
 }
