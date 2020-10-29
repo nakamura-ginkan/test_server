@@ -1,0 +1,26 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      docker: 18
+    commands:
+
+  pre_build:
+    commands:
+      - echo Pre build started on `date`
+
+  build:
+    commands:
+      - echo Build started on `date`
+
+      ########## Client side ##########
+
+      # Deploy
+      - aws s3 sync . s3://${S3_BUCKET} --delete --exclude "*server/*" --exclude "*infra/*" --exclude "buildspec.yaml" --exclude ".gitignore"
+
+      # Cache Delete
+      - aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} --paths "/*"
+
+  post_build:
+    commands:
+      - echo Build completed on `date`
