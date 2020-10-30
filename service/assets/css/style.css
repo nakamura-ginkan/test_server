@@ -1350,7 +1350,7 @@ body {
 .review__star {
   display: flex;
   align-items: center;
-  padding: .8rem 0 0;
+  padding: .2rem 0 0;
 }
 
 .review__star_list {
@@ -1377,7 +1377,7 @@ body {
 }
 .review__label {
   text-align: left;
-  margin:0.8rem 0 0 -0.4rem;
+  margin:0.4rem 0 0 -0.6rem;
 }
 .review__label img {
   width: 50%;
