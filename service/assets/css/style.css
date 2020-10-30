@@ -1700,6 +1700,7 @@ body {
 @media only screen and (max-width: 768px) {
   .post__video_box {
     width: 100%;
+    border-radius: 8px;
   }
 }
 
