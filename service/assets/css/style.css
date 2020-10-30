@@ -571,7 +571,7 @@ body {
 }
 
 .img__business_boxshadow {
-  box-shadow: 0 4px 24px rgba(185, 16, 15, 0.32);
+  box-shadow: 0 4px 24px rgba(95, 190, 0, 0.32);
 }
 
 .header {
@@ -1289,8 +1289,9 @@ body {
   right: 1.6rem;
 }
 
-.review__ribon_icon {
-  width: 1.4rem;
+.review__ribon_icon img {
+  width: 1.2rem;
+  height: auto;
 }
 
 .review__ribon_cap {
@@ -1305,7 +1306,7 @@ body {
 .review__btns {
   display: flex;
   align-items: center;
-  padding: 1.7rem 0 0;
+  padding: 0;
 }
 
 .review__btns_item {
@@ -1322,7 +1323,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.7rem 0 0;
+  padding: 0.5rem 0 0 0;
 }
 
 .review__ttl_text {
@@ -1342,6 +1343,7 @@ body {
 }
 
 .review__ttl_controll {
+  padding: 1rem 0 0 0;
   width: 1.8rem;
 }
 
@@ -1371,7 +1373,15 @@ body {
   text-align: -0.2px;
   font-size: 1.6rem;
   font-weight: 600;
-  color: #FF961B;
+  color: #F37D00;
+}
+.review__label {
+  text-align: left;
+  margin:0.8rem 0 0 -0.4rem;
+}
+.review__label img {
+  width: 50%;
+  height: auto;
 }
 
 .review__comment {
@@ -1431,7 +1441,7 @@ body {
 }
 
 .post__block {
-  margin: 8rem auto 0;
+  margin: 8rem auto 0 0;
   position: relative;
 }
 
@@ -1681,6 +1691,7 @@ body {
 .post__video_box {
   width: 80rem;
   margin: 0 auto;
+  border-radius: 8px;
   box-shadow: 0 5.98927px 32px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   position: relative;
