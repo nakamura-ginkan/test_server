@@ -1820,7 +1820,8 @@ body {
 }
 
 .campaign__bnr {
-  margin-top: 8rem;
+  margin: 8rem auto 0 auto;
+  max-width: 720px;
 }
 
 .campaign__bnr a {
