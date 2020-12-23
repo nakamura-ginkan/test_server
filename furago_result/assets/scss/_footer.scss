@@ -1,0 +1,26 @@
+.footer {
+    &__sns {
+        padding: 1.6rem 0;
+        border-bottom: .1rem solid #DFDFDF;
+
+        &_list {
+            display: flex;
+            justify-content: center;
+        }
+
+        &_item {
+            width: 4rem;
+            margin: 0 1.2rem;
+        }
+    }
+
+    &__copy {
+        padding: 1.7rem 0;
+
+        &_text {
+            line-height: 1.4;
+            font-size: 1.2rem;
+            color: #AAA;
+        }
+    }
+}
