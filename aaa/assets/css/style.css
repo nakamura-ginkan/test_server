@@ -165,8 +165,10 @@ body {
   float: left;
   width: calc(100% - 30.93333%);
   text-align: left;
+  margin-top:2.5%;
 }
 
+/*
 .countPos1 {
   margin-top:2.5%;
 }
@@ -179,6 +181,7 @@ body {
 .countPos4 {
   margin-top:4%;
 }
+*/
 
 .entry__flow_text {
   margin: 0 auto;
