@@ -139,7 +139,7 @@ body {
 
 .entry__ttl {
   padding:12% 0 8% 0;
-  width: 55.46666%;
+  width: 88%;
   margin: 0 auto;
 }
 
@@ -167,21 +167,6 @@ body {
   text-align: left;
   margin-top:2.5%;
 }
-
-/*
-.countPos1 {
-  margin-top:2.5%;
-}
-.countPos2 {
-  margin-top:9.6%;
-}
-.countPos3 {
-  margin-top:9.6%;
-}
-.countPos4 {
-  margin-top:4%;
-}
-*/
 
 .entry__flow_text {
   margin: 0 auto;
@@ -324,11 +309,11 @@ body {
 }
 
 .get_install .txt {
-  margin:0 0 4% 0;
+  margin:0 0 8% 0;
 }
 
 .get_install .txt img {
-  width: 54.13333%;
+  width: 88%;
   height: auto;
 }
 
@@ -337,11 +322,13 @@ body {
   background: #f32840;
   margin: 0 auto;
   border-radius: 0.5rem;
-  padding:32px;
+  padding:8%;
 }
 
 .get_install .box .txt {
-  margin-bottom:4%;
+  margin:0 0 2% 0;
+  line-height: 0;
+  padding: 0;
 }
 .get_install .box .txt img {
   width: 87.78135%;
