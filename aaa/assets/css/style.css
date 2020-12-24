@@ -272,30 +272,31 @@ body {
 
 
 .section__synchrolife .section__content {
-  max-width: 101.5rem;
-  padding: 6.4rem 3rem;
+  max-width: 100%;
+  padding: 8% 8%;
+  font-feature-settings: "palt";
   box-sizing: border-box;
   background: url(../img/synchrolife_bg.png) 50% 50% no-repeat;
-  background-size: auto 100%;
+  background-size: 200% auto;
 }
 
 .synchrolife__ttl {
-  margin: 0 0 2.6rem;
-  font-size: 2.4rem;
+  margin: 0 0 2%;
+  font-size: 6vw;
   font-weight: 600;
   color: #FFF;
 }
 
 .synchrolife__text {
   margin: 0 auto;
+  font-size: 4vw;
   line-height: 1.6;
   color: #FFF;
-
   width: 100%;
   box-sizing: border-box;
-  font-size: 1.6rem;
   font-weight: 400;
 }
+
 .synchrolife__btn {
   margin: 3.2rem auto 0;
 }
@@ -490,9 +491,10 @@ footer .footer__visual_logo {
 
 footer .footer__visual_text {
   margin: 0 0 8% 0;
-  font-size: 6vw;
+  font-size: 5.5vw;
   font-weight: 600;
-  color: #FFF;
+  color: #fff;
+  font-feature-settings: "palt";
 }
 
 footer .footer__visual_btns {
