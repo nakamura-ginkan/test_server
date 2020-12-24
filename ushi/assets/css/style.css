@@ -1,0 +1,559 @@
+@charset "UTF-8";
+/*ブレイクポイントを設定*/
+/*メディアクエリ用のミックスイン*/
+/*-- リセット --*/
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+b,
+dt,
+dd,
+li,
+span,
+a,
+strong {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  min-height: 0%;
+  vertical-align: top;
+}
+
+figure {
+  width: 100%;
+  min-height: 0%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.01);
+  text-decoration: none;
+  transition: .3s;
+}
+
+a img {
+  display: inline-block;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "游明朝", "Yu Mincho", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  text-align: center;
+  color: #000;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.section__content {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom:16%;
+}
+
+.section__bg_red {
+  background: #F32840;
+}
+
+.btn_app,
+.btn_play {
+  display: none;
+}
+
+.btn_app.show,
+.btn_play.show {
+  display: block;
+}
+
+
+#mv {
+  padding: 0 0 8% 0;
+  background: url(../img/bg_mv.png) 50% 50% repeat;
+  background-size:12.5%;
+}
+
+#mv .main {
+}
+
+#mv .txt{
+  width: 88%;
+  margin: 0 auto;
+  padding: 8% 0;
+}
+
+#mv .concept {
+}
+
+#mv .sns {
+  margin: 4% 0 0 0;
+}
+
+#mv .sns ul{
+  width: 50%;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+#mv .sns ul li {
+  float: left;
+  width: 25.33333%;
+  margin: 0 4%;
+}
+
+#mv .sns ul li img {
+  width: 100%;
+}
+
+
+
+
+
+.section__entry {
+  padding: 0 32px;
+  background: url(../img/entry_bg.png) 50% 50% no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.entry__ttl {
+  padding:12% 0 8% 0;
+  width: 55.46666%;
+  margin: 0 auto;
+}
+
+.entry__flow {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: left;
+  padding:0;
+}
+
+.entry__flow_item {
+  padding: 0 0 8% 0;
+}
+
+.entry__flow_img {
+  width: 30.93333%;
+  float: left;
+}
+
+.entry__flow_cont {
+  float: left;
+  width: calc(100% - 30.93333%);
+  text-align: left;
+}
+
+.countPos1 {
+  margin-top:2.5%;
+}
+.countPos2 {
+  margin-top:9.6%;
+}
+.countPos3 {
+  margin-top:9.6%;
+}
+.countPos4 {
+  margin-top:4%;
+}
+
+.entry__flow_text {
+  margin: 0 auto;
+  line-height: 1.4;
+  font-size: 120%;
+  padding-left:4%;
+  font-weight: 600;
+}
+
+.entry__flow_text .import {
+  color: #AE3032;
+  font-size: 140%;
+  font-feature-settings: 'palt';
+}
+
+.entry__flow_btns {
+  display: flex;
+  justify-content: space-between;
+  margin:4% 0 0 4%;
+}
+
+.entry__flow .entry__flow_btns  {
+  width: 50%
+}
+
+.entry__copy {
+  width: 36.8rem;
+  margin: 4.3rem -5.4rem 0 auto;
+}
+
+
+
+
+
+
+
+
+
+.section__more {
+  padding: 20% 0 10% 0;
+  background: url(../img/more_bg.png) 50% 50% no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.more__tips {
+  width: 32%;
+  position: absolute;
+  top: -6%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.more__function {
+  width: 67.46666%;
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.more__content {
+  width: 50%;
+  margin:0 auto;
+  position: relative;
+}
+
+.more__device {
+  width: 150%;
+  margin-top:100%;
+  margin-left: -40%;
+}
+
+.more__copy {
+  position: absolute;
+  width: 56%;
+  top: auto;
+  left: -40%;
+  bottom: -12%;
+}
+
+.more__sub {
+  position: absolute;
+  width: 80%;
+  top: -4%;
+  right: -40%;
+}
+
+.more__product {
+  position: absolute;
+  width: 120%;
+  right: -48%;
+  bottom: -14%;
+}
+
+.more__att {
+  margin: 24% auto 0;
+  font-size: 3vw;
+  font-weight: 600;
+  color: #510006;
+}
+
+
+
+.section__synchrolife .section__content {
+  max-width: 101.5rem;
+  padding: 6.4rem 3rem;
+  box-sizing: border-box;
+  background: url(../img/synchrolife_bg.png) 50% 50% no-repeat;
+  background-size: auto 100%;
+}
+
+.synchrolife__ttl {
+  margin: 0 0 2.6rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #FFF;
+}
+
+.synchrolife__text {
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #FFF;
+
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.synchrolife__btn {
+  margin: 3.2rem auto 0;
+}
+
+
+
+
+.get_install {
+  overflow: hidden;
+  padding:0;
+}
+
+.get_install .txt {
+  margin:0 0 4% 0;
+}
+
+.get_install .txt img {
+  width: 54.13333%;
+  height: auto;
+}
+
+.get_install .box {
+  overflow: hidden;
+  background: #f32840;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  padding:32px;
+}
+
+.get_install .box .txt {
+  margin-bottom:4%;
+}
+.get_install .box .txt img {
+  width: 87.78135%;
+  height: auto;
+}
+
+.get_install .entry__flow_btns{
+}
+.get_install .entry__flow_btns a {
+  border: 0;
+  width: 80%!important;
+  height: auto;
+  margin: 0 auto;
+}
+
+.under_arrow {
+  width: 5.33333%;
+  height: auto;
+  margin: 1rem auto;
+}
+
+.get_step{
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.get_step .ss {
+  float: left;
+  width: 50%;
+  background: #ffcc00;
+}
+
+.get_step .txt {
+  float: left;
+  width: 50%;
+}
+.get_step .txt p {
+  font-size: 120%;
+  margin-left:8%;
+  text-align: left;
+}
+
+
+
+
+
+
+#onemenu {
+  padding: 0 0 24% 0;
+  background: url(../img/bg_onemenu.png) 50% 50% repeat;
+}
+
+#onemenu .st {
+  padding:12% 0 0 0;
+  width: 55.46666%;
+  margin: 0 auto;
+}
+
+#onemenu .category {
+  padding: 8% 32px 16% 32px;
+}
+
+#onemenu .category .st_category {
+  width: 100%;
+  margin: 0 0 4% 0;
+}
+
+#onemenu .category .photo {
+  width: 100%;
+  margin-bottom:4%;
+}
+
+#onemenu .category .txt_menu {
+  color: #fff;
+  font-size: 5vw;
+}
+
+#onemenu .category .money {
+  position: relative;
+  width: 100%;
+  margin: 4% 0 0 0;
+  background: #ffcc00;
+}
+
+#onemenu .category .money .before {
+  position: absolute;
+  top:0;
+  right: 50%;
+  color: #999;
+  font-size: 160%;
+  margin: 3% 8% 0 0;
+}
+
+#onemenu .category .money .after {
+  position: absolute;
+  top:0;
+  left: 50%;
+  text-align: center;
+  width: 24%;
+  margin: 0 0 0 7%;
+}
+
+#onemenu .category .money .after .img {
+  width: 72%;
+  margin: 0 auto;
+  padding-bottom:2%;
+}
+
+#onemenu .category .money .after .txt {
+  color: #fff332;
+  font-size: 6vw;
+  line-height: 1;
+  padding: 0;
+}
+
+#onemenu .category .money .arrow {
+  position: absolute;
+  top:0;
+  left:50%;
+  width: 8%;
+  margin: 4% 0 0 -4%;
+}
+
+
+footer .footer__visual {
+  padding: 16% 0 0 0;
+  background: url(../img/bg_footer.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+footer .footer__visual_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 100%;
+}
+
+footer .footer__visual_img {
+  width: 80%;
+  order: 2;
+}
+
+footer .footer__visual_cont {
+  width: 78.66%;
+  margin: 0 0 0 0;
+  order: 1;
+  text-align: center;
+}
+
+footer .footer__visual_logo {
+  max-width: initial;
+  width: 100%;
+  margin: 0 auto 10% auto;
+}
+
+footer .footer__visual_text {
+  margin: 0 0 8% 0;
+  font-size: 6vw;
+  font-weight: 600;
+  color: #FFF;
+}
+
+footer .footer__visual_btns {
+  display: flex;
+  justify-content: space-between;
+  max-width: initial;
+  width: 80%;
+  margin: 4% auto 16% auto;
+  padding: 0;
+}
+
+footer .footer__visual_stores {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer .footer__line {
+  padding: 6% 0;
+  background: #FFF;
+  border-top: 1px solid #DFDFDF;
+}
+
+footer .footer__line_block {
+  max-width: initial;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer__sns {
+  width: 50%;
+  display: flex;
+  order: 1;
+  justify-content: center;
+  overflow: visible;
+}
+
+footer .footer__sns_item {
+  width: 100%;
+  margin: 0 4% 8% 4%;
+}
+
+footer .footer__copy {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 3vw;
+  color: #aaa;
+  order: 2;
+}
