@@ -1,0 +1,19 @@
+.thanks {
+    padding: 4rem 0 4.8rem;
+    box-sizing: border-box;
+    background: #000;
+
+    &__ttl {
+        width: 26.8rem;
+        margin: 0 auto 2.4rem;
+    }
+
+    &__copy {
+        margin: 0 auto;
+        text-align: center;
+
+        &_text {
+            color: #FFF;
+        }
+    }
+}

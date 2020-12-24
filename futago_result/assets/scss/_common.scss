@@ -1,0 +1,141 @@
+/*-- リセット --*/
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+b,
+dt,
+dd,
+li,
+span,
+a,
+strong {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    min-height: 0%;
+    vertical-align: top;
+}
+
+figure {
+    width: 100%;
+    min-height: 0%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: rgba(255, 255, 255, .01);
+    text-decoration: none;
+    transition: .3s;
+
+    img {
+        display: inline-block;
+    }
+}
+
+.pc {
+    display: block;
+
+    @include media(sp) {
+        display: none;
+    }
+}
+
+.tab {
+    display: none;
+
+    @include media(tablet) {
+        display: block;
+    }
+}
+
+.sp {
+    display: none;
+
+    @include media(sp) {
+        display: block;
+    }
+}
+
+.inline-pc {
+    display: inline;
+
+    @include media(sp) {
+        display: none;
+    }
+}
+
+.text {
+    &__common {
+        font-size: 1.4rem;
+    }
+}
+
+.font {
+    &__weight {
+        &_bold {
+            font-weight: bold;
+        }
+    }
+
+    &__family {
+        &_mincho {
+            font-family: "游明朝", "Yu Mincho", YuMincho, "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+        }
+    }
+}
+
+html {
+    font-size: 62.5%;
+
+    @media screen and ( min-width: 1025px ) {
+        font-size: 130%;
+    }
+
+    @include media(tablet) {
+        font-size: 2.58vw;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Snas", "ヒラギノ角ゴシック W3", "Hiragino Kaku Gothic W3", 'メイリオ', Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    text-align: center;
+    font-feature-settings: 'palt';
+    color: #000;
+
+    @include media(sp) {
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+}
+
+.main {
+    display: block;
+}
+
+.section {
+    &__content {
+        max-width: 1088px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 3.2rem;
+        box-sizing: border-box;
+    }
+}

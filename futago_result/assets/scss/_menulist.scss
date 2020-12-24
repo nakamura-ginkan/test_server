@@ -1,0 +1,151 @@
+.menulist {
+    padding: 4rem 0 8rem;
+    box-sizing: border-box;
+    background: url(../img/bg_ichimatsu.png) 50% 50% no-repeat;
+    background-size: cover;
+
+    &__ttl {
+        width: 29.706rem;
+        margin: 0 auto 1.6rem;
+
+        &_sub {
+            width: 22.1rem;
+            margin: 0 auto 3.2rem;
+        }
+    }
+
+    &__camp {
+        margin: 0 auto 4.1rem;
+
+        &_cap {
+            width: 25.8rem;
+            margin: 0 auto .8rem;
+        }
+
+        &_img {
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    &__date {
+        margin: 0 auto 4rem;
+
+        &_box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            +.menulist__date_box {
+                margin-top: 1.2rem;
+            }
+        }
+
+        &_ttl {
+            width: 12.4rem;
+            padding: .3rem 0;
+            border-radius: .4rem;
+            box-sizing: border-box;
+            background: #AE3032;
+            line-height: 1.5;
+            font-size: 1.2rem;
+            color: #FFF;
+        }
+
+        &_cont {
+            width: calc(100% - 12.4rem - 1.6rem);
+            text-align: left;
+            line-height: 1.5;
+            font-size: 1.6rem;
+            color: #FFF;
+        }
+    }
+}
+
+.rank {
+    &__block {
+        position: relative;
+
+        &_ttl {
+            width: 16.713rem;
+            margin: 0 auto 4rem;
+            transform: translateX(4.2065rem);
+        }
+
+        &_tips {
+            width: 15.9rem;
+            position: absolute;
+            top: -.583rem;
+            left: -2.8rem;
+        }
+    }
+
+    &__box {
+        margin: 0;
+
+        +.rank__box {
+            margin-top: 2.4rem;
+        }
+    }
+
+    &__sign {
+        &_ttl {
+            margin: 0 auto 2.4rem;
+        }
+
+        &_cap {
+            margin: .756rem auto 0;
+            line-height: 1;
+            font-size: 2.4rem;
+            color: #FFF;
+        }
+    }
+
+    &__list {
+        margin: 2.4rem auto 0;
+        padding: 0;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: .2rem;
+            background: url(../img/rank_list_line.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &_item {
+            display: flex;
+            justify-content: space-between;
+            padding: .8rem;
+            box-sizing: border-box;
+            position: relative;
+            text-align: left;
+            color: #FFF;
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: .2rem;
+                background: url(../img/rank_list_line.png);
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        &_num {
+            width: 2.6rem;
+            line-height: 1;
+            font-size: 1.6rem;
+        }
+
+        &_cont {
+            width: calc(100% - 2.6rem - 2.2rem);
+            line-height: 1;
+            font-size: 1.6rem;
+        }
+    }
+}
