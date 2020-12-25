@@ -539,12 +539,14 @@ footer .footer__sns {
   display: flex;
   order: 1;
   justify-content: center;
-  overflow: visible;
 }
 
 footer .footer__sns_item {
   width: 100%;
   margin: 0 4% 8% 4%;
+  padding: 0;
+  overflow: visible;
+  background: #ffcc00;
 }
 
 footer .footer__copy {
