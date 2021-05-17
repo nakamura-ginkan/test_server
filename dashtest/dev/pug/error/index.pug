@@ -1,0 +1,26 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'エラー'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'error'
+  -path         = '..'
+  -imgPC        = path+'/img/'+pageID+"/"
+  -imgSP        = path+'/img/'+pageID+"/sp/"
+
+block container
+  include ../_parts/common-nav
+  .main-content
+    section.section-error
+      .error-inner
+        .error-image
+          img(src=path+"/img/error/error_img.png", alt="404 Error", width="65", height="116")
+        h1.error-title 404 Error
+        h2.error-sub-title ページが見つかりません
+        p.error-text 指定されたページは、削除されたか、
+          br
+          | 他の場所に移動した可能性があります。
+        a.error-button.trans(href=path+"/top/") トップに戻る
+
+  span.button-to-top.js-button-to-top

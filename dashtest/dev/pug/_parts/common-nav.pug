@@ -1,0 +1,37 @@
+nav.common-nav.js-menu
+  .menu-button
+    a.js-button-menu(href="#")
+  a.nav-button(href="#") 加盟店管理画面
+  ul.nav-menu
+    li.menu-item
+      a.menu-link.is-home(href=path+"/top/" class=`${pageID=="top" ? 'is-active': ''}`) トップ
+    li.menu-item
+      a.menu-link.is-accumulation(href="#") 常連P累積人数
+    li.menu-item
+      a.menu-link.is-new-people(href="#") 常連P新規数
+    li.menu-item
+      a.menu-link.is-visit(href="#") 来店回数
+    li.menu-item
+      a.menu-link.is-qr(href="#") QR承認金額
+    li.menu-item
+      a.menu-link.is-customer-sales(href="#") SynchroLife送客数
+    li.menu-item
+      a.menu-link.is-number-customers(href="#") SynchroLife送客売上
+    li.menu-item
+      a.menu-link.is-favorite(href="#") 行きたい数
+    li.menu-item
+      a.menu-link.is-comment(href="#") レビュー投稿数
+    li.menu-item
+      a.menu-link.is-average(href="#") 平均値
+    li.menu-item
+      a.menu-link.is-time(href="#") 時間別来店回数
+    li.menu-item
+      a.menu-link.is-repeat(href="#") リピート指標
+    li.menu-item
+      a.menu-link.is-continue(href="#") 来店回数継続率
+    li.menu-item
+      a.menu-link.is-treatment(class=`${pageID=="detail" ? 'is-active': ''}` href=path+"/detail/") 優待券
+    li.menu-item
+      a.menu-link.is-logout(href="#") ログアウト
+
+span.nav-overlay.js-overlay

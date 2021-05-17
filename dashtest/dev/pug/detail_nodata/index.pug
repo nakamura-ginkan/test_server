@@ -1,0 +1,128 @@
+extends ../_layouts/default
+
+block vars
+  -title        = '下層_データなし'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'detail'
+  -path         = '..'
+  -imgPC        = path+'/img/'+pageID+"/"
+  -imgSP        = path+'/img/'+pageID+"/sp/"
+
+block container
+  include ../_parts/common-nav
+  .main-content
+    .main-header
+      .header-inner.is-detail
+        a.back-button(href="#") 戻る
+        h1.header-title 優待券
+          span.instruction-icon.button-tooltip.js-button-tooltip(data-tooltip="tooltip-coupon")
+        a.download-button.tablet-fixed(href="#")
+          span CSVダウンロード
+    .block-ticket-graph.js-tabs
+      .graph-header
+        .calendar-input-group
+          .calendar-input-wrapper
+            input.calendar-input.font-din.js-open-modal.has-wrapper(data-modal-desktop="modal-calendar" data-modal="modal-term" type="text" value="2020/08/01")
+          span.calendar-symbol -
+          .calendar-input-wrapper
+            input.calendar-input.font-din.js-open-modal.has-wrapper(data-modal-desktop="modal-calendar" data-modal="modal-term" type="text" value="2020/09/01")
+          a.calendar-button.js-open-modal.is-toggle(href="#" data-modal="modal-term") 期間
+        ul.tabs-group.js-list-tabs(data-selector="tab-container")
+          li.tab-item.is-active(data-tab="total") 合計
+          li.tab-item(data-tab="regular") 常連プログラム
+          li.tab-item(data-tab="customers") SynchroLife送客
+      #total.tab-container.is-active
+        .tabs-group-wrapper
+          ul.tabs-group.is-sub.js-list-tabs(data-selector="tab-all")
+            li.tab-item.is-active(data-tab="total-all") すべて
+            li.tab-item(data-tab="total-visited") 三回来店
+            li.tab-item(data-tab="total-no-visited") 一ヶ月来店なし
+            li.tab-item(data-tab="total-category-01") カテゴリ
+            li.tab-item(data-tab="total-category-02") カテゴリ
+        #total-all.tab-all.is-active
+          .no-data
+            p.no-data-text データなし
+          include ../_parts/block-ticket-no-data
+        #total-visited.tab-all
+          .no-data
+            p.no-data-text データなし
+          include ../_parts/block-ticket-no-data
+        #total-no-visited.tab-all
+          .no-data
+            p.no-data-text データなし
+          include ../_parts/block-ticket-no-data
+        #total-category-01.tab-all
+          .no-data
+            p.no-data-text データなし
+          include ../_parts/block-ticket-no-data
+        #total-category-02.tab-all
+          .no-data
+            p.no-data-text データなし
+          include ../_parts/block-ticket-no-data
+      #regular.tab-container
+        ul.tabs-group.is-sub.js-list-tabs(data-selector="tab-regular")
+          li.tab-item.is-active(data-tab="regular-all") すべて
+          li.tab-item(data-tab="regular-visited") 三回来店
+          li.tab-item(data-tab="regular-no-visited") 一ヶ月来店なし
+          li.tab-item(data-tab="regular-category-01") カテゴリ
+          li.tab-item(data-tab="regular-category-02") カテゴリ
+        #regular-all.tab-regular.is-active
+          .no-data
+            p.no-data-text データなし
+          include ../_parts/block-ticket-no-data
+        #regular-visited.tab-regular
+          .no-data
+            p.no-data-text データなし
+          include ../_parts/block-ticket-no-data
+        #regular-no-visited.tab-regular
+          .no-data
+            p.no-data-text データなし
+          include ../_parts/block-ticket-no-data
+        #regular-category-01.tab-regular
+          .no-data
+            p.no-data-text データなし
+          include ../_parts/block-ticket-no-data
+        #regular-category-02.tab-regular
+          .no-data
+            p.no-data-text データなし
+          include ../_parts/block-ticket-no-data
+      #customers.tab-container
+        ul.tabs-group.is-sub.js-list-tabs(data-selector="tab-customers")
+          li.tab-item.is-active(data-tab="customers-all") すべて
+          li.tab-item(data-tab="customers-visited") 三回来店
+          li.tab-item(data-tab="customers-no-visited") 一ヶ月来店なし
+          li.tab-item(data-tab="customers-category-01") カテゴリ
+          li.tab-item(data-tab="customers-category-02") カテゴリ
+        #customers-all.tab-customers.is-active
+          .no-data
+            p.no-data-text データなし
+          include ../_parts/block-ticket-no-data
+        #customers-visited.tab-customers
+          .no-data
+            p.no-data-text データなし
+          include ../_parts/block-ticket-no-data
+        #customers-no-visited.tab-customers
+          .no-data
+            p.no-data-text データなし
+          include ../_parts/block-ticket-no-data
+        #customers-category-01.tab-customers
+          .no-data
+            p.no-data-text データなし
+          include ../_parts/block-ticket-no-data
+        #customers-category-02.tab-customers
+          .no-data
+            p.no-data-text データなし
+          include ../_parts/block-ticket-no-data
+
+  span.button-to-top.custom-tablet.js-button-to-top
+
+  include ../_parts/modal-term
+
+  include ../_parts/modal-calendar
+
+  .tooltip-wrapper#tooltip-coupon
+    dl
+      dt.tooltip-title.is-new-people 常連P新規数
+      dd.tooltip-text ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。
+    span.tooltip-close

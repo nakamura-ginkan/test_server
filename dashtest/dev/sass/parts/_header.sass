@@ -1,0 +1,248 @@
+@charset "utf-8"
+
+/* COMMON HEADER
+ * -----------------------------------------------*/
+
+header
+  .wrapper
+    position: relative
+  .header-button
+    display: block
+    border-radius: 50%
+    margin-right: auto
+    transition: all .3s ease
+  .header-logo
+    display: block
+    position: absolute
+    top: 56%
+    left: 50%
+    transform: translate(-50%,-50%)
+    &::after,
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      pointer-events: none
+      transition: all .3s ease
+    &:before
+      opacity: 0
+      visibility: hidden
+  .logo-image
+    display: block
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+  .header-user
+    display: inline-block
+    color: $dark-gray-color
+    margin-left: auto
+    transition: all .3s ease
+    text-align: right
+    position: relative
+    cursor: pointer
+    &.is-active
+      color: $active-color
+      background-image: url('../img/common/select_arrow_hover.png')
+      .list-user
+        opacity: 1
+        visibility: visible
+  .list-user
+    opacity: 0
+    visibility: hidden
+    border-radius: 8px
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,.32)
+    position: absolute
+    top: 100%
+    text-align: left
+    z-index: 101
+    background: #fff
+    transition: all .3s ease
+    overflow: hidden
+    li
+      border-bottom: 1px solid rgba(130,146,170,.24)
+    li:last-child
+      border-bottom: none
+    a
+      display: block
+      font-size: 16px
+      color: #3C4654
+      line-height: 1.5
+      padding: 17px 16px 15px
+      transition: all .3s ease
+
++desktop
+  header
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background: $white-color
+    border-bottom: 1px solid $border-color
+    z-index: 102
+    .header-button:hover
+      background-color: rgba(130,146,170,.16)
+    .header-logo:hover:before
+      opacity: 1
+      visibility: visible
+      z-index: 11
+    .header-user:hover
+      color: $active-color
+      background-image: url('../img/common/select_arrow_hover.png')
+
+    .wrapper
+      display: flex
+      align-items: center
+      min-height: 79px
+      padding: 0 $space12
+    .header-button
+      width: $space48
+      height: $space48
+      background: $white-color url('../img/common/ico_menu.png') center/$space24 auto no-repeat
+    .header-logo
+      width: $space28
+      height: $space48
+      &::after,
+      &::before
+        width: 78px
+        height: 89px
+        background: url(../img/common/logo.png) center/78px auto no-repeat
+      &::before
+        background-image: url('../img/common/logo_hover.png')
+      img
+        display: none
+    .header-user
+      font-size: $space16
+      padding-right: $space24
+      margin-right: $space12
+      background: url('../img/common/select_arrow.png') right center/$space08 auto no-repeat
+      span
+        display: block
+        max-width: 256px
+        max-height: 44px
+        overflow: hidden
+    .list-user
+      right: -8px
+      min-width: 400px
+      margin-top: 8px
+      a:hover
+        background: rgba(78,138,227,.1)
+      .is-active
+        display: none
+
+
++desktop-ie
+  header
+    .wrapper
+      padding-top: $space16
+
+
++tablet
+  header
+    width: auto
+    height: 136px
+    .wrapper
+      padding: $space12 0 0
+    .header-button
+      width: $space40
+      height: $space40
+      background: $white-color url('../img/common/ico_menu.png') center/$space24 auto no-repeat
+      margin-left: $space16
+      margin-top: $space08
+    .header-logo
+      width: $space48
+      height: $space48
+      top: $space32
+      left: 49.8%
+      &::after
+        display: none
+      .logo-image
+        top: $space08
+        display: flex
+        align-items: center
+        justify-content: center
+      img
+        width: 48px
+        height: 48px
+    .header-user
+      display: flex
+      align-items: center
+      background: $light-gray-color url('../img/common/select_arrow.png') right $space16 center/$space08 auto no-repeat
+      color: $dark-gray-color
+      height: $space40
+      margin: $space20 $space24 0
+      padding: 0 $space40 0 $space12
+      font-size: $space16
+      text-align: left
+      border-radius: 4px
+      span
+        white-space: nowrap
+        display: block
+        width: 100%
+        overflow: hidden
+        text-overflow: ellipsis
+    .list-user
+      width: 100%
+      left: 0
+      top: 0
+      a
+        padding: 9px 45px 7px 16px
+      .is-active a
+        color: #2b74e1
+        background: url(../img/common/select_arrow.png) right 16px top 18px/8px auto no-repeat
+
++mobile
+  header
+    width: auto
+    height: 112px
+    .wrapper
+      padding: $space12 0 0
+    .header-button
+      width: $space40
+      height: $space40
+      background: $white-color url('../img/common/ico_menu.png') center/$space24 auto no-repeat
+      margin-left: $space08
+    .header-logo
+      width: $space48
+      height: $space48
+      top: $space32
+      left: 49.8%
+      &::after
+        display: none
+    .logo-image
+      display: flex
+      align-items: center
+      justify-content: center
+      img
+        width: 32px
+        height: 32px
+    .header-user
+      display: flex
+      align-items: center
+      background: $light-gray-color url('../img/common/select_arrow.png') right $space16 center/$space08 auto no-repeat
+      color: $dark-gray-color
+      height: $space40
+      margin: $space12 $space16 0
+      padding: 0 $space32 0 $space16
+      font-size: $space16
+      text-align: left
+      border-radius: 4px
+      span
+        white-space: nowrap
+        display: block
+        width: 100%
+        overflow: hidden
+        text-overflow: ellipsis
+    .list-user
+      width: 100%
+      left: 0
+      top: 0
+      a
+        padding: 9px 45px 7px 16px
+      .is-active a
+        color: #2b74e1
+        background: url(../img/common/select_arrow.png) right 16px top 17px/8px auto no-repeat

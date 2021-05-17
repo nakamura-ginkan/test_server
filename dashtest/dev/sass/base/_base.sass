@@ -1,0 +1,257 @@
+@charset "utf-8"
+
+/* ADDITIONAL RESET
+ * -----------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font: inherit
+  font-size: 100%
+  vertical-align: baseline
+
+html
+  line-height: 1
+
+ol, ul
+  list-style: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+caption, th, td
+  text-align: left
+  font-weight: normal
+  vertical-align: middle
+
+q, blockquote
+  quotes: none
+
+q:before, q:after, blockquote:before, blockquote:after
+  content: ""
+  content: none
+
+a img
+  border: none
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary
+  display: block
+
+*,
+*:before,
+*:after
+  box-sizing: border-box
+
+body *
+  max-height: 99999em
+  word-break: break-word
+
+img
+  display: inline-block
+  vertical-align: middle
+  max-width: 100%
+  height: auto
+
+input,
+label,
+select,
+button
+  line-height: inherit
+
+input,
+label,
+select,
+button,
+textarea
+  margin: 0
+  border: 0
+  padding: 0
+  word-break: normal
+  display: inline-block
+  vertical-align: middle
+  white-space: normal
+  background: none
+  -webkit-appearance: none
+  font: inherit
+
+button:focus
+  outline: 0
+input:focus,
+textarea:focus,
+select:focus
+  outline: auto
+
+/* Make webkit render the search input like a normal text field */
+input[type=search]
+  -webkit-appearance: textfield
+
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration
+  display: none
+
+/* Turn off scroll bars in IE unless needed */
+textarea
+  overflow: auto
+  white-space: pre-line
+  resize: none
+
+/* PRINTING
+ * -----------------------------------------------*/
+
+@media print
+  body
+    -webkit-print-color-adjust: exact
+  html,
+  body
+    margin: 0
+  @page
+    margin: 0
+  @page :left
+    margin: 0
+  @page :right
+    margin: 0
+  @page :first
+    margin-top: 0
+
+/* GENERAL
+ * -----------------------------------------------*/
+
+body
+  color: $black-color
+  font-family: $base-font-sans
+  font-weight: $base-font-weight
+  line-height: $base-line-height
+  -webkit-text-size-adjust: none
+  -moz-text-size-adjust: none
+  -ms-text-size-adjust: none
+  overflow-y: scroll
+
+.font-avenir
+  font-family: "Avenir", -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans", YuGothic, YuGothicM, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif
+
+.font-din
+  font-family: 'Bebas Neue', cursive
+  letter-spacing: 0.05em
+  font-weight: bold
+
+.is-mac .font-din,
+.is-safari .font-din
+  font-family: 'DIN Alternate', sans-serif
+  letter-spacing: 0
+  font-weight: bold
+
+/* HELPERS
+ * -----------------------------------------------*/
+
+a
+  color: $black-color
+  text-decoration: none
+
+.hidden
+  display: none
+
+.invisible
+  visibility: hidden
+
+.text-left
+  text-align: left
+
+.text-center
+  text-align: center
+
+.text-right
+  text-align: right
+
+.text-justify
+  text-align: justify
+
+.text-nowrap
+  white-space: nowrap
+
+.text-lowercase
+  text-transform: lowercase
+
+.text-uppercase
+  text-transform: uppercase
+
+.text-capitalize
+  text-transform: capitalize
+
+main
+  overflow: hidden
+
+/* RESPONSIVE
+ * -----------------------------------------------*/
+
++desktop
+
+  body
+    font-size: $base-font-size
+
+  .container
+    // max-width: $base-width
+    margin: 0 auto
+
+  .wrapper
+    // max-width: $base-wrapper
+    margin-left: auto
+    margin-right: auto
+    padding-left: 20px
+    padding-right: 20px
+
+  .sm
+    display: none !important
+
+  .tb
+    display: none !important
+
+  .trans
+    opacity: 1
+    transition: opacity .26s ease
+    &:hover
+      opacity: .8
+
++tablet
+  .sm
+    display: none !important
+
+  .md
+    display: none !important
+
+
++mobile
+  .tb
+    display: none !important
+
+  .md
+    display: none !important
+
+  html
+    font-size: calc(100vw / 3.75)
+
+  body
+    font-size: $base-font-size-sp
+
+  main
+    padding-bottom: 56px
+    overflow: hidden
+
+  .container
+    min-width: 320px
+
+  .wrapper
+    padding-left: .2rem
+    padding-right: .2rem

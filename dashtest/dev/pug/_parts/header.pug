@@ -1,0 +1,24 @@
+header
+  .wrapper
+    a.header-button.js-button-menu(href="#")
+    if(pageID == 'top')
+      h1.header-logo
+        a.logo-image(href=path+"/top/")
+          img(src=path+"/img/common/sp/logo.png", alt="SynchroLife for Business", width="64", height="64")
+    else
+      .header-logo
+        a.logo-image(href=path+"/top/")
+          img(src=path+"/img/common/sp/logo.png", alt="SynchroLife for Business", width="64", height="64")
+    .header-user.js-toggle-active
+      span 大阪焼肉・ホルモンふたご 有楽町
+      ul.list-user
+        li.is-active
+          a(href="#") 大阪焼肉・ホルモンふたご 有楽町 あいうえおかきくけこ
+        li
+          a(href="#") 匠のがってん寿司 ららぽーと新三郷店
+        li
+          a(href="#") foreverセンター シンサイバシ＆心斎橋南西口方面Zeev PARCO店
+        li
+          a(href="#") 築地男前鮓　国際通り屋台村
+        li
+          a(href="#") 海鮮旨いもの屋 海福 本店

@@ -1,0 +1,21 @@
+{
+  "name": "fc-watch-sass-file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass ../sass -o ../css force --source-map true --output-style",
+    "sass-watch": "node-sass --watch ../sass -o ../css force --source-map true --output-style expanded",
+    "prefix": "postcss ../css/*.css --use autoprefixer -d ../css/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1"
+  }
+}

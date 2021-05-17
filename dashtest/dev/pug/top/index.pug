@@ -1,0 +1,199 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'トップ'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'top'
+  -path         = '..'
+  -imgPC        = path+'/img/'+pageID+"/"
+  -imgSP        = path+'/img/'+pageID+"/sp/"
+
+block container
+  include ../_parts/common-nav
+  .main-content
+    .main-header
+      .header-inner
+        .calendar-input-group
+          .calendar-input-wrapper
+            input.calendar-input.font-din.js-open-modal.has-wrapper(data-modal-desktop="modal-calendar" data-modal="modal-term" type="text" value="2020/08/01")
+          span.calendar-symbol -
+          .calendar-input-wrapper
+            input.calendar-input.font-din.js-open-modal.has-wrapper(data-modal-desktop="modal-calendar" data-modal="modal-term" type="text" value="2020/09/01")
+          a.calendar-button.js-open-modal.is-toggle(href="#" data-modal="modal-term") 期間
+        a.download-button(href="#")
+          span CSVダウンロード
+
+    section.section-statistics.common-section
+      h2.instruction-text.statistics-title.js-open-lightbox(data-lightbox="modal-help") 各項目の説明について
+      ul.grid-row
+        li.grid-col.md-quarter.sm-half
+          +statistics-card({
+            title: "常連P累積人数",
+            number: "1,041",
+            progress: "+48.66%"
+          }).is-accumulation
+        li.grid-col.md-quarter.sm-half
+          +statistics-card({
+            title: "常連P新規数",
+            number: "1,041",
+            progress: "+80.09%"
+          }).is-new-people
+        li.grid-col.md-quarter.sm-half
+          +statistics-card({
+            title: "来店回数",
+            number: "1,041",
+            progress: "-0.01%",
+            decrease: true
+          }).is-visit
+        li.grid-col.md-quarter.sm-half
+          +statistics-card({
+            title: "QR承認金額",
+            number: "1,041",
+            progress: "+115.23%"
+          }).is-qr
+        li.grid-col.md-quarter.sm-half
+          +statistics-card({
+            title: "SynchroLife送客数",
+            number: "1,041",
+            progress: "-22.44%",
+            decrease: true
+          }).is-customer-sales
+        li.grid-col.md-quarter.sm-half
+          +statistics-card({
+            title: "SynchroLife送客売上",
+            number: "1,041",
+            progress: "+80.09%"
+          }).is-number-customers
+        li.grid-col.md-quarter.sm-half
+          +statistics-card({
+            title: "行きたい数",
+            number: "1,041",
+            progress: "-19.34%",
+            decrease: true
+          }).is-favorite
+        li.grid-col.md-quarter.sm-half
+          +statistics-card({
+            title: "レビュー投稿数",
+            number: "1,041",
+            progress: "+115.23%"
+          }).is-comment
+
+    section.section-reports
+      .list-reports
+        .reports-item
+          h2
+            a.common-link(href="#") 平均値
+          span.reports-link.button-tooltip.js-button-tooltip(data-tooltip="tooltip-average")
+          table.report-table
+            tbody
+              tr
+                th 平均来店人数
+                th 平均客単価
+              tr
+                td
+                  .table-content
+                    p.table-caption.font-din 24
+                      span +24.87%
+                  p.report-note 全期間:2021/xx/xx - 2021/xx/xx
+                td
+                  .table-content
+                    p.table-caption.font-din 98,241
+                      span.is-red -0.18%
+                  p.report-note 全期間:2021/xx/xx - 2021/xx/xx
+        .reports-detail
+          h2
+            a.common-link(href="#") 時間別来店回数
+          span.reports-link.button-tooltip.js-button-tooltip(data-tooltip="tooltip-time")
+          figure.reports-chart
+            img.md(src=path+"/img/top/report_img_01.png", alt="時間別来店回数", width="398", height="207", loading="lazy")
+            img.tb(src=path+"/img/top/tb/report_img_01.png", alt="時間別来店回数", width="686", height="206", loading="lazy")
+            img.sm(src=path+"/img/top/sp/report_img_01.png", alt="時間別来店回数", width="327", height="139", loading="lazy")
+          p.report-note 全期間:2021/xx/xx - 2021/xx/xx
+        .reports-item
+          h2
+            a.common-link(href="#") リピート指標
+          span.reports-link.button-tooltip.js-button-tooltip(data-tooltip="tooltip-repeat")
+          table.report-table
+            tbody
+              tr
+                th 月間平均来店数
+                th リピート率
+              tr
+                td
+                  .table-content
+                    p.table-caption.font-din 126
+                      span +24.87%
+                  p.report-note 全期間:2021/xx/xx - 2021/xx/xx
+                td
+                  .table-content
+                    p.table-caption.font-din 24%
+                      span.is-red -0.18%
+                  p.report-note 全期間:2021/xx/xx - 2021/xx/xx
+        .reports-detail
+          h2
+           a.common-link(href="#") 来店回数継続率
+          span.reports-link.button-tooltip.js-button-tooltip(data-tooltip="tooltip-continue")
+          figure.reports-chart
+            img.md(src=path+"/img/top/report_img_02.png", alt="来店回数継続率", width="398", height="207", loading="lazy")
+            img.tb(src=path+"/img/top/tb/report_img_02.png", alt="来店回数継続率", width="686", height="206", loading="lazy")
+            img.sm(src=path+"/img/top/sp/report_img_02.png", alt="来店回数継続率", width="327", height="154", loading="lazy")
+          p.report-note 全期間:2021/xx/xx - 2021/xx/xx
+        .reports-item
+          h2
+           a.common-link(href="#") 優待券
+          span.reports-link.button-tooltip.js-button-tooltip(data-tooltip="tooltip-treatment")
+          table.report-table
+            tbody
+              tr
+                th 優待券発行数
+                th 優待券使用率
+              tr
+                td
+                  .table-content
+                    p.table-caption.font-din 100
+                      span +24.87%
+                  p.report-note 全期間:2021/xx/xx - 2021/xx/xx
+                td
+                  .table-content
+                    p.table-caption.font-din 9%
+                      span.is-red -0.18%
+                  p.report-note 全期間:2021/xx/xx - 2021/xx/xx
+
+    .tooltip-wrapper#tooltip-average
+      dl
+        dt.tooltip-title.is-average 平均値
+        dd.tooltip-text ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。
+      span.tooltip-close
+
+    .tooltip-wrapper#tooltip-repeat
+      dl
+        dt.tooltip-title.is-repeat リピート指標
+        dd.tooltip-text ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。
+      span.tooltip-close
+
+    .tooltip-wrapper#tooltip-treatment
+      dl
+        dt.tooltip-title.is-treatment 優待券
+        dd.tooltip-text ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。
+      span.tooltip-close
+
+    .tooltip-wrapper#tooltip-time
+      dl
+        dt.tooltip-title.is-time 時間別来店回数
+        dd.tooltip-text ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。
+      span.tooltip-close
+
+    .tooltip-wrapper#tooltip-continue
+      dl
+        dt.tooltip-title.is-continue 来店回数継続率
+        dd.tooltip-text ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。ここに説明文ここに説明文が入ります。
+      span.tooltip-close
+
+  span.button-to-top.js-button-to-top
+
+  include ../_parts/modal-help
+
+  include ../_parts/modal-term
+
+  include ../_parts/modal-calendar

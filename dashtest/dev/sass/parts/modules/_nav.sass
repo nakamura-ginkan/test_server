@@ -1,0 +1,301 @@
+@charset "utf-8"
+
+.nav-button
+  display: flex
+  width: 192px
+  height: 40px
+  align-items: center
+  justify-content: center
+  font-size: 16px
+  background: rgba(130,146,170,.08) url('../img/common/ico_window.png') right 5px top 4px/8px auto no-repeat
+  border-radius: 4px
+  transition: all .3s ease
+
+.common-nav
+  .nav-button
+    margin-left: 24px
+    margin-top: 24px
+  .nav-menu
+    margin-top: 16px
+    margin-bottom: 24px
+  .menu-item
+    position: relative
+    &:last-child
+      padding-top: 16px
+    &:last-child:before
+      content: ''
+      display: block
+      width: calc(100% - 48px)
+      height: 1px
+      background: $border-color
+      position: absolute
+      top: 8px
+      left: 24px
+  .menu-link
+    display: block
+    font-size: 16px
+    padding: 8px 24px 8px 56px
+    line-height: 2
+    transition: all .3s ease
+    background-position: left 24px center
+    background-size: 16px auto
+    background-repeat: no-repeat
+    white-space: nowrap
+    &.is-active
+      color: $active-color
+
+.is-home
+  background-image: url('../img/common/ico_home.png')
+  &.is-active
+    background-image: url('../img/common/ico_home_hover.png')
+.is-accumulation
+  background-image: url('../img/common/ico_accumulation.png')
+  &.is-active
+    background-image: url('../img/common/ico_accumulation_hover.png')
+.is-new-people
+  background-image: url('../img/common/ico_new_people.png')
+  &.is-active
+    background-image: url('../img/common/ico_new_people_hover.png')
+.is-visit
+  background-image: url('../img/common/ico_visit.png')
+  &.is-active
+    background-image: url('../img/common/ico_visit_hover.png')
+.is-qr
+  background-image: url('../img/common/ico_qr.png')
+  &.is-active
+    background-image: url('../img/common/ico_qr_hover.png')
+.is-customer-sales
+  background-image: url('../img/common/ico_customer_sales.png')
+  &.is-active
+    background-image: url('../img/common/ico_customer_sales_hover.png')
+.is-number-customers
+  background-image: url('../img/common/ico_number_customers.png')
+  &.is-active
+    background-image: url('../img/common/ico_number_customers_hover.png')
+.is-favorite
+  background-image: url('../img/common/ico_fav.png')
+  &.is-active
+    background-image: url('../img/common/ico_fav_hover.png')
+.is-comment
+  background-image: url('../img/common/ico_comment.png')
+  &.is-active
+    background-image: url('../img/common/ico_comment_hover.png')
+.is-average
+  background-image: url('../img/common/ico_average.png')
+  &.is-active
+    background-image: url('../img/common/ico_average_hover.png')
+.is-time
+  background-image: url('../img/common/ico_time.png')
+  &.is-active
+    background-image: url('../img/common/ico_time_hover.png')
+.is-repeat
+  background-image: url('../img/common/ico_repeat.png')
+  &.is-active
+    background-image: url('../img/common/ico_repeat_hover.png')
+.is-continue
+  background-image: url('../img/common/ico_continue.png')
+  &.is-active
+    background-image: url('../img/common/ico_continue_hover.png')
+.is-treatment
+  background-image: url('../img/common/ico_treatment.png')
+  &.is-active
+    background-image: url('../img/common/ico_treatment_hover.png')
+.is-logout
+  background-image: url('../img/common/ico_logout.png')
+  &.is-active
+    background-image: url('../img/common/ico_logout_hover.png')
+
++desktop
+  .nav-button:hover
+    background-color: $active-color
+    background-image: url('../img/common/ico_window_hover.png')
+    color: $white-color
+
+  .is-mac .nav-button
+    padding-top: 2px
+
+  .is-mac .common-nav .menu-link
+    padding-top: 9px
+    padding-bottom: 7px
+
+  .common-nav
+    width: 240px
+    margin-left: 0
+    border-right: 1px solid #cdd3dd
+    transition: margin .6s ease-in-out
+    height: calc(100vh - 80px)
+    position: fixed
+    top: 80px
+    left: 0
+    &.is-hidden
+      margin-left: -240px
+    .menu-link:hover
+      color: $active-color
+    .menu-button
+      display: none
+    .menu-item:last-child:before
+      max-width: 191px
+      width: calc(100% - 24px)
+
+  .is-home:hover
+    background-image: url('../img/common/ico_home_hover.png')
+  .is-accumulation:hover
+    background-image: url('../img/common/ico_accumulation_hover.png')
+  .is-new-people:hover
+    background-image: url('../img/common/ico_new_people_hover.png')
+  .is-visit:hover
+    background-image: url('../img/common/ico_visit_hover.png')
+  .is-qr:hover
+    background-image: url('../img/common/ico_qr_hover.png')
+  .is-customer-sales:hover
+    background-image: url('../img/common/ico_customer_sales_hover.png')
+  .is-number-customers:hover
+    background-image: url('../img/common/ico_number_customers_hover.png')
+  .is-favorite:hover
+    background-image: url('../img/common/ico_fav_hover.png')
+  .is-comment:hover
+    background-image: url('../img/common/ico_comment_hover.png')
+  .is-average:hover
+    background-image: url('../img/common/ico_average_hover.png')
+  .is-time:hover
+    background-image: url('../img/common/ico_time_hover.png')
+  .is-repeat:hover
+    background-image: url('../img/common/ico_repeat_hover.png')
+  .is-continue:hover
+    background-image: url('../img/common/ico_continue_hover.png')
+  .is-treatment:hover
+    background-image: url('../img/common/ico_treatment_hover.png')
+  .is-logout:hover
+    background-image: url('../img/common/ico_logout_hover.png')
+
+.menu-button
+  border-bottom: 1px solid $border-color
+  margin-bottom: 16px
+  a
+    display: block
+    width: 40px
+    height: 40px
+    background: url('../img/common/ico_close.png') center/16px auto no-repeat
+    margin: 8px 4px
+
++desktop-ie
+  .nav-button
+    padding-top: 2px
+
++tablet
+  .is-iphone .nav-button
+    padding-top: 2px
+
+  .nav-overlay
+    width: 100%
+    height: 100%
+    position: fixed
+    background: $overlay-color
+    top: 0
+    left: 0
+    z-index: 99
+    opacity: 0
+    visibility: hidden
+    transition: all .3s ease
+
+  .common-nav
+    position: fixed
+    width: 280px
+    left: 0
+    top: 0
+    z-index: 101
+    margin: 0
+    background: $white-color
+    height: 100vh
+    overflow: auto
+    transform: translateX(-100%)
+    transition: all .3s ease
+    &.is-show
+      transform: none
+    &.is-show + .nav-overlay
+      opacity: 1
+      visibility: visible
+    .nav-menu
+      border-top: 1px solid $border-color
+      padding-top: 8px
+      padding-bottom: 40px
+    .nav-button
+      margin-top: 16px
+
+
+  .menu-button
+    border-bottom: 1px solid $border-color
+    margin-bottom: 16px
+    a
+      display: block
+      width: 40px
+      height: 40px
+      background: url('../img/common/ico_close.png') center/16px auto no-repeat
+      margin: 8px 4px
+
+  .nav-button
+    width: calc(100% - 48px)
+    margin: 0 16px
+    position: relative
+    color: $white-color
+    background-color: $dark-gray-color
+    background-image: url("../img/common/ico_window_hover.png")
+
++mobile
+  .is-iphone .nav-button
+    padding-top: 2px
+
+  .nav-overlay
+    width: 100%
+    height: 100%
+    position: fixed
+    background: $overlay-color
+    top: 0
+    left: 0
+    z-index: 99
+    opacity: 0
+    visibility: hidden
+    transition: all .3s ease
+
+  .common-nav
+    position: fixed
+    width: 280px
+    left: 0
+    top: 0
+    z-index: 101
+    margin: 0
+    background: $white-color
+    height: 100vh
+    overflow: auto
+    transform: translateX(-100%)
+    transition: all .3s ease
+    padding-bottom: 120px
+    &.is-show
+      transform: none
+    &.is-show + .nav-overlay
+      opacity: 1
+      visibility: visible
+    .nav-menu
+      border-top: 1px solid $border-color
+      padding-top: 8px
+      padding-bottom: 40px
+    .nav-button
+      margin-top: 16px
+
+  .menu-button
+    border-bottom: 1px solid $border-color
+    margin-bottom: 16px
+    a
+      display: block
+      width: 40px
+      height: 40px
+      background: url('../img/common/ico_close.png') center/16px auto no-repeat
+      margin: 8px 4px
+
+  .nav-button
+    width: calc(100% - 48px)
+    margin: 0 16px
+    position: relative
+    color: $white-color
+    background-color: $dark-gray-color
+    background-image: url("../img/common/ico_window_hover.png")

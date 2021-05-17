@@ -1,0 +1,17 @@
+mixin statistics-card({ title, number, progress, decrease = false})
+  a.statistics-card(href="#")&attributes(attributes)
+    .card-content
+      h3.card-title!=title
+      p.card-caption.font-din!=number
+        span(class=`${decrease? "is-red": ""}`)!=progress
+    .card-graph
+      img.md(src=path+"/img/top/card_graph.png", alt!=title, width="269", height="40", loading="lazy")
+      img.tb(src=path+"/img/top/tb/card_graph.png", alt!=title, width="350", height="41", loading="lazy")
+      img.sm(src=path+"/img/top/sp/card_graph.png", alt!=title, width="162", height="32", loading="lazy")
+
+mixin statistics-card-nodata({ title })
+  a.statistics-card(href="#")&attributes(attributes)
+    .card-content
+      h3.card-title!=title
+      .no-data
+        p.no-data-text データなし

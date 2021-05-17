@@ -1,0 +1,91 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'トップ'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'top'
+  -path         = '..'
+  -imgPC        = path+'/img/'+pageID+"/"
+  -imgSP        = path+'/img/'+pageID+"/sp/"
+
+block container
+  section.section-common-parts
+    h1 BUTTON
+    .parts-block
+      h2 Common Link
+      a.common-link(href="#") xxxxx
+    .parts-block
+      h2 Button go back
+      a.back-button(href="#") 戻る
+    .parts-block
+      h2 Header of modal
+      .modal-header
+        h3.modal-title 期間
+        span.modal-close
+    .parts-block
+      h2 Header of menu
+      .menu-button
+        a(href="#")
+    .parts-block
+      h2 CSV download button
+      a.download-button(href="#")
+        span CSVダウンロード
+    .parts-block
+      h2 Instruction icon
+      span.instruction-icon
+    .parts-block
+      h2 Instruction icon + instruction text
+      h3.instruction-text 各項目の説明について
+    .parts-block
+      h2 Tabs
+      ul.tabs-group.js-list-tabs
+        li.tab-item.is-active 合計
+        li.tab-item 常連プログラム
+        li.tab-item SynchroLife送客
+    .parts-block
+      h2 Read more
+      a.button-read-more(href="")
+        span もっと見る
+    .parts-block
+      h2 Menu parts
+      a.nav-button(href="#") 加盟店管理画面
+    .parts-block
+      h2 Go to TOP
+      span.button-to-top.is-show
+    .parts-block
+      h2 Go back to Today in calendar
+      button.today-button 今日
+    .parts-block
+      h2 Go back to Today in calendar
+      a.button-prev(href="#")
+      a.button-next(href="#")
+    .parts-block
+      h2 Sub Tabs
+      .tabs-group-wrapper
+        ul.tabs-group.is-sub.js-list-tabs
+          li.tab-item.is-active すべて
+          li.tab-item 三回来店
+          li.tab-item 一ヶ月来店なし
+          li.tab-item カテゴリ
+          li.tab-item カテゴリ
+
+  section.section-common-parts
+    h2 Grid systems
+    ul.grid-row
+      li.grid-col.md-quarter.sm-half 1
+      li.grid-col.md-quarter.sm-half 2
+      li.grid-col.md-quarter.sm-half 3
+      li.grid-col.md-quarter.sm-half 4
+
+    ul.grid-row
+      li.grid-col.md-half.sm-full 1
+      li.grid-col.md-half.sm-full 2
+      li.grid-col.md-half.sm-full 3
+      li.grid-col.md-half.sm-full 4
+
+    ul.grid-row
+      li.grid-col.md-full.sm-half 1
+      li.grid-col.md-full.sm-half 2
+      li.grid-col.md-full.sm-half 3
+      li.grid-col.md-full.sm-half 4

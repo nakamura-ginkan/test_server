@@ -1,0 +1,25 @@
+@charset "utf-8"
+
+/* MEDIA QUERIES
+ * -----------------------------------------------*/
+
+=desktop
+  @media print, (min-width: 1200px)
+    @content
+=desktop-ie
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+    @content
+=desktop-edge
+  @supports (-ms-ime-align: auto)
+    @content
+=tablet
+  @media screen and (min-width: 768px) and (max-width: 1199px)
+    @content
+=mobile
+  @media only screen and (max-width: $base-sm-break)
+    @content
+=mobile-xs
+  @media only screen and (max-width: $base-xs-break)
+    @content
+=text-wrap
+  word-break: break-word
