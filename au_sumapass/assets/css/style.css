@@ -1,0 +1,492 @@
+@charset "UTF-8";
+/* ini */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body * {
+  max-height: 99999em;
+  word-break: break-word;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+label,
+select,
+button {
+  line-height: inherit;
+}
+
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  word-break: normal;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  -webkit-appearance: none;
+  font: inherit;
+}
+
+button:focus {
+  outline: 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: auto;
+}
+
+/* Make webkit render the search input like a normal text field */
+input[type=search] {
+  -webkit-appearance: textfield;
+}
+
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration {
+  display: none;
+}
+
+/* Turn off scroll bars in IE unless needed */
+textarea {
+  overflow: auto;
+  white-space: pre-line;
+  resize: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "Avenir", -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans", YuGothic, YuGothicM, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  color: #000;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+/* main */
+main{
+  background: url(../img/mv_bg.png) no-repeat;
+  background-size:100% auto;
+}
+main .stage {
+  background: url(../img/mv_colorpaper.svg) no-repeat;
+  background-size:100% auto;
+}
+main .stage .logo{
+  width: 100%;
+  padding-top:12%;
+}
+main .stage .logo img {
+  width: 60%;
+  height: auto;
+}
+main .stage .title{
+  width: 100%;
+  padding-top:8%;
+  padding-bottom:12%;
+}
+main .stage .title img{
+  width: 80%;
+  height: auto;
+}
+main .coupon{
+  position: relative;
+  background: #fff;
+  margin: 0 16px;
+  border: 1px dashed rgba(0, 0, 0, .2);
+  border-radius:8px;
+  z-index: 999;
+}
+main .coupon .label{
+  position: absolute;
+  right:0;
+  top:0;
+}
+main .coupon .img{
+  margin: 24px;
+}
+main .coupon .further{
+  position: absolute;
+  width: 50%;
+  bottom:-30%;
+  left:50%;
+  margin-left:-25%;
+}
+main .coupon .further img {
+  width: 50%;
+}
+main .benefits{
+  position:relative;
+}
+main .benefits .stage {
+  position: relative;
+  background: #fff8dd;
+  border-radius:8px;
+  margin: 8% 16px 0 16px;
+  padding-top:8%;
+  padding-bottom: 8%;
+}
+main .benefits .hand_right{
+  position: absolute;
+  width: 32%;
+  top: -16%;
+  right: 0;
+  z-index: 99;
+}
+main .benefits .hand_left{
+  position: absolute;
+  width: 32%;
+  bottom:-32%;
+  left: :0;
+  z-index: 99;
+}
+main .benefits hr.stitch{
+  position: absolute;
+  width: 100%;
+  bottom:-30%;
+  border: 1px dashed rgba(0, 0, 0, .2);
+  z-index: 98;
+}
+
+main .benefits .stage .txt {
+  margin-top:4%;
+  font-size: 5vw;
+  font-weight: 600;
+  line-height: 200%;
+}
+main .benefits .stage .txt .red{
+  color: #f32840;
+}
+main .benefits .stage .txt .mid{
+  font-size: 4vw;
+}
+main .benefits .stage .txt .large{
+  font-size: 6vw;
+}
+
+
+
+#step{
+  margin-top:24%;
+  padding: 0 24px;
+}
+#step .st {
+  margin-bottom:8%;
+  font-size: 5vw;
+  font-weight: 600;
+  color: #333;
+}
+#step .step1{
+  overflow: hidden;
+  margin-bottom:6%;
+}
+#step .step1 .icon,
+#step .step2 .icon,
+#step .step3 .icon,
+#step .step4 .icon{
+  float: left;
+  width: 30%;
+}
+#step .step1 .icon img,
+#step .step2 .icon img,
+#step .step3 .icon img,
+#step .step4 .icon img{
+  width: 100%;
+  height: auto;
+}
+#step .step1 .txt,
+#step .step2 .txt,
+#step .step3 .txt,
+#step .step4 .txt{
+  float: left;
+  width: 66%;
+  margin-left:4%;
+}
+#step .step1 .txt p,
+#step .step2 .txt p,
+#step .step3 .txt p,
+#step .step4 .txt p{
+  text-align: left;
+  color: #333;
+  font-size: 4vw;
+  line-height: 140%;
+}
+#step .step1 .txt .btns{
+
+}
+#step .step1 .txt p .import,
+#step .step2 .txt p .import,
+#step .step3 .txt p .import,
+#step .step4 .txt p .import{
+  margin-top:2%;
+  font-size: 3vw;
+  display:block;
+  line-height: 1.4;
+}
+#step .step1 .txt p .red{
+  color: #f32840;
+}
+#step .step2{
+  clear: both;
+  overflow: hidden;
+  margin-bottom:6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#step .step3{
+  clear: both;
+  overflow: hidden;
+  margin-bottom:6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#step .step4{
+  clear: both;
+  overflow: hidden;
+  margin-bottom:6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#install{
+  clear: both;
+  width: 100%;
+  position:relative;
+  padding-bottom:16%;
+}
+#install .stage {
+  background: #f32840;
+  margin: 8% 32px 0 32px;
+  border-radius:8px;
+  padding: 6%;
+}
+#install p{
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  font-size: 4vw;
+  padding-bottom:4%;
+}
+#install .btns{}
+#install .arrow{
+  padding:4% 0;
+}
+#install .arrow img{
+  width: 8%;
+  height: auto;
+}
+#install .img{
+  padding: 0 32px;
+}
+
+
+/* about synchrolife */
+#about_synchrolife {
+  max-width: 100%;
+  font-feature-settings: "palt";
+  box-sizing: border-box;
+  background:#f32840;
+  background-size: contain;
+  padding: 8% 0;
+}
+#about_synchrolife .bg_logo {
+  padding: 4% 0;
+  background: url(../img/synchrolife_bg.png) 50% 50% no-repeat;
+  background-size: contain;
+}
+
+#about_synchrolife .title {
+  font-size: 5vw;
+  margin-bottom:0.5em;
+  font-weight: 600;
+  color: #FFF;
+}
+
+#about_synchrolife .text {
+  padding: 0 32px;
+  font-size: 4vw;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+  color: #FFF;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+/* footer */
+footer .visual {
+  padding: 16% 0 0 0;
+  background: url(../img/bg_footer.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+footer .block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 100%;
+}
+
+footer .img {
+  width: 80%;
+  order: 2;
+}
+
+footer .cont {
+  width: 78.66%;
+  margin: 0 0 0 0;
+  order: 1;
+  text-align: center;
+}
+
+footer .logo {
+  max-width: initial;
+  width: 100%;
+  margin: 0 auto 10% auto;
+}
+
+footer .text {
+  margin: 0 0 8% 0;
+  font-size: 5.5vw;
+  font-weight: 600;
+  color: #fff;
+  font-feature-settings: "palt";
+}
+
+footer .btns {
+  display: flex;
+  justify-content: space-between;
+  max-width: initial;
+  width: 80%;
+  margin: 4% auto 16% auto;
+  padding: 0;
+}
+
+footer .stores {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer .line {
+  padding: 6% 0;
+  background: #FFF;
+  border-top: 1px solid #DFDFDF;
+}
+
+footer .line_block {
+  max-width: initial;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .sns {
+  width: 50%;
+  display: flex;
+  order: 1;
+  justify-content: center;
+}
+
+footer .sns_item {
+  width: 100%;
+  margin: 0 4% 8% 4%;
+  padding: 0;
+  overflow: visible;
+}
+
+footer .copy {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 3vw;
+  color: #aaa;
+  order: 2;
+}
