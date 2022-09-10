@@ -1,0 +1,951 @@
+@media screen and (min-width: 769px) {
+  #spBtmRead {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #spBtmRead {
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    z-index: 15;
+    text-align: center;
+  }
+  #spBtmRead a{
+    color: var(--color-base);
+    display: block;
+    padding: 24px 0;
+    text-decoration: none;
+    background: var(--color-synchrolife) url(../img/arrow_default.svg) no-repeat  right 40px center;
+  }
+}
+
+#mv{
+  position: relative;
+  height: 100%;
+  background: url(../img/mv.png)repeat 0 0;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  #mv{
+    position: relative;
+    height: 100%;
+    background: url(../img/sp_mv.png) no-repeat right top;
+    background-size: cover;
+  }
+}
+
+#mv #mv_title {
+  position: absolute;
+	top: 50%;
+  transform:translate(0, -50%);
+  left:80px;
+}
+#mv #mv_title .img {
+  max-width: 664px;
+  padding-right: 80px;
+}
+#mv #mv_title img {
+  max-width: 100%;
+  height: auto;
+}
+#mv #mv_title .btn_mainRead {
+  margin: 32px 0 0 0;
+}
+@media screen and (max-width: 768px) {
+  #mv #mv_title {
+    position: absolute;
+  	top: 50%;
+    transform:translate(0, -50%);
+    left:40px;
+  }
+  #mv #mv_title .img {
+    max-width: 100%;
+    padding-right: 40px;
+  }
+  #mv #mv_title .pc {
+    display: none;
+  }
+}
+
+#mv #mv_title .btn_mainRead a {
+  display: inline-block;
+  line-height: 1;
+  background: url(../img/arrow_main.svg) no-repeat  right 32px center;
+  background-color: var(--color-synchrolife);
+  border-radius: 80px;
+  padding:24px 64px 24px 32px;
+  text-decoration: none;
+  font-feature-settings: "palt";
+  letter-spacing: 0.05em;
+  font-size: 200%;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+#mv #mv_title .btn_mainRead a:hover {
+  background:var(--color-hover) url(../img/arrow_main.svg) no-repeat  right 24px center;
+}
+
+
+
+#mv #individuals {
+  position: absolute;
+  right:80px;
+  top:120px;
+}
+#mv #individuals a {
+  display: block;
+  line-height: 48px;
+  font-size: 16px;
+  background: url(../img/arrow_default.svg) no-repeat  right 24px center;
+  text-decoration: none;
+  border-radius: 48px;
+  border: #fff solid 4px;
+  padding:0 40px 0 24px;
+  margin:0;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+#mv #individuals a:hover {
+  background: url(../img/arrow_default.svg) no-repeat  right 16px center;
+}
+@media screen and (max-width: 999px) {
+  #mv #individuals {
+    position: absolute;
+    right:24px;
+    top:88px;
+  }
+  #mv #individuals a {
+    display: block;
+    line-height: 32px;
+    font-size: 12px;
+    background: url(../img/sp_arrow_default.svg) no-repeat  right 24px center;
+    text-decoration: none;
+    border-radius: 32px;
+    border: #fff solid 2px;
+    padding:0 40px 0 24px;
+    margin:0;
+    color: #fff;
+  }
+  #mv #individuals a:hover {
+    background: url(../img/sp_arrow_default.svg) no-repeat  right 16px center;
+  }
+}
+
+
+/*main*/
+main{
+}
+main h3 {
+  position:absolute;
+	bottom: -40px;
+	left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-txt);
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+}
+main .sst {
+  margin-top:40px;
+  padding: 0 80px;
+  line-height: 1.3;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+main .sst_txt {
+  padding: 0 80px;
+  margin-top:16px;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+@media screen and (max-width: 768px) {
+  main h3 {
+    position:absolute;
+  	bottom: -24px;
+  	left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-txt);
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+  }
+  main .sst {
+    margin-top:24px;
+    padding: 0 24px;
+    line-height: 1.3;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  main .sst_txt {
+    padding: 0 24px;
+    margin-top:16px;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+}
+
+
+/*feature*/
+main #feature {
+  position: relative;
+}
+
+main #feature .st_feature {
+  position: relative;
+  height: 216px;
+  text-align: center;
+  background:url(../img/st_en_feature.svg) no-repeat center bottom;
+  background-size: auto 96px;
+}
+@media screen and (max-width: 768px) {
+  main #feature .st_feature {
+    position: relative;
+    height: 88px;
+    text-align: center;
+    background:url(../img/st_en_feature.svg) no-repeat center bottom;
+    background-size: auto 40px;
+  }
+}
+
+main #feature {
+  width: 100%;
+}
+
+main #feature .feature_img{
+  text-align: center;
+  margin-top:32px;
+}
+
+main #feature figure {
+  margin: 0;
+  padding: 0;
+}
+
+main #feature figure.ex1 {
+  margin: 0 auto;
+  max-width: 520px;
+  padding: 0 80px;
+}
+
+main #feature figure.ex1 img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 769px) {
+  main #feature figure.ex1 {
+    margin: 0 auto;
+    max-width: 520px;
+    padding: 0 24px;
+  }
+}
+
+main #feature figure.ex2 {
+  margin: 32px 80px 132px 80px;
+}
+
+main #feature figure.ex2 img {
+  max-width: 316px;
+  height: auto;
+}
+@media screen and (max-width: 769px) {
+  main #feature figure.ex2 {
+    margin: 32px 0 132px 0;
+  }
+  main #feature figure.ex2 img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+main #feature .ex3 {
+  position: relative;
+  width: 100%;
+  background:var(--color-synchrolife);
+}
+
+main #feature figure.ex3_shop {
+  position: absolute;
+	top: -100px;
+	left: 50%;
+  transform: translateX(-50%);
+  padding: 0 80px;
+}
+
+main #feature figure.ex3_shop img {
+  max-width: 200px;
+  height: auto;
+}
+
+@media screen and (max-width: 769px) {
+  main #feature figure.ex3_shop {
+    position: absolute;
+  	top: -15%;
+  	left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+  }
+  main #feature figure.ex3_shop img {
+    max-width: 64%;
+    height: auto;
+  }
+}
+
+main #feature figure.ex3_main {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+main #feature figure.ex3_main img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  main #feature figure.ex3_main {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*service*/
+main #service {
+  position: relative;
+  width: 100%;
+}
+main #service .st_service {
+  position: relative;
+  height: 216px;
+  text-align: center;
+  background: url(../img/st_en_service.svg) no-repeat center bottom;
+	background-size: auto 96px;
+}
+@media screen and (max-width: 768px) {
+  main #service .st_service {
+    position: relative;
+    height: 88px;
+    text-align: center;
+    background:url(../img/st_en_service.svg) no-repeat center bottom;
+    background-size: auto 40px;
+  }
+}
+
+
+main #service .service_set {
+  width: 100%;
+  position: relative;
+  margin-top:80px;
+}
+
+main #service .service_set .figure_wrap {
+  position: relative;
+  top:0;
+  left: 0;
+  width: 50%;
+}
+main #service .service_set .figure_wrap figure {
+  margin:0;
+  padding: 0;
+  width: 100%;
+  height: 1140px;
+  background: url(../img/service_figure01.png) no-repeat right 80px top;
+  background-size: contain;
+}
+
+@media screen and (max-width: 999px) {
+  main #service .service_set .figure_wrap {
+    display: none;
+  }
+}
+
+/*01*/
+main #service .service_set #service01 {
+  position:absolute;
+  top:0;
+  right: 0;
+  width: 50%;
+}
+@media screen and (max-width: 999px) {
+  main #service .service_set #service01 {
+    position: relative;
+    width: 100%;
+    top:0;
+    left:0;
+  }
+}
+
+main #service .service_set #service01 .service_wrap {
+  padding-right:80px;
+}
+@media screen and (max-width: 999px) {
+  main #service .service_set #service01 .service_wrap {
+    padding:0 24px;
+    /*エリア問題
+    background: #fff000;
+    */
+  }
+}
+
+main #service .service_set #service01 .service_wrap .service_num {
+  position: relative;
+  width: 200px;
+  /*width: 31%;*/
+  margin: -50px auto 0 auto;
+
+}
+@media screen and (max-width: 999px) {
+  main #service .service_set #service01 .service_wrap .service_num {
+    max-width: 120px;
+    margin: -50px auto 0 auto;
+  }
+}
+
+main #service .service_set #service01 .service_wrap .service_num img {
+  width: 100%;
+  height: auto;
+}
+
+main #service .service_set #service01 .service_wrap h5 {
+  margin:16px 0 40px 0;
+  padding: 0;
+  line-height: 1.4;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+@media screen and (max-width: 999px) {
+  main #service .service_set #service01 .service_wrap h5 {
+    margin:16px 0 40px 0;
+    padding: 0;
+    line-height: 1.4;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+  main #service .service_set #service01 .service_wrap h5 br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main #service .service_set #service01 .service_wrap .sp_pic {
+    display: none;
+  }
+}
+
+main #service .service_set #service01 .service_wrap .sp_pic {
+  position: relative;
+  width: 100%;
+  padding:0 0 40px 0;
+}
+main #service .service_set #service01 .service_wrap .sp_pic img {
+  width: 100%;
+  height: auto;
+}
+
+main #service .service_set #service01 .service_wrap ul {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main #service .service_set #service01 .service_wrap ul li {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+
+main #service .service_set #service01 .service_wrap ul li .servise_item {
+  padding: 0 20px 0 0;
+  margin: 0 0 24px 0;
+}
+main #service .service_set #service01 .service_wrap ul li:nth-child(even) .servise_item {
+  padding: 0 0 0 20px;
+  margin: 0 0 24px 0;
+}
+@media screen and (max-width: 768px) {
+  main #service .service_set #service01 .service_wrap ul li .servise_item {
+    padding: 0 12px 0 0;
+    margin: 0 0 24px 0;
+  }
+  main #service .service_set #service01 .service_wrap ul li:nth-child(even) .servise_item {
+    padding: 0 0 0 12px;
+    margin: 0 0 24px 0;
+  }
+}
+
+main #service .service_set #service01 .service_wrap ul li .servise_item .service_icon {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #eaeff3;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+main #service .service_set #service01 .service_wrap ul li .servise_item .service_icon img {
+  width: auto;
+  max-height: 128px;
+}
+
+main #service .service_set #service01 .service_wrap ul li .servise_item h6 {
+  margin:8px 0 0 0;
+  padding: 0;
+  line-height: 1.4;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+main #service .service_set #service01 .service_wrap ul li .servise_item p {
+  margin: 8px 0 0 0;
+  padding: 0;
+  line-height: 1.4;
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+@media screen and (max-width: 768px) {
+  main #service .service_set #service01 .service_wrap ul li .servise_item h6 {
+    margin:8px 0 0 0;
+    padding: 0;
+    line-height: 1.4;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+  main #service .service_set #service01 .service_wrap ul li .servise_item p {
+    margin: 8px 0 0 0;
+    padding: 0;
+    line-height: 1.4;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+  }
+}
+
+/*02*/
+main #service #service02 {
+  position: relative;
+  padding: 0 0 80px 0;
+}
+
+main #service #service02 .service02_num {
+  width: 200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 999px) {
+  main #service #service02 .service02_num {
+    max-width: 120px;
+  }
+}
+
+main #service #service02 .service02_num img {
+  width: 100%;
+  height: auto;
+}
+
+main #service #service02 h5 {
+  margin:16px 80px 16px 80px;
+  padding: 0;
+  line-height: 1.4;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+@media screen and (max-width: 768px) {
+  main #service #service02 h5 {
+    margin:16px 24px 16px 24px;
+    padding: 0;
+    line-height: 1.4;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+  main #service #service02 h5 br {
+    display: none;
+  }
+}
+
+main #service #service02 .sst_txt {
+}
+
+main #service #service02 .sst_txt p {
+  padding: 0;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 768px) {
+  main #service #service02 .sst_txt p {
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+  }
+  main #service #service02 .sst_txt p br {
+    display: none;
+  }
+}
+
+main #service #service02 figure {
+  padding: 0 80px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+main #service #service02 figure img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  main #service #service02 figure.pc {
+    display: none;
+  }
+}
+
+main #service #service02 figure.sp {
+  padding: 0 24px;
+}
+main #service #service02 figure.sp img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 769px) {
+  main #service #service02 figure.sp {
+    display: none;
+  }
+}
+
+main #service #service02 ul {
+  max-width: 1200px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 40px 80px 0 80px;
+}
+main #service #service02 ul li {
+  width: 100%;
+  margin-bottom:0px;
+  border-top:1px solid rgba(0, 0, 0, 0.16);
+}
+
+main #service #service02 ul li a {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  color: var(--color-txt);
+  background: url(../img/arrow_news.svg) no-repeat  right 0 top 48px;
+}
+main #service #service02 ul li a:hover {
+  color: var(--color-txt);
+  background: rgba(0, 0, 0, 0.04) url(../img/arrow_news.svg) no-repeat  right 16px top 48px;
+}
+main #service #service02 ul li a:visited {
+  color: var(--color-txt);
+}
+
+main #service #service02 ul li a .service02_news_thumb {
+  float: left;
+  box-sizing:content-box;
+  width: 200px;
+  height: 104px;
+  margin:20px 40px 20px 0;
+  border:1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+}
+
+main #service #service02 ul li a .service02_news_thumb img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+main #service #service02 ul li a .service02_news_txt {
+  float: left;
+  padding:16px 0 16px 0;
+  width: calc(100% - 320px);
+}
+
+main #service #service02 ul li a .service02_news_txt p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  main #service #service02 ul {
+    list-style: none;
+    margin: 0;
+    padding: 40px 24px 0 24px;
+  }
+  main #service #service02 ul li {
+    width: 100%;
+    margin-bottom:24px;
+    border:none;
+  }
+  main #service #service02 ul li a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    color: var(--color-txt);
+    transition: 0.3s ease-in-out;
+    background: none;
+  }
+  main #service #service02 ul li a:hover {
+    color: var(--color-txt);
+    background: none;
+  }
+  main #service #service02 ul li a:visited {
+    color: var(--color-txt);
+  }
+  main #service #service02 ul li a .service02_news_thumb {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin:0;
+    border:1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+  }
+
+  main #service #service02 ul li a .service02_news_thumb img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+  }
+
+  main #service #service02 ul li a .service02_news_txt {
+    float: left;
+    width: 100%;
+    padding:0;
+  }
+
+  main #service #service02 ul li a .service02_news_txt p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*03*/
+main #service .service_set .figure_wrap3 {
+  position: relative;
+  top:0;
+  left: 0;
+  width: 50%;
+}
+main #service .service_set .figure_wrap3 figure {
+  margin:0;
+  padding: 0;
+  width: 100%;
+  height: 800px;
+  background: url(../img/service_figure03.png) no-repeat right 80px top;
+  background-size: contain;
+}
+
+@media screen and (max-width: 999px) {
+  main #service .service_set .figure_wrap3 {
+    display: none;
+  }
+}
+
+
+main #service .service_set #service03 {
+  position:absolute;
+  top:0;
+  right: 0;
+  width: 50%;
+}
+@media screen and (max-width: 999px) {
+  main #service .service_set #service03 {
+    position: relative;
+    width: 100%;
+    top:0;
+    left:0;
+  }
+}
+
+main #service .service_set #service03 .service_wrap {
+  padding-right:80px;
+}
+@media screen and (max-width: 999px) {
+  main #service .service_set #service03 .service_wrap {
+    padding:0 24px;
+    */
+  }
+}
+
+main #service .service_set #service03 .service_wrap .service_num {
+  position: relative;
+  width: 200px;
+  margin: -50px auto 0 auto;
+
+}
+@media screen and (max-width: 999px) {
+  main #service .service_set #service03 .service_wrap .service_num {
+    max-width: 120px;
+    margin: -50px auto 0 auto;
+  }
+}
+
+main #service .service_set #service03 .service_wrap .service_num img {
+  width: 100%;
+  height: auto;
+}
+
+main #service .service_set #service03 .service_wrap h5 {
+  margin:16px 0 40px 0;
+  padding: 0;
+  line-height: 1.4;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+@media screen and (max-width: 999px) {
+  main #service .service_set #service03 .service_wrap h5 {
+    margin:16px 0 40px 0;
+    padding: 0;
+    line-height: 1.4;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+  /*
+  main #service .service_set #service03 .service_wrap h5 br {
+    display: none;
+  }
+  */
+}
+@media screen and (max-width: 1200px) {
+  main #service .service_set #service03 .service_wrap h5 br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main #service .service_set #service03 .service_wrap .sp_pic {
+    display: none;
+  }
+}
+
+main #service .service_set #service03 .service_wrap .sp_pic {
+  position: relative;
+  width: 100%;
+  padding:0 0 40px 0;
+}
+main #service .service_set #service03 .service_wrap .sp_pic img {
+  width: 100%;
+  height: auto;
+}
+
+main #service .service_set #service03 .service_wrap .synchroPay {
+  margin: 0;
+  padding: 0 0 40px 0;
+}
+main #service .service_set #service03 .service_wrap .synchroPay img {
+  width: 100%;
+  height: auto;
+}
+
+main #service .service_set #service03 .service_wrap .merit_st {
+  width: 100%;
+  border-radius: 40px;
+  background: var(--color-synchrolife);
+  text-align: center;
+
+}
+
+main #service .service_set #service03 .service_wrap .merit_st img {
+  width: auto;
+  height: 64px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  main #service .service_set #service03 .service_wrap .merit_st img {
+    width: auto;
+    height: 42px;
+    margin: 0 auto;
+  }
+}
+
+main #service .service_set #service03 .service_wrap .merit_list {
+}
+
+main #service .service_set #service03 .service_wrap .merit_list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main #service .service_set #service03 .service_wrap .merit_list ul li {
+  padding: 8px 0 8px 5rem;
+  background: url(../img/service_figure03_st_merit1.svg) no-repeat center left;
+  background-size:contain;
+  border-bottom:1px solid rgba(0, 0, 0, 0.16);
+  margin: 16px 0;
+}
+main #service .service_set #service03 .service_wrap .merit_list ul li p {
+  line-height: 1;
+  font-size: 1.5vw;
+  font-weight: 800;
+}
+main #service .service_set #service03 .service_wrap .merit_list ul li p span.red {
+  color: var(--color-synchrolife);
+}
+
+
+
+
+
+
+
+
+
+
+/*price*/
+main #price {
+  position: relative;
+  width: 100%;
+}

@@ -1,0 +1,268 @@
+:root {
+  --color-base:#fff;
+  --color-txt:#333;
+  --color-txt-thin:#aaa;
+  --color-synchrolife: #f32840;
+  --color-hover: #ff9900;
+  --color-darkred: #ba0f23;
+  --color-thin: #eAeff3;
+  --color-gra-bgbottom: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+
+  --font-sans-serif:'源暎ゴシックN', 'Noto Sans', Roboto, system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-num: "03スマートフォントUI";
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+@font-face {
+  font-family:"03スマートフォントUI";
+  src: url("../font/03smartfontUI.otf");
+}
+::selection{
+    background: var(--color-synchrolife);
+    color: var(--color-base);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--color-txt);
+  background-color: var(--color-base);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  /* 背景色を黒にする */
+  background:transparent;
+  /* headerに余白を作る */
+  padding: 24px 0;
+  /* アニメーションの変化時間 */
+  transition: 0.5s;
+  z-index: 10;
+}
+
+header .headerStage {
+}
+
+header .headerStage #logo {
+  float:left;
+  padding-left:80px;
+}
+header .headerStage #logo a img {
+  fill:fff000;
+  height: 64px;
+  width: auto;
+  transition: 0.5s;
+}
+@media screen and (max-width: 999px) {
+  header .headerStage #logo {
+    float:left;
+    padding-left:24px;
+  }
+  header .headerStage #logo a img {
+    fill:fff000;
+    height: 40px;
+    width: auto;
+    transition: 0.5s;
+  }
+}
+
+header .headerStage nav {
+}
+@media screen and (max-width: 768px) {
+  header .headerStage nav .pc {
+    display: none;
+  }
+}
+
+/* ナビゲーションのリンクを横並びにする */
+header .headerStage nav ul {
+  float: right;
+  margin: 0 40px 0 0;
+  padding: 0;
+}
+
+header .headerStage nav ul li {
+  float: left;
+  /*white-space: nowrap;*/
+  margin-left:32px;
+  list-style: none;
+}
+/* ナビゲーションのリンクのスタイル調整 */
+header .headerStage  nav ul li a {
+  display:block;
+  padding:0;
+  color: #fff;
+  font-size: 16px;
+  line-height: 64px;
+  text-decoration: none;
+  /* アニメーションの変化時間 */
+  transition: 0.5s;
+}
+@media screen and (max-width: 1239px) {
+  header .headerStage nav ul li {
+    float: left;
+    margin-left:16px;
+    list-style: none;
+  }
+  header .headerStage  nav ul li a {
+    display:block;
+    padding:0;
+    color: #fff;
+    font-size: 12px;
+    line-height: 64px;
+    text-decoration: none;
+    /* アニメーションの変化時間 */
+    transition: 0.5s;
+  }
+}
+@media screen and (max-width: 999px) {
+  header .headerStage .pc {
+    display: none;
+  }
+}
+
+header .headerStage .btn_read {
+  float:right;
+  cursor: pointer;
+}
+
+header .headerStage .btn_read a{
+  display: block;
+  text-decoration: none;
+  line-height: 48px;
+  background:var(--color-synchrolife) url(../img/arrow_default.svg) no-repeat  right 24px center;
+  border-radius: 48px;
+  padding:0 40px 0 24px;
+  margin: 8px 80px 8px 0;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+header .headerStage .btn_read a:hover {
+  background:var(--color-hover) url(../img/arrow_default.svg) no-repeat  right 16px center;
+}
+
+/* スクロールするため高さを出すためのsection */
+.section {
+  height: 100vh;
+}
+.section-a {
+  background: #000;
+}
+.section-b {
+  background: #fff;
+}
+
+/* スクロールして「scroll-navクラス」がついたときのヘッダーデザイン */
+header.scroll-nav {
+  /* 余白を狭くする */
+  padding: 16px 0;
+  /* 背景を白にする */
+  background-color: rgba(255, 255, 255, .72);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  -moz-backdrop-filter: blur(40px);
+  /* コンテンツの背景が白でもナビゲーションだと分かりやすいように影をつける */
+  border-bottom:1px solid rgba(0, 0, 0, 0.16);
+}
+
+/*一定スクロール時のヘッダーの設定*/
+header.scroll-nav .headerStage  nav ul li a {
+  color: #333;
+}
+header.scroll-nav #logo {
+}
+header.scroll-nav .menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #333;
+  border-radius: 4px;
+}
+/******************************************/
+
+.header-logo.headerLogoScroll.-before {
+  display : none;
+}
+.header-logo.-after {
+  display : none;
+}
+.header-logo.headerLogoScroll.-after {
+  display : block;
+}
+
+/*sp menu*/
+@media screen and (min-width: 999px) {
+  header .headerStage #sp_menu {
+    display: none;
+  }
+}
+header .headerStage #sp_menu {
+  float: right;
+  padding: 0;
+  margin: 7px 24px 0 0;
+}
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all .5s;
+  box-sizing: border-box;
+}
+.menu-trigger {
+  position: relative;
+  width: 32px;
+  height: 16px;
+  background: none;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+}
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+.menu-trigger span:nth-of-type(2) {
+  top: 7px;
+}
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+#menu02.active span:nth-of-type(1) {
+  transform: translateY(7px) rotate(-315deg);
+}
+#menu02.active span:nth-of-type(2) {
+  opacity: 0;
+}
+#menu02.active span:nth-of-type(3) {
+  transform: translateY(-7px) rotate(315deg);
+}
+
+
+
+
+footer {
+  background:var(--color-synchrolife);
+  margin-top:120px;
+}
