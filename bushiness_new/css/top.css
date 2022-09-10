@@ -780,7 +780,7 @@ main #service .service_set .figure_wrap3 figure {
   margin:0;
   padding: 0;
   width: 100%;
-  height: 800px;
+  height: 1000px;
   background: url(../img/service_figure03.png) no-repeat right 80px top;
   background-size: contain;
 }
@@ -790,7 +790,6 @@ main #service .service_set .figure_wrap3 figure {
     display: none;
   }
 }
-
 
 main #service .service_set #service03 {
   position:absolute;
