@@ -398,6 +398,8 @@ main #service .service_set #service01 {
 }
 
 main #service .service_set #service01 .service_wrap {
+  /* @del */
+  max-width: 800px;
   padding-right:80px;
 }
 @media screen and (max-width: 999px) {
@@ -806,6 +808,8 @@ main #service .service_set #service03 {
 }
 
 main #service .service_set #service03 .service_wrap {
+  /* @del */
+  max-width: 800px;
   padding-right:80px;
 }
 @media screen and (max-width: 999px) {
@@ -852,11 +856,6 @@ main #service .service_set #service03 .service_wrap h5 {
     font-weight: bold;
     letter-spacing: 0.05em;
   }
-  /*
-  main #service .service_set #service03 .service_wrap h5 br {
-    display: none;
-  }
-  */
 }
 @media screen and (max-width: 1200px) {
   main #service .service_set #service03 .service_wrap h5 br {
@@ -889,54 +888,19 @@ main #service .service_set #service03 .service_wrap .synchroPay img {
   height: auto;
 }
 
-main #service .service_set #service03 .service_wrap .merit_st {
+main #service .service_set #service03 .service_wrap .merit {
   width: 100%;
-  border-radius: 40px;
-  background: var(--color-synchrolife);
-  text-align: center;
 
 }
 
-main #service .service_set #service03 .service_wrap .merit_st img {
-  width: auto;
-  height: 64px;
-  margin: 0 auto;
+main #service .service_set #service03 .service_wrap .merit img {
+  width: 100%;
+  height: auto;
 }
 @media screen and (max-width: 768px) {
-  main #service .service_set #service03 .service_wrap .merit_st img {
-    width: auto;
-    height: 42px;
-    margin: 0 auto;
+  main #service .service_set #service03 .service_wrap .merit img {
   }
 }
-
-main #service .service_set #service03 .service_wrap .merit_list {
-}
-
-main #service .service_set #service03 .service_wrap .merit_list ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-main #service .service_set #service03 .service_wrap .merit_list ul li {
-  padding: 8px 0 8px 5rem;
-  background: url(../img/service_figure03_st_merit1.svg) no-repeat center left;
-  background-size:contain;
-  border-bottom:1px solid rgba(0, 0, 0, 0.16);
-  margin: 16px 0;
-}
-main #service .service_set #service03 .service_wrap .merit_list ul li p {
-  line-height: 1;
-  font-size: 1.5vw;
-  font-weight: 800;
-}
-main #service .service_set #service03 .service_wrap .merit_list ul li p span.red {
-  color: var(--color-synchrolife);
-}
-
-
-
 
 
 
