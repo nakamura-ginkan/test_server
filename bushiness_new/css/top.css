@@ -462,7 +462,7 @@ main #service .service_set #service01 .service_wrap ul {
   overflow: hidden;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 40px 0;
 }
 
 main #service .service_set #service01 .service_wrap ul li {
@@ -545,7 +545,6 @@ main #service #service02 {
   width: 100%;
   clear: both;
   position: relative;
-  padding: 0 0 80px 0;
 }
 @media screen and (max-width: 999px) {
   main #service #service02 {
