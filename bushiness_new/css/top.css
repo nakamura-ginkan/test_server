@@ -324,17 +324,10 @@ main #feature figure.ex3_main img {
 
 /*service*/
 main #service {
-  overflow: hidden;
   position: relative;
   width: 100%;
   padding-top: 80px;/*anchor*/
   margin-top: -80px;
-}
-@media screen and (max-width: 768px) {
-  main #service {
-    position: relative;
-    width: 100%;
-  }
 }
 main #service .st_service {
   position: relative;
@@ -355,23 +348,25 @@ main #service .st_service {
 
 main #service .service_set {
   width: 100%;
-  position: relative;
   margin-top:80px;
 }
 
 main #service .service_set .figure_wrap {
-  position: relative;
-  top:0;
-  left: 0;
+  float: left;
   width: 50%;
 }
 main #service .service_set .figure_wrap figure {
+  position: relative;
   margin:0;
   padding: 0;
+  top: 0;
+  right: 80px;
+}
+
+main #service .service_set .figure_wrap figure img {
   width: 100%;
-  height: 1140px;
-  background: url(../img/service_figure01.png) no-repeat right 80px top;
-  background-size: contain;
+  height: auto;
+  margin-bottom:80px;
 }
 
 @media screen and (max-width: 999px) {
@@ -382,9 +377,7 @@ main #service .service_set .figure_wrap figure {
 
 /*01*/
 main #service .service_set #service01 {
-  position:absolute;
-  top:0;
-  right: 0;
+  float: left;
   width: 50%;
 }
 @media screen and (max-width: 999px) {
@@ -502,6 +495,7 @@ main #service .service_set #service01 .service_wrap ul li .servise_item .service
   border-radius: 8px;
   border: 1px solid #eaeff3;
   padding: 24px 16px;
+  margin-bottom:8px;
   text-align: center;
 }
 
@@ -510,12 +504,9 @@ main #service .service_set #service01 .service_wrap ul li .servise_item .service
   max-height: 128px;
 }
 
-main #service .service_set #service01 .service_wrap ul li .servise_item h6 {
-  margin:8px 0 0 0;
-  padding: 0;
+main #service .service_set #service01 .service_wrap ul li .servise_item strong {
   line-height: 1.4;
-  text-align: left;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.05em;
 }
@@ -523,12 +514,13 @@ main #service .service_set #service01 .service_wrap ul li .servise_item p {
   margin: 8px 0 0 0;
   padding: 0;
   line-height: 1.4;
-  text-align: left;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0.05em;
 }
+/*限界値*/
+
 @media screen and (max-width: 768px) {
-  main #service .service_set #service01 .service_wrap ul li .servise_item h6 {
+  main #service .service_set #service01 .service_wrap ul li .servise_item strong {
     margin:8px 0 0 0;
     padding: 0;
     line-height: 1.4;
@@ -547,8 +539,11 @@ main #service .service_set #service01 .service_wrap ul li .servise_item p {
   }
 }
 
+
 /*02*/
 main #service #service02 {
+  width: 100%;
+  clear: both;
   position: relative;
   padding: 0 0 80px 0;
 }
@@ -765,30 +760,33 @@ main #service #service02 ul li a .service02_news_txt p {
 
 /*03*/
 main #service .service_set .figure_wrap3 {
-  position: relative;
-  top:0;
-  left: 0;
+  clear: both;
+  float: left;
   width: 50%;
 }
 
 main #service .service_set .figure_wrap3 figure {
+  position: relative;
   margin:0;
   padding: 0;
-  width: 100%;
-  height: 1000px;
-  background: url(../img/service_figure03.png) no-repeat right 80px top;
-  background-size: contain;
+  top: 0;
+  right: 80px;
 }
+
 @media screen and (max-width: 999px) {
   main #service .service_set .figure_wrap3 figure {
     display: none;
   }
 }
+main #service .service_set .figure_wrap3 figure img {
+  width: 100%;
+  height: auto;
+  margin-bottom:80px;
+}
+
 
 main #service .service_set #service03 {
-  position:absolute;
-  top:0;
-  right: 0;
+  float: left;
   width: 50%;
 }
 @media screen and (max-width: 999px) {
@@ -828,6 +826,7 @@ main #service .service_set #service03 .service_wrap .service_num img {
   height: auto;
 }
 
+
 main #service .service_set #service03 .service_wrap h5 {
   margin:16px 0 40px 0;
   padding: 0;
@@ -839,13 +838,7 @@ main #service .service_set #service03 .service_wrap h5 {
 }
 @media screen and (max-width: 999px) {
   main #service .service_set #service03 .service_wrap h5 {
-    margin:16px 0 40px 0;
-    padding: 0;
-    line-height: 1.4;
-    text-align: center;
     font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 0.05em;
   }
 }
 
@@ -878,11 +871,6 @@ main #service .service_set #service03 .service_wrap .merit {
   width: 100%;
   margin-bottom:80px;
 }
-@media screen and (max-width: 768px) {
-  main #service .service_set #service03 .service_wrap .merit {
-    margin-bottom:160px;
-  }
-}
 
 main #service .service_set #service03 .service_wrap .merit img {
   width: 100%;
@@ -891,6 +879,7 @@ main #service .service_set #service03 .service_wrap .merit img {
 
 /*price*/
 main #price {
+  clear: both;
   overflow: hidden;
   position: relative;
   width: 100%;
