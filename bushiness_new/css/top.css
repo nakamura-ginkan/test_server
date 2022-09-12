@@ -11,6 +11,7 @@
     width: 100%;
     z-index: 15;
     text-align: center;
+    padding-bottom: env(safe-area-inset-bottom);
   }
   #spBtmRead a{
     color: var(--color-base);

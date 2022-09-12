@@ -52,23 +52,8 @@ $(document).ready(function() {
         });//resize
 
         //特定要素の高さを揃えて横幅が小さい場合は解除させる
-        if( $('.service01height').length ){
-              var w = $(window).width();
-              if( w > 767 ){
-                  $('.service01height').matchHeight();
-              }else{
-                  $('.service01height').matchHeight({remove: true});
-              }
-              $(window).resize(function(){
-                  if( w <= 768 && $(window).width() > 767 ){
-                      $('.service01height').matchHeight();
-                  }
-                  if( w > 767 && $(window).width() <= 768 ){
-                      $('.service01height').matchHeight({remove: true});
-                  }
-                  w = $(window).width();
-              })
-          }
+        $('.service01height').matchHeight();
+
 
         //特定要素の高さを揃えて横幅が小さい場合は解除させる
         if( $('.listheight').length ){
