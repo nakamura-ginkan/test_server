@@ -51,9 +51,66 @@ $(document).ready(function() {
 
         });//resize
 
+        //特定要素の高さを揃えて横幅が小さい場合は解除させる
+        if( $('.listheight').length ){
+              var w = $(window).width();
+              if( w > 767 ){
+                  $('.listheight').matchHeight();
+              }else{
+                  $('.listheight').matchHeight({remove: true});
+              }
+              $(window).resize(function(){
+                  if( w <= 768 && $(window).width() > 767 ){
+                      $('.listheight').matchHeight();
+                  }
+                  if( w > 767 && $(window).width() <= 768 ){
+                      $('.listheight').matchHeight({remove: true});
+                  }
+                  w = $(window).width();
+              })
+          }
 
-
+          //導入事例左右高さ
+          if( $('.sideHeight').length ){
+                var w = $(window).width();
+                if( w > 767 ){
+                    $('.sideHeight').matchHeight();
+                }else{
+                    $('.sideHeight').matchHeight({remove: true});
+                }
+                $(window).resize(function(){
+                    if( w <= 768 && $(window).width() > 767 ){
+                        $('.sideHeight').matchHeight();
+                    }
+                    if( w > 767 && $(window).width() <= 768 ){
+                        $('.sideHeight').matchHeight({remove: true});
+                    }
+                    w = $(window).width();
+                })
+            }
 
       }
       setMV();
+
+      //sp menu
+      function setSmartMenu(){
+        $('.hamburger').click(function() {
+          $(this).toggleClass('active');
+
+          if ($(this).hasClass('active')) {
+              $('.globalMenuSp').addClass('active');
+          } else {
+              $('.globalMenuSp').removeClass('active');
+          }
+
+        });
+
+        //メニュー内を閉じておく
+        $('.globalMenuSp a[href]').click(function() {
+          $('.globalMenuSp').removeClass('active');
+          $('.hamburger').removeClass('active');
+        });
+      }
+      setSmartMenu();
+
 });

@@ -10,7 +10,10 @@
 
     <title>ここにタイトル</title>
     <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.matchHeight.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/jquery.youtube-inview-autoplay.js"></script>
 
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/main.css">
@@ -21,18 +24,15 @@
 <body>
 
 
-<!-- 最後に表示させる
 <div id="spBtmRead"><a href="#" >無料でお申し込み</a></div>
--->
 
-
-  <header>
+<header>
     <div class="headerStage">
 
 
       <div id="logo" class="js-header">
-        <a href="#" ><img src="img/logo_mv.svg" class="header-logo js-header -before" alt="SynchroLife for Business" /></a>
-        <a href="#" ><img src="img/logo_base.svg" class="header-logo js-header -after" alt="SynchroLife for Business" /></a>
+        <a href="/" ><img src="img/logo_mv.svg" class="header-logo js-header -before" alt="SynchroLife for Business" /></a>
+        <a href="/" ><img src="img/logo_base.svg" class="header-logo js-header -after" alt="SynchroLife for Business" /></a>
       </div>
 
 
@@ -44,22 +44,32 @@
       <nav class="pc">
         <ul>
         <li><a href="#feature">特長</a></li>
-        <li><a href="#">サービス内容</a></li>
-        <li><a href="#">料金</a></li>
-        <li><a href="#">実績</a></li>
-        <li><a href="#">導入の流れ</a></li>
-        <li><a href="#">導入事例</a></li>
-        <li><a href="#">お知らせ</a></li>
+        <li><a href="#service">サービス内容</a></li>
+        <li><a href="#price">料金</a></li>
+        <li><a href="#ahievement">実績</a></li>
+        <li><a href="#flow">導入の流れ</a></li>
+        <li><a href="#useCase">導入事例</a></li>
+        <li><a href="#news">お知らせ</a></li>
         </ul>
       </nav>
       <div id="sp_menu">
-        <div class="item">
-        <button class="menu-trigger" id="menu02">
-        <span></span>
-        <span></span>
-        <span></span>
-        </button>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <nav class="globalMenuSp">
+          <ul>
+            <li><div class="logo"><a href="/" ><img src="img/logo_base.svg" alt="SynchroLife for Business" /></a></div></li>
+            <li><a href="#feature">特長</a></li>
+            <li><a href="#service">サービス内容</a></li>
+            <li><a href="#price">料金</a></li>
+            <li><a href="#ahievement">実績</a></li>
+            <li><a href="#flow">導入の流れ</a></li>
+            <li><a href="#useCase">導入事例</a></li>
+            <li><a href="#news">お知らせ</a></li>
+          </ul>
+        </nav>
       </div>
 
 
@@ -78,182 +88,557 @@
 </div>
 
 
+<main>
 
+  <div id="feature">
+    <section>
+      <div class="st_feature">
+        <h3>特長</h3>
+      </div>
+      <div class="sst"><h4>シンクロライフ活用で<br>実現できること</h4></div>
+      <div class="sst_txt">シンクロライフ加盟店サービスはお店の来店客の常連化をサポートし売上UPと広告費の最適化を目指します。</div>
+    </section>
 
+    <div class="feature_img">
+      <figure class="ex1"><img src="img/feature_ex1.png"/></figure>
+      <figure class="ex2"><img src="img/feature_ex2.png"/></figure>
+      <div class="ex3">
+        <figure class="ex3_shop"><img src="img/feature_ex3.png"/></figure>
+        <figure class="ex3_main"><img src="img/feature_ex4.png"/></figure>
+      </div>
+    </div>
+  </div>
 
-
-
-    <main>
-
-      <div id="feature">
-        <section>
-          <div class="st_feature">
-            <h3>特長</h3>
-          </div>
-          <div class="sst"><h4>シンクロライフ活用で実現できること</h4></div>
-          <div class="sst_txt">シンクロライフ加盟店サービスはお店の来店客の常連化をサポートし売上UPと広告費の最適化を目指します。</div>
-        </section>
-
-        <div class="feature_img">
-          <figure class="ex1"><img src="img/feature_ex1.png"/></figure>
-          <figure class="ex2"><img src="img/feature_ex2.png"/></figure>
-          <div class="ex3">
-            <figure class="ex3_shop"><img src="img/feature_ex3.png"/></figure>
-            <figure class="ex3_main"><img src="img/feature_ex4.png"/></figure>
-          </div>
-        </div>
+  <div id="service">
+    <section>
+      <div class="st_service">
+        <h3>サービス</h3>
       </div>
 
+      <div class="sst"><h4>常連プログラム・CRM・データ</h4></div>
+      <!--<div class="sst_txt">txt</div>-->
+    </section>
 
-      <div id="service">
-        <section>
-          <div class="st_service">
-            <h3>サービス</h3>
-          </div>
+    <!--01-->
+    <div class="service_set">
+      <div class="figure_wrap"><figure></figure></div>
 
-          <div class="sst"><h4>常連プログラム・CRM・データ</h4></div>
-          <!--<div class="sst_txt">txt</div>-->
-        </section>
-
-        <div class="service_set">
-          <div class="figure_wrap"><figure></figure></div>
-
-          <div id="service01">
-            <div class="service_wrap">
-            <div class="service_num">
-              <img src="img/service_st01.svg" alt="xxx" />
-            </div>
-
-            <h5>顧客の常連化を実現する<br>常連プログラム＆CRM</h5>
-
-            <div class="sp_pic"><img src="img/service_figure01.png"/></div>
-
-            <ul>
-              <li>
-                <section class="servise_item">
-                  <div class="service_icon"><img src="img/service_icon_0.svg" alt="xxx" /></div>
-                  <h6>ここに見出し</h6>
-                  <p>初期・月額費用無料　完全成功報酬（オリジナル販促物の企画・デザインもゼロ）。</p>
-                </section>
-              </li>
-              <li>
-                <section class="servise_item">
-                  <div class="service_icon"><img src="img/service_icon_auto.svg" alt="xxx" /></div>
-                  <h6>ここに見出し</h6>
-                  <p>初期・月額費用無料　完全成功報酬（オリジナル販促物の企画・デザインもゼロ）。</p>
-                </section>
-              </li>
-              <li>
-                <section class="servise_item">
-                  <div class="service_icon"><img src="img/service_icon_crm.svg" alt="xxx" /></div>
-                  <h6>ここに見出し</h6>
-                  <p>初期・月額費用無料　完全成功報酬（オリジナル販促物の企画・デザインもゼロ）。</p>
-                </section>
-              </li>
-              <li>
-                <section class="servise_item">
-                  <div class="service_icon"><img src="img/service_icon_graph.svg" alt="xxx" /></div>
-                  <h6>ここに見出し</h6>
-                  <p>初期・月額費用無料　完全成功報酬（オリジナル販促物の企画・デザインもゼロ）。</p>
-                </section>
-              </li>
-              <li>
-                <section class="servise_item">
-                  <div class="service_icon"><img src="img/service_icon_card.svg" alt="xxx" /></div>
-                  <h6>ここに見出し</h6>
-                  <p>初期・月額費用無料　完全成功報酬（オリジナル販促物の企画・デザインもゼロ）。</p>
-                </section>
-              </li>
-            </ul>
-
-            </div>
-          </div>
+      <div id="service01">
+        <div class="service_wrap">
+        <div class="service_num">
+          <img src="img/service_st01.svg"/>
         </div>
 
-        <!--02-->
-        <div id="service02">
-          <div class="service02_num">
-            <img src="img/service_st02.svg" alt="xxx" />
-          </div>
-          <h5>グルメSNS上で新規集客、お店の常連客が広告塔に</h5>
-          <div class="sst_txt">
-            <p>全国57万カ所で使えるポイントやビットコインなどが貯まるお店に。<br>シンクロライフ加盟店になることで、ユーザーはポイントや暗号資産を自由に貯めることができ新たな顧客層を呼び込みます。</p>
-          </div>
-          <figure class="pc"><img src="img/service_figure02.png" alt="xxx" /></figure>
-          <figure class="sp"><img src="img/sp_service_figure02.png" alt="xxx" /></figure>
+        <h5>顧客の常連化を実現する<br>常連プログラム＆CRM</h5>
 
-          <ul>
-            <li><a href="https://prtimes.jp/main/html/rd/p/000000042.000035259.html" target="_blank">
-              <div class="service02_news_thumb"><img src="img/service02_thumb1.png" alt="xxx" /></div>
-              <div class="service02_news_txt"><p>トークンエコノミー型グルメSNS「シンクロライフ」⾷べて貯まったポイント利用先が57万ヵ所を突破。「ドトールコーヒー」「コメダ珈琲」「KFC」など有名ブランドeギフトが続々追加</p></div>
-            </a></li>
-            <li><a href="https://prtimes.jp/main/html/rd/p/000000048.000035259.html" target="_blank">
-              <div class="service02_news_thumb"><img src="img/service02_thumb2.png" alt="xxx" /></div>
-              <div class="service02_news_txt"><p>「レストランでビットコインが貯まる」トークンエコノミー型グルメSNSシンクロライフ、暗号資産交換業者マーキュリーと提携し飲食加盟店で暗号資産の還元を開始</p></div>
-            </a></li>
-          </ul>
+        <div class="sp_pic"><img src="img/service_figure01.png"/></div>
+
+        <ul>
+          <li>
+            <section class="servise_item">
+              <div class="service_icon"><img src="img/service_icon_0.svg" alt="xxx" /></div>
+              <h6>ここに見出し</h6>
+              <p>初期・月額費用無料　完全成功報酬（オリジナル販促物の企画・デザインもゼロ）。</p>
+            </section>
+          </li>
+          <li>
+            <section class="servise_item">
+              <div class="service_icon"><img src="img/service_icon_auto.svg" alt="xxx" /></div>
+              <h6>ここに見出し</h6>
+              <p>初期・月額費用無料　完全成功報酬（オリジナル販促物の企画・デザインもゼロ）。</p>
+            </section>
+          </li>
+          <li>
+            <section class="servise_item">
+              <div class="service_icon"><img src="img/service_icon_crm.svg" alt="xxx" /></div>
+              <h6>ここに見出し</h6>
+              <p>初期・月額費用無料　完全成功報酬（オリジナル販促物の企画・デザインもゼロ）。</p>
+            </section>
+          </li>
+          <li>
+            <section class="servise_item">
+              <div class="service_icon"><img src="img/service_icon_graph.svg" alt="xxx" /></div>
+              <h6>ここに見出し</h6>
+              <p>初期・月額費用無料　完全成功報酬（オリジナル販促物の企画・デザインもゼロ）。</p>
+            </section>
+          </li>
+          <li>
+            <section class="servise_item">
+              <div class="service_icon"><img src="img/service_icon_card.svg" alt="xxx" /></div>
+              <h6>ここに見出し</h6>
+              <p>初期・月額費用無料　完全成功報酬（オリジナル販促物の企画・デザインもゼロ）。</p>
+            </section>
+          </li>
+        </ul>
+
         </div>
+      </div>
+    </div>
 
-        <!--03-->
+    <!--02-->
+    <div id="service02">
+      <div class="service02_num">
+        <img src="img/service_st02.svg"/>
+      </div>
+      <h5>グルメSNS上で新規集客、<br>お店の常連客が広告塔に</h5>
+      <div class="sst_txt">
+        <p>全国57万カ所で使えるポイントやビットコインなどが貯まるお店に。<br>シンクロライフ加盟店になることで、ユーザーはポイントや暗号資産を自由に貯めることができ新たな顧客層を呼び込みます。</p>
+      </div>
+      <figure class="pc"><img src="img/service_figure02.png"/></figure>
+      <figure class="sp"><img src="img/sp_service_figure02.png"/></figure>
+
+      <ul>
+        <li><a href="https://prtimes.jp/main/html/rd/p/000000042.000035259.html" target="_blank">
+          <div class="service02_news_thumb"><img src="img/service02_thumb1.png" alt="トークンエコノミー型グルメSNS「シンクロライフ」⾷べて貯まったポイント利用先が57万ヵ所を突破。「ドトールコーヒー」「コメダ珈琲」「KFC」など有名ブランドeギフトが続々追加" /></div>
+          <div class="service02_news_txt"><p>トークンエコノミー型グルメSNS「シンクロライフ」⾷べて貯まったポイント利用先が57万ヵ所を突破。「ドトールコーヒー」「コメダ珈琲」「KFC」など有名ブランドeギフトが続々追加</p></div>
+        </a></li>
+        <li><a href="https://prtimes.jp/main/html/rd/p/000000048.000035259.html" target="_blank">
+          <div class="service02_news_thumb"><img src="img/service02_thumb2.png" alt="「レストランでビットコインが貯まる」トークンエコノミー型グルメSNSシンクロライフ、暗号資産交換業者マーキュリーと提携し飲食加盟店で暗号資産の還元を開始" /></div>
+          <div class="service02_news_txt"><p>「レストランでビットコインが貯まる」トークンエコノミー型グルメSNSシンクロライフ、暗号資産交換業者マーキュリーと提携し飲食加盟店で暗号資産の還元を開始</p></div>
+        </a></li>
+      </ul>
+    </div>
+
+    <!--03-->
+      <div class="service_set">
+        <div class="figure_wrap3"><figure></figure></div>
         <div id="service03">
-          <div class="service_set">
-            <div class="figure_wrap3"><figure></figure></div>
+          <div class="service_wrap">
+          <div class="service_num">
+            <img src="img/service_st03.svg" />
+          </div>
+          <h5>お店の決済と全自動CRMが一つになる<br>新しいキャッシュレスサービス</h5>
+          <div class="sp_pic"><img src="img/service_figure03.png"/></div>
+          <div class="synchroPay">
+            <img src="img/service_figure03_synchroPay.png" alt="シンクロPay"/>
+          </div>
+          <div class="merit"><img src="img/service_merit.png" alt="3つのメリット"/></div>
+          </div>
+        </div>
+      </div>
+  </div>
 
-            <div id="service03">
-              <div class="service_wrap">
-              <div class="service_num">
-                <img src="img/service_st03.svg" alt="xxx" />
+  <div id="price">
+      <div class="st_price">
+        <h3>料金</h3>
+      </div>
+      <div class="sst"><h4>初期費用・月額などのランニングコストは無料!</h4></div>
+      <div class="sst_txt">成果報酬費用のみで全自動CRM、来店ポイント、データダッシュボードなど全てオールインワンでご提供します。<br>初期、固定費がかからないため、導入リスクゼロでサービス利用頂けます。</div>
+
+    <div id="price_list">
+      <ul>
+        <li>
+          <div class="price01">
+          <img src="img/price_list1.png" alt="導入・初期費用" />
+          </div>
+        </li>
+        <li>
+          <div class="price02">
+          <img src="img/price_list2.png" alt="月額" />
+          </div>
+        </li>
+        <li>
+          <div class="price03">
+          <img src="img/price_list3.png" alt="成功報酬費用" />
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="price_annotation">※初期費用は店舗会員登録費用15,000円、利用料に使える15,000円分のクレジット付与により実質無料となります。</div>
+
+  </div>
+
+
+  <div id="ahievement">
+    <div class="st_ahievement">
+      <h3>実績</h3>
+    </div>
+    <div id="ahievement_box">
+      <div class="ahievement_sns">
+        <div class="sns_wrap">
+          <div class="stage">
+            <div class="category">グルメSNS</div>
+            <div class="catch">コロナ禍でも<br>レビュー投稿が急成長</div>
+            <div class="achievement_list"><p>レビュー投稿累積<span class="red">40万件</span></p></div>
+            <div class="achievement_list"><p><span class="red">1万件以上</span>/月</p></div>
+            <div class="achievement_list listheight"><p><span class="red">92%</span>がポジティブな投稿</p>
+              <figure><img src="img/achievement_sns_review.png" alt="レビュー投稿" class="pc_sns_review" /><img src="img/sp_achievement_sns_review.png" alt="レビュー投稿" class="sp_sns_review" /></figure>
+              <!--
+              <div class="review1">
+                <div class="com">
+                  <div class="shop_thumb">
+                    <p>レストラン シンクロ軒</p>
+                    <img src="img/achievement_sns_review1.png" alt="xxx" />
+                  </div>
+
+                  <div class="review_box">
+                    <div class="star">
+                      <div class="my">
+                        <img src="img/achievement_sns_review_star-full.svg" />
+                        <img src="img/achievement_sns_review_star-full.svg" />
+                        <img src="img/achievement_sns_review_star-full.svg" />
+                        <img src="img/achievement_sns_review_star-full.svg" />
+                        <img src="img/achievement_sns_review_star-half.svg" />
+                      </div>
+                      <p>4.5</p>
+                    </div>
+                    <div class="txt">
+                    名物JAL特製オリジナルビーフカレー&amp;チビたい焼き＋牛丼小！ やっぱり美味いかな.. サクラは寿司がないけどハイボールがあればOK‼️
+                    </div>
+                    <div class="review_time">2022/08/30 16:54:21</div>
+                  </div>
+
+                </div>
+
+                <div class="arrow"><img src="img/achievement_sns_review_com2.svg" alt="xxx" /></div>
+                <div class="user_thumb"><img src="img/achievement_sns_review_user.png" alt="xxx" /></div>
               </div>
+            -->
 
-              <h5>お店の決済と全自動CRMが一つになる<br>新しいキャッシュレスサービス</h5>
+            </div>
+          </div>
+        </div>
+      </div>
 
-              <div class="sp_pic"><img src="img/service_figure03.png"/></div>
+      <div class="ahievement_store">
+        <div class="store_wrap">
+          <div class="stage">
+            <div class="category">シンクロライフ加盟店</div>
+            <div class="catch">ポストコロナで<br>加盟店急増中</div>
+            <div class="achievement_list"><p>活用店舗の<span class="red">??.?％</span>が<span class="red">ROI??.?％</span></p></div>
+            <div class="achievement_list"><p>全国<span class="red">1,800店舗</span>が利用</p></div>
+            <div class="achievement_list listheight">
+              <p>加盟店数<span class="red">500%</span>成長</p>
+              <figure><img src="img/Achievement_shop_graph.png" alt="加盟店舗数1,800店舗" /></figure>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-              <div class="synchroPay"><img src="img/service_figure03_synchroPay.png"/></div>
-                <div class="merit"><img src="img/service_merit.png"/></div>
+  <div class="sst"><h4>導入店舗</h4></div>
+  <div id="introduction_store">
+    <ul>
+      <li><div class="shopname"><img src="img/shop/futago.png" alt="大阪焼肉・ホルモン ふたご" /></div></li>
+      <li><div class="shopname"><img src="img/shop/kawara.png" alt="kawara CAFE&DINING" /></div></li>
+      <li><div class="shopname"><img src="img/shop/nabeshima.png" alt="焼肉なべしま" /></div></li>
+      <li><div class="shopname"><img src="img/shop/teppen.png" alt="ろばた焼き 絶好調てっぺん" /></div></li>
+      <li><div class="shopname"><img src="img/shop/rikyu.png" alt="牛たん炭焼 利久" /></div></li>
+
+      <li><div class="shopname"><img src="img/shop/schmatz.png" alt="SCHMATZ" /></div></li>
+      <li><div class="shopname"><img src="img/shop/fukuho.png" alt="餃子の福包" /></div></li>
+      <li><div class="shopname"><img src="img/shop/beefkitchen.png" alt="BEEF KITCHEN STAND" /></div></li>
+      <li><div class="shopname"><img src="img/shop/masumoto.png" alt="辛麺屋 桝元" /></div></li>
+      <li><div class="shopname"><img src="img/shop/gaburico.png" alt="肉バル ガブリコ" /></div></li>
+
+      <li><div class="shopname"><img src="img/shop/compho.png" alt="COMPHO" /></div></li>
+      <li><div class="shopname"><img src="img/shop/deliriumcafe.png" alt="Little Deliriumcafe" /></div></li>
+      <li><div class="shopname"><img src="img/shop/heijoen.png" alt="平城苑" /></div></li>
+      <li><div class="shopname"><img src="img/shop/alegria.png" alt="ALEGRIA" /></div></li>
+      <li><div class="shopname"><img src="img/shop/retasu.png" alt="しゃぶしゃぶ れたす" /></div></li>
+    </ul>
+  </div>
+
+  <div class="sst"><h4>メディア</h4></div>
+  <div id="media">
+    <ul>
+      <li><div class="medianame"><img src="img/media/cointelegraph.png" alt="Cointelegraph" /></div></li>
+      <li><div class="medianame"><img src="img/media/thebridge.png" alt="THE BRIDGE" /></div></li>
+      <li><div class="medianame"><img src="img/media/nikkei.png" alt="日本経済新聞" /></div></li>
+      <li><div class="medianame"><img src="img/media/tc.png" alt="TechCrunch" /></div></li>
+
+      <li><div class="medianame"><img src="img/media/techinasia.png" alt="Tech in Asia" /></div></li>
+      <li><div class="medianame"><img src="img/media/newspicks.png" alt="NewsPicks" /></div></li>
+      <li><div class="medianame"><img src="img/media/yahoo.png" alt="Yahoo!" /></div></li>
+      <li><div class="medianame"><img src="img/media/business.png" alt="Business Insider Japan" /></div></li>
+    </ul>
+  </div>
+  </div>
+
+
+  <div id="flow">
+    <div class="st_flow">
+      <h3>導入の流れ</h3>
+    </div>
+    <!--<div class="sst"><h4>txt</h4></div>-->
+    <div class="sst_txt">お手持ちのスマホやタブレットひとつですぐに始められます！</div>
+
+    <div id="flow_list">
+      <ul>
+        <li>
+          <div class="wrap">
+            <div class="box">
+              <div class="num">01</div>
+              <div class="icon"><img src="img/flow_icon1.svg" /></div>
+              <div class="txt">アプリ・Webサイトから<br>お申し込み</div>
+            </div>
+          </div>
+      </li>
+      <li>
+        <div class="wrap">
+          <div class="box">
+            <div class="num">02</div>
+            <div class="icon"><img src="img/flow_icon2.svg" /></div>
+            <div class="txt">最短2～3営業日<br>以内に審査結果のご連絡</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="wrap">
+          <div class="box">
+            <div class="num">03</div>
+            <div class="icon"><img src="img/flow_icon3.svg" /></div>
+            <div class="txt">スターターキットの<br>送付＆アプリ登録</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="wrap">
+          <div class="box">
+            <div class="num">04</div>
+            <div class="icon"><img src="img/flow_icon4.svg" /></div>
+            <div class="txt">店内販促活用<br>シンクロライフ掲載開始！</div>
+          </div>
+        </div>
+      </li>
+      </ul>
+    </div>
+
+    <div class="flow_annotation">※シンクロPAYの審査については別途お時間がかかります。</div>
+
+  </div>
+
+
+<div id="useCase">
+  <div class="st_useCase">
+    <h3>導入事例</h3>
+  </div>
+  <div class="sst"><h4>加盟店の事例</h4></div>
+  <div class="wrap">
+    <div class="left sideHeight">
+      <div class="box">
+        <div class="write">
+          <div class="catch1">
+            <p>コロナ禍の利用開始から</p>
+          </div>
+          <div class="catch2">
+            <p>6ヶ月で成果を達成!</p>
+          </div>
+          <div class="appeal1">
+            <div class="img"><img src="img/case_appeal1.svg" /></div>
+            <div class="label"><img src="img/case_appeal_label.svg" /></div>
+          </div>
+          <div class="appeal2">
+            <div class="img">
+              <img src="img/case_appeal2.svg" />
+            </div>
+            <div class="label"><img src="img/case_appeal_label.svg" /></div>
+          </div>
+          <div class="gradation">
+            <div class="shopname">らーめんぎょうてん屋 東名厚木店</div>
+          </div>
+          <div class="img"><img src="img/case_thumb1.png" /></div>
+        </div>
+      </div>
+    </div>
+    <div class="right sideHeight">
+      <div class="box">
+        <div class="write">
+
+          <div class="case2">
+            <div class="resize">
+              <a href="#">
+              <div class="thumb"><img src="img/case_thumb2.png" /></div>
+              <div class="txt">
+                <p>お客様の記憶呼び覚しのツールを提供してもらえることに魅力を持った。</p>
+                <p class="shopname">渋谷<br>オーストラリア料理<br>ズーガンズー</p>
               </div>
+              </a>
             </div>
           </div>
 
-        </div><!--03ここまで-->
+          <div class="case3">
+            <div class="resize">
+              <a href="#">
+              <div class="thumb"><img src="img/case_thumb3.png" /></div>
+              <div class="txt">
+                <p>固定費型ではなく成果報酬型でSNS連動が魅力。全店導入を決めた。</p>
+                <p class="shopname">新宿<br>肉バル<br>BEEF KITCHEN STAND</p>
+              </div>
+            </a>
+            </div>
+          </div>
 
+        <div class="img"><img src="img/case_area.png" /></div>
+
+        </div>
       </div>
+    </div>
+  </div>
 
+  <div class="sst reset"><h4>飲食加盟店のインタビュー</h4></div>
 
-      <div id="price">
-        ここに料金
-      <div>
+  <div id="interview">
+    <ul>
+      <li>
+        <a href="/case/frocafe.html">
+          <div class="thumb">
+            <div class="thumb_link"><img src="img/thumb_link.svg"/></div>
+            <div class="gradation">
+              <div class="shopname">武蔵小杉・カフェ</div>
+            </div>
+            <div class="photo"><img src="img/interview1.png"/></div>
+          </div>
+          <div class="txt">大掛かりなキャンペーン企画なしで、お客様にお得な体験が提供できファンが育つ。楽だな！</div>
+          <div class="name">FRO CAFE<br>谷田部 様(川崎フロンターレ)、<br>飯田 様（SLD）</div>
+        </a>
+      </li>
 
-      <div id="ahievement">
-        明日の目標ここまで
-      <div>
+      <li>
+        <a href="/case/shoudouten.html">
+          <div class="thumb">
+            <div class="thumb_link"><img src="img/thumb_link.svg"/></div>
+            <div class="gradation">
+              <div class="shopname">大手町・坦々麺＆シュウマイ</div>
+            </div>
+            <div class="photo"><img src="img/interview2.png"/></div>
+          </div>
+          <div class="txt">お客様の来店回数が可視化できる！シンクロライフでどなたが常連さんなのかすぐにわかるようになった。</div>
+          <div class="name">小洞天<br>松田 様、木村 様</div>
+        </a>
+      </li>
 
+      <li>
+        <a href="/case/hassenkaku.html">
+          <div class="thumb">
+            <div class="thumb_link"><img src="img/thumb_link.svg"/></div>
+            <div class="gradation">
+              <div class="shopname">九州・中華料理</div>
+            </div>
+            <div class="photo"><img src="img/interview3.png"/></div>
+          </div>
+          <div class="txt">負担なく気軽にできる、それがシンクロライフ。全自動で動いてくれるから正直放置しても稼働する！</div>
+          <div class="name">株式会社八仙閣<br>執行役員 営業企画部 部長 難波 二朗様</div>
+        </a>
+      </li>
 
+    </ul>
+    <div class="btn_interviewList"><a href="xxx.html">インタビュー一覧</a></div>
 
+    <div id="interview_movie">
       <!--
-      <div id="flow">
-        導入の流れ
-      <div>
-      <div id="useCase">
-        導入事例
-      <div>
-      <div id="application">
-        ここにお申し込み・お問い合わせ
-      <div>
-      <div id="news">
-        ここにお知らせ
-      <div>
+      <script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        function onYouTubeIframeAPIReady() {
+          $('.interviewMov').inViewAutoplay({
+            autohide: 1,
+            modestbranding: 1,
+            rel: 0,
+            quality: 'hd720'
+          });
+        }
+      </script>
+      <div class="interviewMov" id="mov_main" data-video-id="Lzc5wIGLHiY" width="800" height="450"></div>
+
     -->
+    <div class="movStage">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Lzc5wIGLHiY?rel=0&controls=0&autoplay=0&loop=1&playlist=Lzc5wIGLHiY&showinfo=0&modestbranding=1&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+    </div>
 
-    </main>
+
+    </div>
+
+  </div><!--interview-->
 
 
-    <!--
-    <footer>
-      ここにフッター
-    </footer>
 
-  -->
+</div>
+
+
+<div id="application">
+  <div class="cover">
+    <div class="box">
+      <h5>シンクロライフに加盟店を<br>試してみませんか？</h5>
+      <p>機能、価格、導入方法、その他ご不明な点はお気軽にお問い合わせ下さい。</p>
+      <div class="btn_application"><a href="">Web申し込みはこちら</a></div>
+      <div class="btn_contact"><a href="">お問い合わせ</a></div>
+    </div>
+  </div>
+</div>
+
+
+<div id="news">
+<div class="st_news">
+  <h3>お知らせ</h3>
+</div>
+  <ul>
+    <li>
+      <a href="https://prtimes.jp/main/html/rd/p/000000034.000035259.html" target="_blank">
+      <div class="news_thumb"><img src="img/news/news_thumb6.png" alt="トークンエコノミー型グルメSNS「シンクロライフ」を運営する株式会社GINKAN、KDDI Open Innovation Fundを引受先とする第三者割当増資を実施" /></div>
+      <div class="news_txt"><p>トークンエコノミー型グルメSNS「シンクロライフ」を運営する株式会社GINKAN、KDDI Open Innovation Fundを引受先とする第三者割当増資を実施</p></div>
+      </a>
+    </li>
+    <li>
+      <a href="https://medium.com/synchrocoin-jp/%E3%82%B0%E3%83%AB%E3%83%A1sns-%E3%82%B7%E3%83%B3%E3%82%AF%E3%83%AD%E3%83%A9%E3%82%A4%E3%83%95-%E5%B7%9D%E5%B4%8E%E3%83%95%E3%83%AD%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%AC%E3%81%A8%E5%85%B1%E5%90%8C%E3%81%A7%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%A2%E3%83%A0%E3%81%AE%E9%A3%B2%E9%A3%9F%E5%BA%97%E3%81%AE%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC%E5%AE%9F%E8%A8%BC%E5%AE%9F%E9%A8%93%E3%82%92%E9%96%8B%E5%A7%8B-46e445bad4a0" target="_blank">
+      <div class="news_thumb"><img src="img/news/news_thumb5.png" alt="グルメSNS「シンクロライフ」、川崎フロンターレと共同でスタジアムの飲食店のモバイルオーダー実証実験を開始" /></div>
+      <div class="news_txt"><p>グルメSNS「シンクロライフ」、川崎フロンターレと共同でスタジアムの飲食店のモバイルオーダー実証実験を開始</p></div>
+      </a>
+    </li>
+    <li>
+      <a href="https://medium.com/synchrocoin-jp/%E3%83%88%E3%83%BC%E3%82%AF%E3%83%B3%E3%82%A8%E3%82%B3%E3%83%8E%E3%83%9F%E3%83%BC%E5%9E%8B%E3%82%B0%E3%83%AB%E3%83%A1sns-%E3%82%B7%E3%83%B3%E3%82%AF%E3%83%AD%E3%83%A9%E3%82%A4%E3%83%95-%E3%81%8C%E4%B8%89%E4%BA%95%E4%BD%8F%E5%8F%8B%E3%82%AB%E3%83%BC%E3%83%89%E3%81%AE%E6%B1%BA%E6%B8%88%E3%83%97%E3%83%A9%E3%83%83%E3%83%88%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0-stera-%E3%81%A8%E5%8D%94%E6%A5%AD-%E5%88%86%E6%95%A3%E3%81%99%E3%82%8B%E9%A3%B2%E9%A3%9F%E5%BA%97%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E4%B8%80%E5%85%83%E7%AE%A1%E7%90%86%E3%81%97%E9%A3%B2%E9%A3%9F%E5%BA%97dx%E3%82%92%E5%AE%9F%E7%8F%BE-39c4119cf08d" target="_blank">
+      <div class="news_thumb"><img src="img/news/news_thumb4.png" alt="グルメSNS「シンクロライフ」が三井住友カードの決済プラットフォーム「stera」と協業、分散する飲食店データを一元管理し飲食店DXを実現" /></div>
+      <div class="news_txt"><p>グルメSNS「シンクロライフ」が三井住友カードの決済プラットフォーム「stera」と協業、分散する飲食店データを一元管理し飲食店DXを実現</p></div>
+      </a>
+    </li>
+    <li>
+      <a href="https://medium.com/synchrocoin-jp/%E3%81%B5%E3%81%9F%E3%81%94%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E7%B7%8F%E9%81%B8%E6%8C%99-10%E6%9C%8823%E6%97%A5-12%E6%9C%8823%E6%97%A5%E9%96%8B%E5%82%AC%E4%B8%AD-%E5%A4%A7%E9%98%AA%E7%84%BC%E8%82%89-%E3%83%9B%E3%83%AB%E3%83%A2%E3%83%B3%E3%81%B5%E3%81%9F%E3%81%94-%E3%81%A8-%E3%82%B7%E3%83%B3%E3%82%AF%E3%83%AD%E3%83%A9%E3%82%A4%E3%83%95-%E3%82%BF%E3%82%A4%E3%82%A2%E3%83%83%E3%83%97%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3-93d457689f5" target="_blank">
+      <div class="news_thumb"><img src="img/news/news_thumb3.png" alt="「ふたごメニュー総選挙」10月23日〜12月23日開催中！「大阪焼肉・ホルモンふたご」と「シンクロライフ」タイアップキャンペーン" /></div>
+      <div class="news_txt"><p>「ふたごメニュー総選挙」10月23日〜12月23日開催中！「大阪焼肉・ホルモンふたご」と「シンクロライフ」タイアップキャンペーン</p></div>
+      </a>
+    </li>
+    <li>
+      <a href="https://medium.com/synchrocoin-jp/%E3%83%88%E3%83%BC%E3%82%AF%E3%83%B3%E3%82%A8%E3%82%B3%E3%83%8E%E3%83%9F%E3%83%BC%E5%9E%8B%E3%82%B0%E3%83%AB%E3%83%A1sns-%E3%82%B7%E3%83%B3%E3%82%AF%E3%83%AD%E3%83%A9%E3%82%A4%E3%83%95-%E9%81%8B%E5%96%B6%E3%81%AEginkan-%E7%AC%AC4%E6%9C%9Fmufg-digital-%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%A9%E3%83%AC%E3%83%BC%E3%82%BF%E3%81%AB%E3%81%A6%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%97%E3%83%AA%E3%82%92%E5%8F%97%E8%B3%9E-f5a030293444" target="_blank">
+      <div class="news_thumb"><img src="img/news/news_thumb2.png" alt="トークンエコノミー型グルメSNS「シンクロライフ」運営のGINKAN、三菱UFJフィナンシャル・グループが主催する第4期MUFG Digital アクセラレータにてグランプリを受賞" /></div>
+      <div class="news_txt"><p>トークンエコノミー型グルメSNS「シンクロライフ」運営のGINKAN、三菱UFJフィナンシャル・グループが主催する第4期MUFG Digital アクセラレータにてグランプリを受賞</p></div>
+      </a>
+    </li>
+    <li>
+      <a href="https://forbesjapan.com/articles/detail/34874/1/1/1" target="_blank">
+      <div class="news_thumb"><img src="img/news/news_thumb1.png" alt="「フォーブス ジャパン」CEOインタビュー: レビューを書いて、暗号通貨を貯める。「打倒・食べログ」を標榜するグルメSNSの勝算" /></div>
+      <div class="news_txt"><p>「フォーブス ジャパン」CEOインタビュー: レビューを書いて、暗号通貨を貯める。「打倒・食べログ」を標榜するグルメSNSの勝算</p></div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+</main>
+
+
+<footer>
+  <div class="wrap">
+  <div class="box">
+    <h2><a href="/" ><img src="img/logo_mv.svg" class="header-logo js-header -after" alt="SynchroLife for Business" /></a></h2>
+    <nav>
+      <ul>
+        <li><a href="https://tayori.com/faq/83e5d5d21166b569c6db3115b3e5c5d16dc6fafd">FAQ</a></li>
+        <li><a href="https://console-business.synchrolife.jp/documents/%E3%82%B7%E3%83%B3%E3%82%AF%E3%83%AD%E3%83%A9%E3%82%A4%E3%83%95%E5%BA%97%E8%88%97%E4%BC%9A%E5%93%A1%E8%A6%8F%E7%B4%84.pdf">利用規約</a></li>
+        <li><a href="https://console-business.synchrolife.jp/documents/%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC.pdf">プライバシーポリシー</a></li>
+        <li><a href="https://business.synchrolife.jp/contact/index.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="another"><a href="https://www.synchrolife.io">個人ユーザー向け</a></div>
+  </div>
+  </div>
+  <div class="copy">
+    <div class="box"><p>Copyright © 2012-2022 SynchroLife. All rights reserved.</p></div>
+  </div>
+</footer>
+
 
 </body>
 </html>

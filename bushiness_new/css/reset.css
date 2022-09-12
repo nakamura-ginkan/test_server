@@ -255,19 +255,3 @@ th {
   text-align: left;
   font-weight: bold;
 }
-
-.clearfix:after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-.clearfix:before {
-　　　　content: "";
-	display: block;
-	clear: both;
-}
-
-.clearfix {
-	display: block;
-}

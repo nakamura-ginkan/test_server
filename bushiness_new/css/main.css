@@ -6,6 +6,7 @@
   --color-hover: #ff9900;
   --color-darkred: #ba0f23;
   --color-thin: #eAeff3;
+  --color-verythin: #f4f7f9;
   --color-gra-bgbottom: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 
   --font-sans-serif:'源暎ゴシックN', 'Noto Sans', Roboto, system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
@@ -61,7 +62,6 @@ header .headerStage #logo {
   padding-left:80px;
 }
 header .headerStage #logo a img {
-  fill:fff000;
   height: 64px;
   width: auto;
   transition: 0.5s;
@@ -87,7 +87,6 @@ header .headerStage nav {
   }
 }
 
-/* ナビゲーションのリンクを横並びにする */
 header .headerStage nav ul {
   float: right;
   margin: 0 40px 0 0;
@@ -96,19 +95,17 @@ header .headerStage nav ul {
 
 header .headerStage nav ul li {
   float: left;
-  /*white-space: nowrap;*/
   margin-left:32px;
   list-style: none;
 }
-/* ナビゲーションのリンクのスタイル調整 */
-header .headerStage  nav ul li a {
+
+header .headerStage nav ul li a {
   display:block;
   padding:0;
-  color: #fff;
+  color: var(--color-base);
   font-size: 16px;
   line-height: 64px;
   text-decoration: none;
-  /* アニメーションの変化時間 */
   transition: 0.5s;
 }
 @media screen and (max-width: 1239px) {
@@ -117,14 +114,13 @@ header .headerStage  nav ul li a {
     margin-left:16px;
     list-style: none;
   }
-  header .headerStage  nav ul li a {
+  header .headerStage nav ul li a {
     display:block;
     padding:0;
-    color: #fff;
+    color: var(--color-base);
     font-size: 12px;
     line-height: 64px;
     text-decoration: none;
-    /* アニメーションの変化時間 */
     transition: 0.5s;
   }
 }
@@ -139,7 +135,7 @@ header .headerStage .btn_read {
   cursor: pointer;
 }
 
-header .headerStage .btn_read a{
+header .headerStage .btn_read a {
   display: block;
   text-decoration: none;
   line-height: 48px;
@@ -147,7 +143,7 @@ header .headerStage .btn_read a{
   border-radius: 48px;
   padding:0 40px 0 24px;
   margin: 8px 80px 8px 0;
-  color: #fff;
+  color: var(--color-base);
   transition: 0.3s ease-in-out;
 }
 
@@ -180,20 +176,18 @@ header.scroll-nav {
 }
 
 /*一定スクロール時のヘッダーの設定*/
-header.scroll-nav .headerStage  nav ul li a {
-  color: #333;
+header.scroll-nav .headerStage nav ul li a {
+  color: var(--color-txt);
 }
-header.scroll-nav #logo {
+header.scroll-nav .headerStage #sp_menu nav ul li a {
+  color: var(--color-txt);
 }
-header.scroll-nav .menu-trigger span {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #333;
-  border-radius: 4px;
+
+header.scroll-nav .headerStage #sp_menu .hamburger span {
+  background: var(--color-txt);
 }
-/******************************************/
+
+/****************************************/
 
 .header-logo.headerLogoScroll.-before {
   display : none;
@@ -216,53 +210,275 @@ header .headerStage #sp_menu {
   padding: 0;
   margin: 7px 24px 0 0;
 }
-.menu-trigger,
-.menu-trigger span {
-  display: inline-block;
-  transition: all .5s;
-  box-sizing: border-box;
-}
-.menu-trigger {
-  position: relative;
-  width: 32px;
-  height: 16px;
-  background: none;
-  border: none;
-  appearance: none;
-  cursor: pointer;
-}
-.menu-trigger span {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  border-radius: 4px;
-}
-.menu-trigger span:nth-of-type(1) {
-  top: 0;
-}
-.menu-trigger span:nth-of-type(2) {
-  top: 7px;
-}
-.menu-trigger span:nth-of-type(3) {
-  bottom: 0;
-}
-
-#menu02.active span:nth-of-type(1) {
-  transform: translateY(7px) rotate(-315deg);
-}
-#menu02.active span:nth-of-type(2) {
-  opacity: 0;
-}
-#menu02.active span:nth-of-type(3) {
-  transform: translateY(-7px) rotate(315deg);
-}
 
 
 
 
 footer {
-  background:var(--color-synchrolife);
   margin-top:120px;
+  background:var(--color-synchrolife);
+}
+footer .wrap {
+  padding:40px 80px 40px 80px;
+}
+@media screen and (max-width: 999px) {
+  footer .wrap {
+    padding:0;
+  }
+}
+footer .wrap .box {
+  width: 100%;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+}
+
+@media screen and (max-width: 999px) {
+  footer .wrap .box {
+    width: 100%;
+    display : flex;
+    flex-wrap : wrap;
+    justify-content:space-between;
+  }
+}
+
+footer .box h2 {
+  margin: 0;
+  padding: 0 40px 0 0;
+}
+
+@media screen and (max-width: 999px) {
+  footer .box h2 {
+    margin: 0;
+    padding: 40px 0 40px 40px;
+    width: 100%;
+  }
+  footer .box h2 img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+footer .box nav {
+  width: 100%;
+}
+
+footer .box nav ul {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+footer .box nav ul li {
+  float: left;
+  padding-right: 40px;
+}
+@media screen and (max-width: 1239px) {
+  footer .box nav ul li {
+    padding-right:16px;
+  }
+}
+@media screen and (max-width: 999px) {
+  footer .box nav ul li {
+    float: left;
+    width: 100%;
+    border-top:1px solid rgba(0, 0, 0, 0.16);
+    padding:0;
+  }
+}
+
+footer .box nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--color-base);
+  transition: 0.5s;
+  padding: 24px 0;
+}
+@media screen and (max-width: 1239px) {
+   footer .box nav ul li a {
+    font-size: 12px;
+    transition: 0.5s;
+  }
+}
+@media screen and (max-width: 999px) {
+  footer .box nav ul li a {
+    padding: 24px 40px;
+    background: url(../img/arrow_default.svg) no-repeat  right 40px center;
+  }
+}
+
+footer .box .another {
+  white-space: nowrap;
+}
+@media screen and (max-width: 999px) {
+  footer .box .another {
+    width: 100%;
+    border-top:1px solid rgba(0, 0, 0, 0.16);
+  }
+}
+
+footer .box .another a {
+  display:block;
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--color-base);
+  border: 2px solid var(--color-base);
+  padding: 16px 40px 16px 24px;
+  border-radius: 40px;
+  transition: 0.5s;
+  background:var(--color-synchrolife) url(../img/arrow_default.svg) no-repeat  right 24px center;
+}
+footer .box .another a:hover {
+  padding: 16px 40px 16px 24px;
+  color: var(--color-synchrolife);
+  background:var(--color-base) url(../img/arrow_default_red.svg) no-repeat  right 16px center;
+}
+
+@media screen and (max-width: 1239px) {
+  footer .box .another a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 999px) {
+  footer .box .another a {
+    margin:24px;
+    padding:24px 40px 24px 40px;
+    text-align: center;
+  }
+  footer .box .another a:hover {
+    margin:24px;
+    padding:24px 40px 24px 40px;
+    color: var(--color-synchrolife);
+    background:var(--color-base) url(../img/arrow_default_red.svg) no-repeat  right 16px center;
+  }
+}
+
+footer .copy {
+  background: var(--color-base);
+}
+
+footer .copy .box {
+  text-align: left;
+  padding-left:80px;
+}
+@media screen and (max-width: 999px) {
+  footer .copy .box {
+    text-align: center;
+    padding:0 0 80px 0;
+  }
+}
+
+footer .copy .box p {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--color-txt);
+  padding: 16px 0;
+}
+
+
+
+/* sp menu */
+.hamburger {
+  display : block;
+  position:relative;
+  z-index : 3;
+  right : 0;
+  top   : 0;
+  width : 32px;
+  height: 24px;
+  cursor: pointer;
+  text-align: center;
+}
+.hamburger span {
+  display : block;
+  position: absolute;
+  width   : 32px;
+  height  : 2px ;
+  left    : 0;
+  background : var(--color-base);
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition   : 0.3s ease-in-out;
+  transition        : 0.3s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+.hamburger span:nth-child(2) {
+  top: 8px;
+}
+.hamburger span:nth-child(3) {
+  top: 16px;
+}
+
+/* スマホメニューを開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
+  top : 8px;
+  left: 0;
+  background : var(--color-txt);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform   : rotate(-45deg);
+  transform        : rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 8px;
+  left: 0;
+  background: var(--color-txt);
+  -webkit-transform: rotate(45deg);
+  -moz-transform   : rotate(45deg);
+  transform        : rotate(45deg);
+}
+
+/* メニュー背景　*/
+header .headerStage #sp_menu nav.globalMenuSp {
+  position: fixed;
+  z-index : 2;
+  top  : 0;
+  left : 0;
+  color: var(--color-txt);
+  background: var(--color-base);
+
+  text-align: left;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: all 0.6s;
+}
+
+header .headerStage #sp_menu nav.globalMenuSp ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+header .headerStage #sp_menu nav.globalMenuSp ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  transition: .4s all;
+  border-bottom:1px solid rgba(0, 0, 0, 0.16);
+}
+header .headerStage #sp_menu nav.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+}
+
+header .headerStage #sp_menu nav.globalMenuSp ul li a {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  padding: 0;
+  text-decoration :none;
+}
+
+header .headerStage #sp_menu nav.globalMenuSp ul li .logo img {
+  height: 40px;
+  width: auto;
+  margin-top:24px;
+}
+
+/* クリックでjQueryで追加・削除 */
+header .headerStage #sp_menu nav.globalMenuSp.active {
+  opacity: 100;
+  display: block;
+  transform: translateY(0%);
 }

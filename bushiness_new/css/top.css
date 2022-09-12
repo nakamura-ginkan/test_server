@@ -24,7 +24,7 @@
 #mv{
   position: relative;
   height: 100%;
-  background: url(../img/mv.png)repeat 0 0;
+  background: url(../img/mv.png)repeat center 0;
   background-size: cover;
 }
 @media screen and (max-width: 768px) {
@@ -88,8 +88,6 @@
   background:var(--color-hover) url(../img/arrow_main.svg) no-repeat  right 24px center;
 }
 
-
-
 #mv #individuals {
   position: absolute;
   right:80px;
@@ -121,6 +119,7 @@
     display: block;
     line-height: 32px;
     font-size: 12px;
+    font-feature-settings: "palt";
     background: url(../img/sp_arrow_default.svg) no-repeat  right 24px center;
     text-decoration: none;
     border-radius: 32px;
@@ -137,6 +136,7 @@
 
 /*main*/
 main{
+  position: relative;
 }
 main h3 {
   position:absolute;
@@ -196,9 +196,18 @@ main .sst_txt {
 
 /*feature*/
 main #feature {
+  overflow: hidden;
+  padding-top: 80px;/*anchor*/
+  margin-top: -80px;
+
+  width: 100%;
   position: relative;
 }
-
+@media screen and (min-width: 768px) {
+  main #feature .sst h4 br {
+    display: none;
+  }
+}
 main #feature .st_feature {
   position: relative;
   height: 216px;
@@ -214,10 +223,6 @@ main #feature .st_feature {
     background:url(../img/st_en_feature.svg) no-repeat center bottom;
     background-size: auto 40px;
   }
-}
-
-main #feature {
-  width: 100%;
 }
 
 main #feature .feature_img{
@@ -317,24 +322,19 @@ main #feature figure.ex3_main img {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*service*/
 main #service {
+  overflow: hidden;
   position: relative;
   width: 100%;
+  padding-top: 80px;/*anchor*/
+  margin-top: -80px;
+}
+@media screen and (max-width: 768px) {
+  main #service {
+    position: relative;
+    width: 100%;
+  }
 }
 main #service .st_service {
   position: relative;
@@ -352,7 +352,6 @@ main #service .st_service {
     background-size: auto 40px;
   }
 }
-
 
 main #service .service_set {
   width: 100%;
@@ -398,23 +397,19 @@ main #service .service_set #service01 {
 }
 
 main #service .service_set #service01 .service_wrap {
-  /* @del */
-  max-width: 800px;
+  /* 800を1000に */
+  max-width: 1000px;
   padding-right:80px;
 }
 @media screen and (max-width: 999px) {
   main #service .service_set #service01 .service_wrap {
     padding:0 24px;
-    /*エリア問題
-    background: #fff000;
-    */
   }
 }
 
 main #service .service_set #service01 .service_wrap .service_num {
   position: relative;
   width: 200px;
-  /*width: 31%;*/
   margin: -50px auto 0 auto;
 
 }
@@ -557,6 +552,12 @@ main #service #service02 {
   position: relative;
   padding: 0 0 80px 0;
 }
+@media screen and (max-width: 999px) {
+  main #service #service02 {
+    position: relative;
+    padding:0;
+  }
+}
 
 main #service #service02 .service02_num {
   width: 200px;
@@ -592,6 +593,8 @@ main #service #service02 h5 {
     font-weight: bold;
     letter-spacing: 0.05em;
   }
+}
+@media screen and (min-width: 768px) {
   main #service #service02 h5 br {
     display: none;
   }
@@ -663,16 +666,17 @@ main #service #service02 ul li {
 }
 
 main #service #service02 ul li a {
-  display: block;
+  display: flex;
   width: 100%;
   overflow: hidden;
   transition: 0.3s ease-in-out;
   color: var(--color-txt);
-  background: url(../img/arrow_news.svg) no-repeat  right 0 top 48px;
+  background: url(../img/arrow_news.svg) no-repeat  right 0 center;
+  align-items: center;
 }
 main #service #service02 ul li a:hover {
   color: var(--color-txt);
-  background: rgba(0, 0, 0, 0.04) url(../img/arrow_news.svg) no-repeat  right 16px top 48px;
+  background: rgba(0, 0, 0, 0.04) url(../img/arrow_news.svg) no-repeat  right 16px center;
 }
 main #service #service02 ul li a:visited {
   color: var(--color-txt);
@@ -704,9 +708,6 @@ main #service #service02 ul li a .service02_news_txt p {
   font-size: 16px;
   line-height: 1.5;
 }
-
-
-
 
 @media screen and (max-width: 768px) {
   main #service #service02 ul {
@@ -762,13 +763,6 @@ main #service #service02 ul li a .service02_news_txt p {
 }
 
 
-
-
-
-
-
-
-
 /*03*/
 main #service .service_set .figure_wrap3 {
   position: relative;
@@ -776,6 +770,7 @@ main #service .service_set .figure_wrap3 {
   left: 0;
   width: 50%;
 }
+
 main #service .service_set .figure_wrap3 figure {
   margin:0;
   padding: 0;
@@ -784,9 +779,8 @@ main #service .service_set .figure_wrap3 figure {
   background: url(../img/service_figure03.png) no-repeat right 80px top;
   background-size: contain;
 }
-
 @media screen and (max-width: 999px) {
-  main #service .service_set .figure_wrap3 {
+  main #service .service_set .figure_wrap3 figure {
     display: none;
   }
 }
@@ -807,14 +801,12 @@ main #service .service_set #service03 {
 }
 
 main #service .service_set #service03 .service_wrap {
-  /* @del */
-  max-width: 800px;
+  max-width: 1000px;
   padding-right:80px;
 }
 @media screen and (max-width: 999px) {
   main #service .service_set #service03 .service_wrap {
     padding:0 24px;
-    */
   }
 }
 
@@ -856,11 +848,6 @@ main #service .service_set #service03 .service_wrap h5 {
     letter-spacing: 0.05em;
   }
 }
-@media screen and (max-width: 1200px) {
-  main #service .service_set #service03 .service_wrap h5 br {
-    display: none;
-  }
-}
 
 @media screen and (min-width: 1000px) {
   main #service .service_set #service03 .service_wrap .sp_pic {
@@ -889,16 +876,1253 @@ main #service .service_set #service03 .service_wrap .synchroPay img {
 
 main #service .service_set #service03 .service_wrap .merit {
   width: 100%;
-
+  margin-bottom:80px;
+}
+@media screen and (max-width: 768px) {
+  main #service .service_set #service03 .service_wrap .merit {
+    margin-bottom:160px;
+  }
 }
 
 main #service .service_set #service03 .service_wrap .merit img {
   width: 100%;
   height: auto;
 }
+
+/*price*/
+main #price {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: var(--color-thin);
+  padding-top: 80px;/*anchor*/
+  margin-top: -80px;
+}
 @media screen and (max-width: 768px) {
-  main #service .service_set #service03 .service_wrap .merit img {
+  main #price {
+    width: 100%;
+    background: var(--color-thin);
   }
+}
+
+main #price .st_price {
+  position: relative;
+  height: 136px;
+  text-align: center;
+  background: url(../img/st_en_price.svg) no-repeat center bottom;
+  background-size: auto 96px;
+}
+@media screen and (max-width: 768px) {
+  main #price .st_price {
+    position: relative;
+    height: 40px;
+    text-align: center;
+    background:url(../img/st_en_price.svg) no-repeat center bottom;
+    background-size: auto 40px;
+  }
+  main #price .sst_txt br {
+    display: none;
+  }
+}
+
+main #price #price_list {
+  overflow: hidden;
+  max-width: 1200px;
+  padding: 40px 80px 16px 80px;
+}
+main #price #price_list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size:0;
+}
+main #price #price_list ul li {
+  float: left;
+  width: 33.333%;
+
+}
+main #price #price_list ul li img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+main #price #price_list ul li .price01,
+main #price #price_list ul li .price02,
+main #price #price_list ul li .price03 {
+  margin: 0 20px 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  main #price #price_list {
+    overflow: hidden;
+    width: 100%;
+    padding:0;
+  }
+  main #price #price_list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size:0;
+  }
+  main #price #price_list ul li {
+    clear: both;
+    float: left;
+    width: 100%;
+
+  }
+  main #price #price_list ul li img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  main #price #price_list ul li .price01,
+  main #price #price_list ul li .price02,
+  main #price #price_list ul li .price03 {
+    margin:0;
+    padding: 16px 40px;
+  }
+}
+
+main #price .price_annotation {
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  padding: 0 80px 80px 80px;
+  color:var(--color-txt-thin);
+}
+@media screen and (max-width: 768px) {
+  main #price .price_annotation {
+    font-size: 10px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 0 24px 40px 24px;
+    color:var(--color-txt-thin);
+  }
+}
+
+
+/*ahievement*/
+main #ahievement {
+  clear: both;
+  position: relative;
+  width: 100%;
+  padding-top: 80px;/*anchor*/
+  margin-top: -80px;
+}
+@media screen and (max-width: 768px) {
+  main #ahievement {
+    position: relative;
+    width: 100%;
+    padding-bottom:80px;
+  }
+}
+main #ahievement .st_ahievement {
+  margin-bottom:40px;
+  position: relative;
+  height: 216px;
+  text-align: center;
+  background: url(../img/st_en_achievement.svg) no-repeat center bottom;
+	background-size: auto 96px;
+}
+@media screen and (max-width: 768px) {
+  main #ahievement .st_ahievement {
+    position: relative;
+    height: 88px;
+    text-align: center;
+    background:url(../img/st_en_achievement.svg) no-repeat center bottom;
+    background-size: auto 40px;
+  }
+}
+
+main #ahievement #ahievement_box {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 80px 40px 80px;
+}
+@media screen and (max-width: 768px) {
+  main #ahievement #ahievement_box {
+    margin: 0;
+    padding: 0 24px 40px 24px;
+  }
+}
+
+/*共通*/
+main #ahievement #ahievement_box .stage {
+  text-align: center;
+  padding: 32px;
+  background: var(--color-verythin);
+  border-radius: 8px;
+}
+@media screen and (max-width: 768px) {
+  main #ahievement #ahievement_box .stage {
+    text-align: center;
+    padding: 24px;
+    background: var(--color-verythin);
+    border-radius: 8px;
+  }
+}
+
+main #ahievement #ahievement_box .category {
+  position: relative;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 40px;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 768px) {
+  main #ahievement #ahievement_box .category {
+    margin-bottom:16px;
+  }
+}
+
+main #ahievement #ahievement_box .catch {
+  width: 100%;
+  position: relative;
+  color: var(--color-synchrolife);
+  display: inline-block;
+  line-height: 1.4;
+  font-size: 2.5vw;
+  font-weight: 800;
+  padding: 0 -1rem;
+  margin-bottom:0;
+  z-index: 1;
+  font-feature-settings: "palt";
+  letter-spacing: 0.075em;
+}
+@media screen and (min-width: 999px) {
+  main #ahievement #ahievement_box .catch{
+  font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main #ahievement #ahievement_box .catch {
+    width: 100%;
+    line-height: 1.4;
+    font-size: 5.5vw;
+  }
+}
+
+main #ahievement #ahievement_box .catch::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+
+  top:0;
+  left:-8px;
+  background: url(../img/import_txt-before.svg) no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  main #ahievement #ahievement_box .catch::before {
+    top:0;
+    left:10%;
+  }
+}
+
+main #ahievement #ahievement_box .catch:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+
+  bottom:-8px;
+  right:-8px;
+  background: url(../img/import_txt-after.svg) no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  main #ahievement #ahievement_box .catch:after {
+    bottom:0;
+    right:10%;
+  }
+}
+
+main #ahievement #ahievement_box .achievement_list {
+  background: var(--color-base);
+  padding:16px;
+  margin: 24px 0 0 0;
+  border-radius: 8px;
+}
+
+main #ahievement #ahievement_box .achievement_list p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5vw;
+  line-height: 1.4;
+  font-feature-settings: "palt";
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+main #ahievement #ahievement_box .achievement_list p span.red {
+  color:var(--color-synchrolife);
+  font-size: 2vw;
+  font-weight: 800;
+}
+@media screen and (max-width: 768px) {
+  main #ahievement #ahievement_box .achievement_list p {
+    font-size: 3vw;
+  }
+  main #ahievement #ahievement_box .achievement_list p span.red {
+    color:var(--color-synchrolife);
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 999px) {
+  main #ahievement #ahievement_box .achievement_list p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.4;
+    font-feature-settings: "palt";
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+  main #ahievement #ahievement_box .achievement_list p span.red {
+    color:var(--color-synchrolife);
+    font-size: 24px;
+    font-weight: 800;
+  }
+}
+
+main #ahievement #ahievement_box .achievement_list figure {
+  margin: 0;
+  padding: 8px 0 0 0;
+}
+
+main #ahievement #ahievement_box .achievement_list figure img {
+  width: 100%;
+  height: auto;
+}
+
+/*review*/
+/*
+main #ahievement #ahievement_box .achievement_list .review1 {
+  width: 100%;
+  padding-top:8px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 999px) {
+  main #ahievement #ahievement_box .achievement_list .review1 {
+    display: none;
+  }
+}
+main #ahievement #ahievement_box .achievement_list .review1 .com {
+  width: calc(100% - 44px);
+  border-radius: 0 8px 8px 0;
+  background: var(--color-verythin);
+  text-align: left;
+}
+
+main #ahievement #ahievement_box .achievement_list .review1 .com .shop_thumb {
+  float: left;
+  width: 10vw;
+  margin-right:16px;
+}
+
+main #ahievement #ahievement_box .achievement_list .review1 .com .shop_thumb p {
+  padding-left:8px;
+}
+main #ahievement #ahievement_box .achievement_list .review1 .com .shop_thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 0 0 8px;
+}
+
+main #ahievement #ahievement_box .achievement_list .review1 .com .review_box {
+  margin: 8px 16px 8px 0;
+}
+main #ahievement #ahievement_box .achievement_list .review1 .com .review_box .star {
+  width: 100%;
+  padding: 0 0 4px 0;
+}
+
+main #ahievement #ahievement_box .achievement_list .review1 .com .review_box .star .my {
+  padding-top:8px;
+}
+
+main #ahievement #ahievement_box .achievement_list .review1 .com .review_box .star .my img {
+  width: 16px;
+  height: auto;
+  float: left;
+	display: block;
+}
+
+main #ahievement #ahievement_box .achievement_list .review1 .com .review_box .star p {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  color: #f37d00;
+  padding-left:8px;
+}
+
+main #ahievement #ahievement_box .achievement_list .review1 .com .review_box .txt {
+  font-size: calc(0.02vw + 5 * (100vw - 768px) / 500);
+  line-height: 1.4;
+}
+*{
+    min-height: 0vw;
+}
+
+main #ahievement #ahievement_box .achievement_list .review1 .com .review_box .review_time {
+  font-size: 0;
+  color: #aaa;
+  padding-top: 4px;
+}
+
+main #ahievement #ahievement_box .achievement_list .review1 .user_thumb {
+  margin-left:8px;
+  width: 40px;
+  height: 40px;
+}
+
+main #ahievement #ahievement_box .achievement_list .review1 .user_thumb img {
+  border-radius: 80px;
+  width: 100%;
+  height: auto;
+}
+*/
+
+
+
+/*sns*/
+main #ahievement #ahievement_box .ahievement_sns {
+  float: left;
+  width: 50%;
+}
+main #ahievement #ahievement_box .ahievement_sns .sns_wrap {
+  padding-right:20px;
+}
+@media screen and (max-width: 768px) {
+  main #ahievement #ahievement_box .ahievement_sns {
+    float: left;
+    width: 100%;
+  }
+  main #ahievement #ahievement_box .ahievement_sns .sns_wrap {
+    padding:0 0 40px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main #ahievement #ahievement_box .ahievement_sns .sns_wrap .pc_sns_review {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  main #ahievement #ahievement_box .ahievement_sns .sns_wrap .sp_sns_review {
+    display: none;
+  }
+}
+
+
+/*加盟店*/
+main #ahievement #ahievement_box .ahievement_store {
+  float: left;
+  width: 50%;
+}
+main #ahievement #ahievement_box .ahievement_sns .store_wrap {
+  padding-left:20px;
+}
+@media screen and (max-width: 768px) {
+  main #ahievement #ahievement_box .ahievement_store {
+    float: left;
+    width: 100%;
+  }
+  main #ahievement #ahievement_box .ahievement_sns .store_wrap {
+    padding:0;
+  }
+}
+
+/*店舗実績*/
+main #ahievement #introduction_store {
+  overflow: hidden;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom:40px;
+}
+@media screen and (max-width: 768px) {
+  main #ahievement #introduction_store {
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+main #ahievement #introduction_store ul {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0 80px;
+}
+@media screen and (max-width: 768px) {
+  main #ahievement #introduction_store ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 40px;
+  }
+}
+
+main #ahievement #introduction_store ul li {
+  float: left;
+  width: 20%;
+  font-size: 0;
+}
+
+main #ahievement #introduction_store ul li .shopname {
+  padding: 8px;
+}
+@media screen and (max-width: 768px) {
+  main #ahievement #introduction_store ul li .shopname {
+    padding: 0 8px 8px 8px;
+  }
+}
+
+main #ahievement #introduction_store ul li img {
+  width: 100%;
+  height: auto;
+}
+
+
+/*メディア*/
+main #ahievement #media {
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto 0 auto;
+}
+
+main #ahievement #media ul {
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0 160px 0;
+  padding: 0 80px;
+}
+@media screen and (max-width: 768px) {
+  main #ahievement #media ul {
+    list-style: none;
+    margin: 0 0 80px 0;
+    padding: 0 80px;
+  }
+}
+
+main #ahievement #media ul li {
+  float: left;
+  width: 25%;
+  font-size: 0;
+}
+
+main #ahievement #media ul li .medianame {
+  padding: 8px 16px;
+}
+@media screen and (max-width: 768px) {
+  main #ahievement #media ul li .medianame {
+    padding: 0 12px 8px 12px;
+  }
+}
+
+main #ahievement #media ul li img {
+  width: 100%;
+  height: auto;
+}
+
+/*flow*/
+main #flow {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: var(--color-thin);
+  padding-top: 80px;/*anchor*/
+  margin-top: -80px;
+}
+@media screen and (max-width: 768px) {
+  main #flow {
+  }
+}
+main #flow .st_flow {
+  position: relative;
+  height: 136px;
+  text-align: center;
+  background:url(../img/st_en_flow.svg) no-repeat center bottom;
+  background-size: auto 96px;
+}
+@media screen and (max-width: 768px) {
+  main #flow .st_flow {
+    position: relative;
+    height: 40px;
+    text-align: center;
+    background:url(../img/st_en_flow.svg) no-repeat center bottom;
+    background-size: auto 40px;
+  }
+  main #flow .sst_txt br {
+    display: none;
+  }
+}
+
+main #flow #flow_list {
+  overflow: hidden;
+  max-width: 960px;
+  padding: 40px 80px 16px 80px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  main #flow #flow_list {
+    padding: 40px 24px 0 24px;
+  }
+}
+main #flow #flow_list ul {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 40px 0 0 0;
+}
+@media screen and (max-width: 768px) {
+  main #flow #flow_list ul {
+    padding: 24px 0 0 0;
+  }
+}
+main #flow #flow_list ul li {
+  float: left;
+  width: 25%;
+}
+@media screen and (max-width: 768px) {
+  main #flow #flow_list ul li {
+    float: left;
+    width: 50%;
+    padding-bottom:40px;
+  }
+}
+
+main #flow #flow_list ul li .wrap {
+  padding: 0 20px;
+}
+@media screen and (max-width: 999px) {
+  main #flow #flow_list ul li .wrap {
+    padding: 0 16px;
+  }
+}
+
+main #flow #flow_list ul li .wrap .box {
+  position: relative;
+  background: var(--color-base);
+  border-radius: 8px;
+  padding-bottom:24px;
+}
+
+main #flow #flow_list ul li .wrap .box .num {
+  color: var(--color-txt);
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 5vw;
+  line-height: 1;
+  font-family:"03スマートフォントUI", 'Helvetica Neue', Arial, sans-serif;
+}
+@media screen and (max-width: 768px) {
+  main #flow #flow_list ul li .wrap .box .num {
+    top: -25px;
+    font-size: 300%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  main #flow #flow_list ul li .wrap .box .num {
+    top: -40px;
+    font-size: 400%;
+  }
+}
+
+main #flow #flow_list ul li .wrap .box .icon {
+  padding: 32px 15% 0 15%;
+}
+
+main #flow #flow_list ul li .wrap .box .icon img {
+  width: 100%;
+  height: auto;
+  border:1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 100%;
+}
+
+main #flow #flow_list ul li .wrap .box .txt {
+  text-align: center;
+  font-size: 1vw;
+  line-height: 1.6;
+  padding:5% 0;
+  color: var(--color-txt);
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  main #flow #flow_list ul li .wrap .box .txt {
+    text-align: center;
+    font-size: 2vw;
+    line-height: 1.6;
+    padding:5% 0;
+    color: var(--color-txt);
+  }
+}
+@media screen and (min-width: 1000px) {
+  main #flow #flow_list ul li .wrap .box .txt {
+    font-size: 13px;
+  }
+}
+
+main #flow #flow_list ul li img {
+  width: 100%;
+  height: auto;
+  border-radius: 160px;
+}
+
+main #flow .flow_annotation {
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  padding: 0 80px 80px 80px;
+  color:var(--color-txt-thin);
+}
+@media screen and (max-width: 768px) {
+  main #flow .flow_annotation {
+    font-size: 10px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 0 24px 40px 24px;
+    color:var(--color-txt-thin);
+  }
+}
+
+/*use case*/
+main #useCase {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 80px;/*anchor*/
+  margin-top: -80px;
+}
+main #useCase .st_useCase {
+  position: relative;
+  height: 176px;
+  text-align: center;
+  background: url(../img/st_en_usecase.svg) no-repeat center bottom;
+  background-size: auto 96px;
+}
+@media screen and (max-width: 768px) {
+  main #useCase .st_useCase {
+    position: relative;
+    height: 88px;
+    text-align: center;
+    background:url(../img/st_en_usecase.svg) no-repeat center bottom;
+    background-size: auto 40px;
+  }
+}
+
+main #useCase .wrap {
+  max-width: 999px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+@media screen and (max-width: 768px) {
+  main #useCase .wrap {
+    padding: 0 56px;
+  }
+}
+
+main #useCase .wrap .left {
+  float: left;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  main #useCase .wrap .left {
+    width: 100%;
+  }
+}
+main #useCase .wrap .left .box {
+  padding:0 32px 0 0;
+}
+@media screen and (max-width: 768px) {
+  main #useCase .wrap .left .box {
+    padding:0;
+  }
+}
+
+
+
+
+main #useCase .wrap .left .box .write {
+  position: relative;
+}
+
+main #useCase .wrap .left .box .write .catch1 {
+  position: absolute;
+  top:24px;
+  left:0;
+}
+
+main #useCase .wrap .left .box .write .catch1 p {
+  display: inline-block;
+  background: var(--color-synchrolife);
+  color: var(--color-base);
+  padding: 8px;
+}
+
+main #useCase .wrap .left .box .write .catch2 {
+  position: absolute;
+  top:64px;
+  left:0;
+}
+
+main #useCase .wrap .left .box .write .catch2 p {
+  display: inline-block;
+  background: var(--color-synchrolife);
+  color: var(--color-base);
+  padding: 8px;
+}
+
+main #useCase .wrap .left .box .write .img {
+  position: relative;
+  z-index: -1;
+}
+
+main #useCase .wrap .left .box .write .img img {
+  border-radius: 40px;
+  width: 100%;
+  height: auto;
+}
+
+main #useCase .wrap .left .box .write .appeal1 {
+  position: absolute;
+  top:-24px;
+  right:-40px;
+  /*background: #ffcc00;*/
+  width: 120px;
+  height: 120px;
+}
+
+main #useCase .wrap .left .box .write .appeal1 .img{
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 6;
+}
+
+main #useCase .wrap .left .box .write .appeal1 .label {
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 5;
+}
+main #useCase .wrap .left .box .write .appeal1 .img img,
+main #useCase .wrap .left .box .write .appeal1 .label img {
+  width: 100%;
+  height: auto;
+}
+
+main #useCase .wrap .left .box .write .appeal2 {
+  position: absolute;
+  top:120px;
+  right:-40px;
+  width: 120px;
+  height: 120px;
+}
+
+main #useCase .wrap .left .box .write .appeal2 .img{
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 6;
+}
+
+main #useCase .wrap .left .box .write .appeal2 .label {
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 5;
+}
+main #useCase .wrap .left .box .write .appeal2 .img img,
+main #useCase .wrap .left .box .write .appeal2 .label img {
+  width: 100%;
+  height: auto;
+}
+
+main #useCase .wrap .left .box .write .gradation {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+  border-radius: 0 0 40px 40px;
+}
+
+main #useCase .wrap .left .box .write .gradation .shopname {
+  position: absolute;
+  font-size: 1.5vw;
+  bottom:24px;
+  left:24px;
+  color: var(--color-base);
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 1000px) {
+  main #useCase .wrap .left .box .write .gradation .shopname {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #useCase .wrap .left .box .write .gradation .shopname {
+    font-size: 2.5vw;
+  }
+}
+
+
+
+
+/*right*/
+main #useCase .wrap .right {
+  float: left;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  main #useCase .wrap .right {
+    width: 100%;
+    margin-top:40px;
+  }
+}
+
+main #useCase .wrap .right .box {
+  padding:0 0 0 32px;
+}
+@media screen and (max-width: 768px) {
+  main #useCase .wrap .right .box {
+    padding:0;
+  }
+}
+
+main #useCase .wrap .right .box .write {
+  position: relative;
+}
+
+
+/* case2*/
+main #useCase .wrap .right .box .write .case2 {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  margin: 0;
+}
+main #useCase .wrap .right .box .write .case2 .resize {
+  /*margin-bottom:8px;*/
+}
+main #useCase .wrap .right .box .write .case2 .resize .thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  vertical-align: bottom;
+}
+main #useCase .wrap .right .box .write .case2 .resize .thumb {
+  width: 45%;
+}
+main #useCase .wrap .right .box .write .case2 .resize .txt {
+  position: absolute;
+  right: 0;
+  top:50%;
+  transform: translateY(-50%);
+  width: 50%;
+}
+main #useCase .wrap .right .box .write .case2 .resize .txt p {
+  margin: 0;
+  padding: 0 16px;
+  font-size: 1.3vw;
+  line-height: 1.3;
+  color: var(--color-synchrolife);
+  font-weight: 800;
+}
+main #useCase .wrap .right .box .write .case2 .resize .txt p.shopname {
+  font-size: 1vw;
+  color:var(--color-txt);
+  margin-top:16px;
+  font-weight: 300;
+}
+/*限界値*/
+@media screen and (min-width: 1000px) {
+  main #useCase .wrap .right .box .write .case2 .resize .txt p {
+    font-size: 16px;
+  }
+  main #useCase .wrap .right .box .write .case2 .resize .txt p.shopname {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #useCase .wrap .right .box .write .case2 .resize .txt p {
+    font-size: 3vw;
+    line-height: 1.4;
+  }
+  main #useCase .wrap .right .box .write .case2 .resize .txt p.shopname {
+    font-size: 2vw;
+    line-height: 1.4;
+  }
+}
+
+
+
+/*case3*/
+
+main #useCase .wrap .right .box .write .case3 {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width: 100%;
+  margin: 0;
+}
+main #useCase .wrap .right .box .write .case3 .resize {
+  /*padding-bottom:8px;*/
+}
+main #useCase .wrap .right .box .write .case3 .resize .thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  vertical-align: bottom;
+}
+main #useCase .wrap .right .box .write .case3 .resize .thumb {
+  width: 45%;
+}
+
+main #useCase .wrap .right .box .write .case3 .resize .txt {
+  position: absolute;
+  right: 0;
+  top:50%;
+  transform: translateY(-50%);
+  width: 50%;
+}
+main #useCase .wrap .right .box .write .case3 .resize .txt p {
+  margin: 0;
+  padding: 0 16px;
+  font-size: 1.3vw;
+  line-height: 1.3;
+  color: var(--color-synchrolife);
+  font-weight: 800;
+}
+main #useCase .wrap .right .box .write .case3 .resize .txt p.shopname {
+  font-size: 1vw;
+  color:var(--color-txt);
+  margin-top:16px;
+  font-weight: 300;
+}
+/*限界値*/
+@media screen and (min-width: 1000px) {
+  main #useCase .wrap .right .box .write .case3 .resize .txt p {
+    font-size: 16px;
+  }
+  main #useCase .wrap .right .box .write .case3 .resize .txt p.shopname {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #useCase .wrap .right .box .write .case3 .resize .txt p {
+    font-size: 3vw;
+    line-height: 1.4;
+  }
+  main #useCase .wrap .right .box .write .case3 .resize .txt p.shopname {
+    font-size: 2vw;
+    line-height: 1.4;
+  }
+}
+
+
+
+/***************************************************************/
+
+main #useCase .wrap .right .box .write .img {
+  position: relative;
+  z-index: -1;
+}
+
+main #useCase .wrap .right .box .write .img img {
+  width: 100%;
+  height: auto;
+}
+
+/***************************************************************/
+
+
+
+main #useCase .reset {
+  clear: both;
+  padding-top: 40px;
+}
+
+
+
+
+
+/*interview*/
+
+main #interview {
+  clear: both;
+}
+
+main #interview ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 80px;
+  max-width: 1200px;
+}
+@media screen and (max-width: 768px) {
+  main #interview ul {
+    padding: 0 24px;
+  }
+}
+
+main #interview ul li {
+  float: left;
+  width: 33.333%;
+}
+@media screen and (max-width: 768px) {
+  main #interview ul li {
+    width: 100%;
+    margin-bottom:24px;
+  }
+}
+
+main #interview ul li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 16px;
+  transition: 0.3s ease-in-out;
+}
+main #interview ul li a:hover {
+  background: var(--color-thin);
+  border-radius: 8px;
+}
+
+
+main #interview ul li a .thumb {
+  position: relative;
+}
+
+main #interview ul li a .thumb .gradation {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+  border-radius: 0 0 8px 8px;
+}
+
+main #interview ul li a .thumb .gradation .shopname {
+  position: absolute;
+  font-size: 1vw;
+  bottom:16px;
+  left:16px;
+  color: var(--color-base);
+  line-height: 1.4;
+}
+@media screen and (min-width: 1000px) {
+  main #interview ul li a .thumb .gradation .shopname {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #interview ul li a .thumb .gradation .shopname {
+    font-size: 14px;
+  }
+}
+
+
+main #interview ul li a .thumb .thumb_link {
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+main #interview ul li a .thumb .photo {
+}
+
+main #interview ul li a .thumb .photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+main #interview ul li a .txt {
+  margin-top:16px;
+  font-size: 16px;
+  color: var(--color-synchrolife);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+main #interview ul li a .name {
+  margin-top:16px;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+
+
+main #interview .btn_interviewList {
+  clear: both;
+  text-align: center;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+main #interview .btn_interviewList a {
+  display:inline-block;
+  text-decoration: none;
+  line-height: 48px;
+  background:var(--color-synchrolife) url(../img/arrow_default.svg) no-repeat  right 24px center;
+  border-radius: 48px;
+  padding:0 40px 0 24px;
+  margin: 8px 0 8px 0;
+  color: var(--color-base);
+  transition: 0.3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  main #interview .btn_interviewList a {
+    display:block;
+    margin: 0 24px;
+  }
+}
+
+main #interview .btn_interviewList a:hover {
+  background:var(--color-hover) url(../img/arrow_default.svg) no-repeat  right 16px center;
+}
+
+main #interview #interview_movie {
+  max-width: 800px;
+  margin: 0 auto;
+  padding:80px 40px 120px 40px;
+}
+@media screen and (max-width: 768px) {
+  main #interview #interview_movie {
+    padding:40px 24px 80px 24px;
+  }
+}
+
+.movStage {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+.movStage iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
 
 
@@ -907,8 +2131,250 @@ main #service .service_set #service03 .service_wrap .merit img {
 
 
 
-/*price*/
-main #price {
-  position: relative;
+
+main #interview_movie {
+
+}
+
+
+
+
+
+/*application*/
+main #application {
   width: 100%;
+  position: relative;
+  background: url(../img/application_bg.png)repeat center 0;
+  background-size: cover;
+}
+
+main #application .cover {
+  background-color:rgba(24, 53, 65, 0.64);
+}
+
+main #application .cover .box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+main #application .cover .box h5 {
+  font-size: 200%;
+  line-height: 1;
+  color: var(--color-base);
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+@media screen and (min-width: 769px) {
+  main #application .cover .box h5 br {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #application .cover .box h5 {
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--color-base);
+    padding: 0;
+    margin: 0 24px 24px 24px;
+  }
+}
+
+main #application .cover .box p {
+  padding: 0;
+  margin: 0 0 40px 0;
+  color: var(--color-base);
+  font-size: 16px;
+  line-height: 1.4;
+}
+@media screen and (max-width: 768px) {
+  main #application .cover .box p {
+    padding: 0;
+    margin: 0 40px 40px 40px;
+    color: var(--color-base);
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+main #application .cover .box .btn_application {
+  padding-bottom:40px;
+}
+
+main #application .cover .box .btn_application a {
+  display:inline-block;
+  text-decoration: none;
+  font-size: 200%;
+  font-weight: 800;
+  color: var(--color-base);
+  font-feature-settings: "palt";
+  background: var(--color-synchrolife) url(../img/arrow_main.svg) no-repeat  right 40px center;
+  padding: 24px 72px 24px 40px;
+  border-radius: 80px;
+  transition: 0.5s ease-in-out;
+}
+main #application .cover .box .btn_application a:hover {
+  background:var(--color-hover) url(../img/arrow_main.svg) no-repeat  right 24px center;
+}
+@media screen and (max-width: 768px) {
+  main #application .cover .box .btn_application a {
+    background: var(--color-synchrolife) url(../img/arrow_default.svg) no-repeat  right 40px center;
+    font-size: 150%;
+  }
+  main #application .cover .box .btn_application a:hover {
+    background: var(--color-hover) url(../img/arrow_default.svg) no-repeat  right 24px center;
+  }
+}
+
+main #application .cover .box .btn_contact a {
+  display:inline-block;
+  line-height: 48px;
+  font-size: 16px;
+  background: url(../img/arrow_default.svg) no-repeat  right 24px center;
+  text-decoration: none;
+  border-radius: 48px;
+  border: #fff solid 4px;
+  padding:0 40px 0 24px;
+  margin:0;
+  color: var(--color-base);
+  transition: 0.3s ease-in-out;
+}
+main #application .cover .box .btn_contact a:hover {
+  background: url(../img/arrow_default.svg) no-repeat  right 16px center;
+}
+
+
+/*news*/
+main #news {
+  width: 100%;
+  position: relative;
+  padding-top: 80px;/*anchor*/
+  margin-top: -80px;
+}
+main #news .st_news {
+  position: relative;
+  height: 216px;
+  text-align: center;
+  background:url(../img/st_en_news.svg) no-repeat center bottom;
+  background-size: auto 96px;
+}
+@media screen and (max-width: 768px) {
+  main #news .st_news {
+    position: relative;
+    height: 88px;
+    text-align: center;
+    background:url(../img/st_en_news.svg) no-repeat center bottom;
+    background-size: auto 40px;
+  }
+}
+
+main #news ul {
+  max-width: 1200px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 40px 80px 0 80px;
+}
+main #news ul li {
+  width: 100%;
+  margin-bottom:0px;
+  border-top:1px solid rgba(0, 0, 0, 0.16);
+}
+
+main #news ul li a {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  color: var(--color-txt);
+  background: url(../img/arrow_news.svg) no-repeat  right 0 center;
+  /*justify-content: center;*/
+  align-items: center;
+}
+main #news ul li a:hover {
+  color: var(--color-txt);
+  background: rgba(0, 0, 0, 0.04) url(../img/arrow_news.svg) no-repeat  right 16px center;
+}
+main #news ul li a:visited {
+  color: var(--color-txt);
+}
+
+main #news ul li a .news_thumb {
+  float: left;
+  box-sizing:content-box;
+  width: 280px;
+  height: 147px;
+  margin:20px 40px 20px 0;
+  border:1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+}
+
+main #news ul li a .news_thumb img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+main #news ul li a .news_txt {
+  float: left;
+  padding:16px 0 16px 0;
+  width: calc(100% - 400px);
+}
+
+main #news ul li a .news_txt p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  main #news ul {
+    list-style: none;
+    margin: 0;
+    padding: 40px 24px 0 24px;
+  }
+  main #news ul li {
+    width: 100%;
+    margin-bottom:24px;
+    border:none;
+  }
+  main #news ul li a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    color: var(--color-txt);
+    transition: 0.3s ease-in-out;
+    background: none;
+  }
+  main #news  ul li a:hover {
+    color: var(--color-txt);
+    background: none;
+  }
+  main #news ul li a:visited {
+    color: var(--color-txt);
+  }
+  main #news ul li a .news_thumb {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin:0;
+    border:1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+  }
+
+  main #news ul li a .news_thumb img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+  }
+
+  main #news ul li a .news_txt {
+    float: left;
+    width: 100%;
+    padding:0;
+  }
+
+  main #news ul li a .news_txt p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
