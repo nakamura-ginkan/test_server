@@ -43,7 +43,7 @@
   left:80px;
 }
 #mv #mv_title .img {
-  max-width: 664px;
+  max-width: 1200px;
   padding-right: 80px;
 }
 #mv #mv_title img {
@@ -1686,7 +1686,6 @@ main #useCase .wrap .left .box .write .appeal1 {
   position: absolute;
   top:-24px;
   right:-40px;
-  /*background: #ffcc00;*/
   width: 120px;
   height: 120px;
 }
@@ -1703,7 +1702,13 @@ main #useCase .wrap .left .box .write .appeal1 .label {
   top:0;
   right:0;
   z-index: 5;
+  animation:10s linear infinite labelRotation;
 }
+@keyframes labelRotation{
+  0%{ transform:rotate(0);}
+  100%{ transform:rotate(360deg); }
+}
+
 main #useCase .wrap .left .box .write .appeal1 .img img,
 main #useCase .wrap .left .box .write .appeal1 .label img {
   width: 100%;
@@ -1730,6 +1735,7 @@ main #useCase .wrap .left .box .write .appeal2 .label {
   top:0;
   right:0;
   z-index: 5;
+  animation:10s linear infinite labelRotation;
 }
 main #useCase .wrap .left .box .write .appeal2 .img img,
 main #useCase .wrap .left .box .write .appeal2 .label img {
@@ -1810,12 +1816,68 @@ main #useCase .wrap .right .box .write .case2 .resize {
 main #useCase .wrap .right .box .write .case2 .resize .thumb img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
   vertical-align: bottom;
 }
 main #useCase .wrap .right .box .write .case2 .resize .thumb {
+  position: relative;/*追加*/
   width: 45%;
 }
+
+/*******assahuisahuisahsasasasasassaassasasasaaaaaaaaaaaaaauiashuishiuashsauhasiuhasiusahassssasasaassaassasaassassasaiusahuas*****/
+
+
+main #useCase .wrap .right .box .write .case2 .resize .thumb .gradation {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+  border-radius: 0 0 8px 8px;
+}
+
+main #useCase .wrap .right .box .write .case2 .resize .thumb .gradation .name {
+  position: absolute;
+  font-size: 1vw;
+  bottom:16px;
+  left:16px;
+  color: var(--color-base);
+  line-height: 1.4;
+}
+@media screen and (min-width: 1000px) {
+  main #useCase .wrap .right .box .write .case2 .resize .thumb .gradation .name {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #useCase .wrap .right .box .write .case2 .resize .thumb .gradation .name {
+    font-size: 14px;
+  }
+}
+
+main #useCase .wrap .right .box .write .case2 .resize .thumb .photo {
+}
+
+main #useCase .wrap .right .box .write .case2 .resize .thumb img {
+  width: 100%;
+  height: auto;
+}
+
+main #useCase .wrap .right .box .write .case2 .resize .thumb .thumb_link {
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+
+/*******assahuisahuisahuiashuishiuashsauhasiuhasiusahiusahuas*****/
+
+
+
+
+
+
+
 main #useCase .wrap .right .box .write .case2 .resize .txt {
   position: absolute;
   right: 0;
@@ -1874,12 +1936,62 @@ main #useCase .wrap .right .box .write .case3 .resize {
 main #useCase .wrap .right .box .write .case3 .resize .thumb img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
   vertical-align: bottom;
 }
 main #useCase .wrap .right .box .write .case3 .resize .thumb {
+  position:relative;
   width: 45%;
 }
+
+/*aahsusahuashusahsahsauhsauihsauisa*/
+
+
+
+main #useCase .wrap .right .box .write .case3 .resize .thumb .gradation {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+  border-radius: 0 0 8px 8px;
+}
+
+main #useCase .wrap .right .box .write .case3 .resize .thumb .gradation .name {
+  position: absolute;
+  font-size: 1vw;
+  bottom:16px;
+  left:16px;
+  color: var(--color-base);
+  line-height: 1.4;
+}
+@media screen and (min-width: 1000px) {
+  main #useCase .wrap .right .box .write .case3 .resize .thumb .gradation .name {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #useCase .wrap .right .box .write .case3 .resize .thumb .gradation .name {
+    font-size: 14px;
+  }
+}
+
+main #useCase .wrap .right .box .write .case3 .resize .thumb img {
+  width: 100%;
+  height: auto;
+}
+
+main #useCase .wrap .right .box .write .case3 .resize .thumb .thumb_link {
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+
+
+
+/*sasahgyusagyusaguyasguyasgsauygsauygsauysagyusaguysagyusa*/
+
 
 main #useCase .wrap .right .box .write .case3 .resize .txt {
   position: absolute;
