@@ -928,6 +928,7 @@ main #price .st_price {
 main #price #price_list {
   overflow: hidden;
   max-width: 1200px;
+  margin: 0 auto;
   padding: 40px 80px 16px 80px;
 }
 main #price #price_list ul {
