@@ -1,9 +1,9 @@
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   #spBtmRead {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #spBtmRead {
     position: fixed;
     bottom:0;
@@ -28,7 +28,7 @@
   background: url(../img/mv.png)repeat center 0;
   background-size: cover;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #mv{
     position: relative;
     height: 100%;
@@ -54,7 +54,7 @@
 #mv #mv_title .btn_mainRead {
   margin: 32px 0 0 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #mv #mv_title {
     position: absolute;
   	top: 50%;
@@ -165,7 +165,7 @@ main .sst_txt {
   font-size: 16px;
   letter-spacing: 0.05em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main h3 {
     position:absolute;
   	bottom: -24px;
@@ -214,7 +214,7 @@ main #feature .st_feature {
   background:url(../img/st_en_feature.svg) no-repeat center bottom;
   background-size: auto 96px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #feature .st_feature {
     position: relative;
     height: 88px;
@@ -244,7 +244,7 @@ main #feature figure.ex1 img {
   width: 100%;
   height: auto;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 767px) {
   main #feature figure.ex1 {
     margin: 0 auto;
     max-width: 520px;
@@ -260,7 +260,7 @@ main #feature figure.ex2 img {
   max-width: 316px;
   height: auto;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 767px) {
   main #feature figure.ex2 {
     margin: 32px 0 132px 0;
   }
@@ -289,7 +289,7 @@ main #feature figure.ex3_shop img {
   height: auto;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 767px) {
   main #feature figure.ex3_shop {
     position: absolute;
   	top: -10%;
@@ -312,7 +312,7 @@ main #feature figure.ex3_main img {
   width: 100%;
   height: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #feature figure.ex3_main {
     max-width: 768px;
     margin: 0 auto;
@@ -334,7 +334,7 @@ main #service .st_service {
   background: url(../img/st_en_service.svg) no-repeat center bottom;
 	background-size: auto 96px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #service .st_service {
     position: relative;
     height: 88px;
@@ -476,7 +476,7 @@ main #service .service_set #service01 .service_wrap ul li:nth-child(even) .servi
   padding: 0 0 0 20px;
   margin: 0 0 24px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #service .service_set #service01 .service_wrap ul li .servise_item {
     padding: 0 12px 0 0;
     margin: 0 0 24px 0;
@@ -516,7 +516,7 @@ main #service .service_set #service01 .service_wrap ul li .servise_item p {
 }
 /*限界値*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #service .service_set #service01 .service_wrap ul li .servise_item strong {
     margin:8px 0 0 0;
     padding: 0;
@@ -573,7 +573,7 @@ main #service #service02 h5 {
   font-weight: bold;
   letter-spacing: 0.05em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #service #service02 h5 {
     margin:16px 24px 16px 24px;
     padding: 0;
@@ -601,7 +601,7 @@ main #service #service02 .sst_txt p {
   letter-spacing: 0.05em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #service #service02 .sst_txt p {
     padding: 0;
     line-height: 1.6;
@@ -624,7 +624,7 @@ main #service #service02 figure img {
   width: 100%;
   height: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #service #service02 figure.pc {
     display: none;
   }
@@ -637,7 +637,7 @@ main #service #service02 figure.sp img {
   width: 100%;
   height: auto;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   main #service #service02 figure.sp {
     display: none;
   }
@@ -699,7 +699,7 @@ main #service #service02 ul li a .service02_news_txt p {
   line-height: 1.5;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #service #service02 ul {
     list-style: none;
     margin: 0;
@@ -879,7 +879,7 @@ main #price {
   padding-top: 80px;/*anchor*/
   margin-top: -80px;/*anchor*/
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #price {
     width: 100%;
     background: var(--color-thin);
@@ -893,7 +893,7 @@ main #price .st_price {
   background: url(../img/st_en_price.svg) no-repeat center bottom;
   background-size: auto 96px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #price .st_price {
     position: relative;
     height: 40px;
@@ -935,7 +935,7 @@ main #price #price_list ul li .price03 {
   margin: 0 20px 0 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #price #price_list {
     overflow: hidden;
     width: 100%;
@@ -974,7 +974,7 @@ main #price .price_annotation {
   padding: 0 80px 80px 80px;
   color:var(--color-txt-thin);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #price .price_annotation {
     font-size: 10px;
     line-height: 1.2;
@@ -992,7 +992,7 @@ main #ahievement {
   padding-top: 80px;/*anchor*/
   margin-top: -80px;/*anchor*/
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement {
     position: relative;
     width: 100%;
@@ -1007,7 +1007,7 @@ main #ahievement .st_ahievement {
   background: url(../img/st_en_achievement.svg) no-repeat center bottom;
 	background-size: auto 96px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement .st_ahievement {
     position: relative;
     height: 88px;
@@ -1023,7 +1023,7 @@ main #ahievement #ahievement_box {
   margin: 0 auto;
   padding: 0 80px 40px 80px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement #ahievement_box {
     margin: 0;
     padding: 0 24px 40px 24px;
@@ -1037,7 +1037,7 @@ main #ahievement #ahievement_box .stage {
   background: var(--color-verythin);
   border-radius: 8px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement #ahievement_box .stage {
     text-align: center;
     padding: 24px;
@@ -1055,7 +1055,7 @@ main #ahievement #ahievement_box .category {
   border-radius: 40px;
   margin-bottom: 32px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement #ahievement_box .category {
     margin-bottom:16px;
   }
@@ -1081,7 +1081,7 @@ main #ahievement #ahievement_box .catch {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement #ahievement_box .catch {
     width: 100%;
     line-height: 1.4;
@@ -1101,7 +1101,7 @@ main #ahievement #ahievement_box .catch::before {
   background-size: contain;
   z-index: -1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement #ahievement_box .catch::before {
     top:0;
     left:10%;
@@ -1120,7 +1120,7 @@ main #ahievement #ahievement_box .catch:after {
   background-size: contain;
   z-index: -1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement #ahievement_box .catch:after {
     bottom:0;
     right:10%;
@@ -1148,7 +1148,7 @@ main #ahievement #ahievement_box .achievement_list p span.red {
   font-size: 2vw;
   font-weight: 800;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement #ahievement_box .achievement_list p {
     font-size: 3vw;
   }
@@ -1192,7 +1192,7 @@ main #ahievement #ahievement_box .ahievement_sns {
 main #ahievement #ahievement_box .ahievement_sns .sns_wrap {
   padding-right:20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement #ahievement_box .ahievement_sns {
     float: left;
     width: 100%;
@@ -1202,12 +1202,12 @@ main #ahievement #ahievement_box .ahievement_sns .sns_wrap {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement #ahievement_box .ahievement_sns .sns_wrap .pc_sns_review {
     display: none;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   main #ahievement #ahievement_box .ahievement_sns .sns_wrap .sp_sns_review {
     display: none;
   }
@@ -1221,7 +1221,7 @@ main #ahievement #ahievement_box .ahievement_store {
 main #ahievement #ahievement_box .ahievement_sns .store_wrap {
   padding-left:20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement #ahievement_box .ahievement_store {
     float: left;
     width: 100%;
@@ -1238,7 +1238,7 @@ main #ahievement #introduction_store {
   margin: 0 auto;
   padding-bottom:40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement #introduction_store {
     overflow: hidden;
     width: 100%;
@@ -1251,7 +1251,7 @@ main #ahievement #introduction_store ul {
   margin: 0;
   padding: 0 80px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement #introduction_store ul {
     list-style: none;
     margin: 0;
@@ -1268,7 +1268,7 @@ main #ahievement #introduction_store ul li {
 main #ahievement #introduction_store ul li .shopname {
   padding: 8px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement #introduction_store ul li .shopname {
     padding: 0 8px 8px 8px;
   }
@@ -1292,7 +1292,7 @@ main #ahievement #media ul {
   margin: 0 0 160px 0;
   padding: 0 80px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement #media ul {
     list-style: none;
     margin: 0 0 80px 0;
@@ -1309,7 +1309,7 @@ main #ahievement #media ul li {
 main #ahievement #media ul li .medianame {
   padding: 8px 16px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #ahievement #media ul li .medianame {
     padding: 0 12px 8px 12px;
   }
@@ -1329,7 +1329,7 @@ main #flow {
   padding-top: 80px;/*anchor*/
   margin-top: -80px;/*anchor*/
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #flow {
   }
 }
@@ -1340,7 +1340,7 @@ main #flow .st_flow {
   background:url(../img/st_en_flow.svg) no-repeat center bottom;
   background-size: auto 96px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #flow .st_flow {
     position: relative;
     height: 40px;
@@ -1359,7 +1359,7 @@ main #flow #flow_list {
   padding: 40px 80px 16px 80px;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #flow #flow_list {
     padding: 40px 24px 0 24px;
   }
@@ -1370,7 +1370,7 @@ main #flow #flow_list ul {
   margin: 0;
   padding: 40px 0 0 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #flow #flow_list ul {
     padding: 24px 0 0 0;
   }
@@ -1379,7 +1379,7 @@ main #flow #flow_list ul li {
   float: left;
   width: 25%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #flow #flow_list ul li {
     float: left;
     width: 50%;
@@ -1413,7 +1413,7 @@ main #flow #flow_list ul li .wrap .box .num {
   line-height: 1;
   font-family:"03スマートフォントUI", 'Helvetica Neue', Arial, sans-serif;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #flow #flow_list ul li .wrap .box .num {
     top: -25px;
     font-size: 300%;
@@ -1445,7 +1445,7 @@ main #flow #flow_list ul li .wrap .box .txt {
   color: var(--color-txt);
   white-space: nowrap;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #flow #flow_list ul li .wrap .box .txt {
     text-align: center;
     font-size: 2vw;
@@ -1473,7 +1473,7 @@ main #flow .flow_annotation {
   padding: 0 80px 80px 80px;
   color:var(--color-txt-thin);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #flow .flow_annotation {
     font-size: 10px;
     line-height: 1.2;
@@ -1498,7 +1498,7 @@ main #useCase .st_useCase {
   background: url(../img/st_en_usecase.svg) no-repeat center bottom;
   background-size: auto 96px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #useCase .st_useCase {
     position: relative;
     height: 88px;
@@ -1513,7 +1513,7 @@ main #useCase .wrap {
   margin: 0 auto;
   padding: 0 80px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #useCase .wrap {
     padding: 0 40px;
   }
@@ -1523,7 +1523,7 @@ main #useCase .wrap .left {
   float: left;
   width: 50%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #useCase .wrap .left {
     width: 100%;
   }
@@ -1531,7 +1531,7 @@ main #useCase .wrap .left {
 main #useCase .wrap .left .box {
   padding:0 32px 0 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #useCase .wrap .left .box {
     padding:0;
   }
@@ -1664,7 +1664,7 @@ main #useCase .wrap .left .box .write .gradation .shopname {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #useCase .wrap .left .box .write .gradation .shopname {
     font-size: 2.5vw;
   }
@@ -1675,7 +1675,7 @@ main #useCase .wrap .right {
   float: left;
   width: 50%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #useCase .wrap .right {
     width: 100%;
     margin-top:40px;
@@ -1685,7 +1685,7 @@ main #useCase .wrap .right {
 main #useCase .wrap .right .box {
   padding:0 0 0 32px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #useCase .wrap .right .box {
     padding:0;
   }
@@ -1740,7 +1740,7 @@ main #useCase .wrap .right .box .write .case2 .resize .thumb .gradation .name {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #useCase .wrap .right .box .write .case2 .resize .thumb .gradation .name {
     font-size: 12px;
     bottom:8px;
@@ -1793,7 +1793,7 @@ main #useCase .wrap .right .box .write .case2 .resize .txt p.shopname {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #useCase .wrap .right .box .write .case2 .resize .txt p {
     font-size: 3vw;
     line-height: 1.4;
@@ -1849,7 +1849,7 @@ main #useCase .wrap .right .box .write .case3 .resize .thumb .gradation .name {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #useCase .wrap .right .box .write .case3 .resize .thumb .gradation .name {
     font-size: 12px;
     bottom:8px;
@@ -1898,7 +1898,7 @@ main #useCase .wrap .right .box .write .case3 .resize .txt p.shopname {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #useCase .wrap .right .box .write .case3 .resize .txt p {
     font-size: 3vw;
     line-height: 1.4;
@@ -1937,7 +1937,7 @@ main #interview ul {
   padding: 0 80px;
   max-width: 1200px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #interview ul {
     padding: 0 24px;
   }
@@ -1947,7 +1947,7 @@ main #interview ul li {
   float: left;
   width: 33.333%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #interview ul li {
     width: 100%;
     margin-bottom:24px;
@@ -1993,7 +1993,7 @@ main #interview ul li a .thumb .gradation .shopname {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #interview ul li a .thumb .gradation .shopname {
     font-size: 14px;
   }
@@ -2047,7 +2047,7 @@ main #interview .btn_interviewList a {
   color: var(--color-base);
   transition: 0.3s ease-in-out;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #interview .btn_interviewList a {
     display:block;
     margin: 0 24px;
@@ -2063,7 +2063,7 @@ main #interview #interview_movie {
   margin: 0 auto;
   padding:80px 40px 120px 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #interview #interview_movie {
     padding:40px 24px 80px 24px;
   }
@@ -2114,12 +2114,12 @@ main #application .cover .box h5 {
   padding: 0;
   margin: 0 0 24px 0;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   main #application .cover .box h5 br {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #application .cover .box h5 {
     font-size: 24px;
     line-height: 1.4;
@@ -2136,7 +2136,7 @@ main #application .cover .box p {
   font-size: 16px;
   line-height: 1.4;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #application .cover .box p {
     padding: 0;
     margin: 0 40px 40px 40px;
@@ -2165,7 +2165,7 @@ main #application .cover .box .btn_application a {
 main #application .cover .box .btn_application a:hover {
   background:var(--color-hover) url(../img/arrow_main.svg) no-repeat  right 24px center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #application .cover .box .btn_application a {
     background: var(--color-synchrolife) url(../img/arrow_default.svg) no-repeat  right 40px center;
     font-size: 150%;
@@ -2207,7 +2207,7 @@ main #news .st_news {
   background:url(../img/st_en_news.svg) no-repeat center bottom;
   background-size: auto 96px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #news .st_news {
     position: relative;
     height: 88px;
@@ -2274,7 +2274,7 @@ main #news ul li a .news_txt p {
   line-height: 1.5;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main #news ul {
     list-style: none;
     margin: 0;
