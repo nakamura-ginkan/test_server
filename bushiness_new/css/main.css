@@ -147,6 +147,10 @@ header .headerStage nav ul li a:hover::after {
   header .headerStage .pc {
     display: none;
   }
+  /*spは非表示*/
+  header .headerStage nav ul li a::after{
+    display: none;
+  }
 }
 
 header .headerStage .btn_read {
