@@ -82,7 +82,7 @@
   letter-spacing: 0.05em;
   font-size: 200%;
   font-weight: bold;
-  color: #fff;
+  color: var(--color-base);
   transition: 0.3s ease-in-out;
 }
 #mv #mv_title .btn_mainRead a:hover {
@@ -101,10 +101,10 @@
   background: url(../img/arrow_default.svg) no-repeat  right 24px center;
   text-decoration: none;
   border-radius: 48px;
-  border: #fff solid 4px;
+  border: var(--color-base) solid 4px;
   padding:0 40px 0 24px;
   margin:0;
-  color: #fff;
+  color: var(--color-base);
   transition: 0.3s ease-in-out;
 }
 #mv #individuals a:hover {
@@ -124,10 +124,10 @@
     background: url(../img/sp_arrow_default.svg) no-repeat  right 24px center;
     text-decoration: none;
     border-radius: 32px;
-    border: #fff solid 2px;
+    border: var(--color-base) solid 2px;
     padding:0 40px 0 24px;
     margin:0;
-    color: #fff;
+    color: var(--color-base);
   }
   #mv #individuals a:hover {
     background: url(../img/sp_arrow_default.svg) no-repeat  right 16px center;
@@ -492,7 +492,7 @@ main #service .service_set #service01 .service_wrap ul li:nth-child(even) .servi
 }
 
 main #service .service_set #service01 .service_wrap ul li .servise_item .service_icon {
-  background: #fff;
+  background: var(--color-base);
   border-radius: 8px;
   border: 1px solid #eaeff3;
   padding: 24px 16px;
@@ -1058,8 +1058,8 @@ main #ahievement #ahievement_box .stage {
 main #ahievement #ahievement_box .category {
   position: relative;
   display: inline-block;
-  background: #333;
-  color: #fff;
+  background: var(--color-txt);
+  color: var(--color-base);
   padding: 12px 24px;
   border-radius: 40px;
   margin-bottom: 32px;
@@ -1398,7 +1398,7 @@ main #ahievement #media ul {
   main #ahievement #media ul {
     list-style: none;
     margin: 0 0 80px 0;
-    padding: 0 80px;
+    padding: 0 40px;
   }
 }
 
@@ -1617,7 +1617,7 @@ main #useCase .wrap {
 }
 @media screen and (max-width: 768px) {
   main #useCase .wrap {
-    padding: 0 56px;
+    padding: 0 40px;
   }
 }
 
@@ -2094,7 +2094,7 @@ main #interview ul li {
 main #interview ul li a {
   display: block;
   text-decoration: none;
-  color: #333;
+  color: var(--color-txt);
   padding: 16px;
   transition: 0.3s ease-in-out;
 }
@@ -2336,7 +2336,7 @@ main #application .cover .box .btn_contact a {
   background: url(../img/arrow_default.svg) no-repeat  right 24px center;
   text-decoration: none;
   border-radius: 48px;
-  border: #fff solid 4px;
+  border: var(--color-base) solid 4px;
   padding:0 40px 0 24px;
   margin:0;
   color: var(--color-base);
