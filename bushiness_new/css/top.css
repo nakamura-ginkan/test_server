@@ -134,7 +134,6 @@
   }
 }
 
-
 /*main*/
 main{
   position: relative;
@@ -757,7 +756,6 @@ main #service #service02 ul li a .service02_news_txt p {
   }
 }
 
-
 /*03*/
 main #service .service_set .figure_wrap3 {
   clear: both;
@@ -783,7 +781,6 @@ main #service .service_set .figure_wrap3 figure img {
   height: auto;
   margin-bottom:80px;
 }
-
 
 main #service .service_set #service03 {
   float: left;
@@ -825,7 +822,6 @@ main #service .service_set #service03 .service_wrap .service_num img {
   width: 100%;
   height: auto;
 }
-
 
 main #service .service_set #service03 .service_wrap h5 {
   margin:16px 0 40px 0;
@@ -1282,8 +1278,6 @@ main #ahievement #ahievement_box .achievement_list .review1 .user_thumb img {
 }
 */
 
-
-
 /*sns*/
 main #ahievement #ahievement_box .ahievement_sns {
   float: left;
@@ -1640,8 +1634,6 @@ main #useCase .wrap .left .box {
 }
 
 
-
-
 main #useCase .wrap .left .box .write {
   position: relative;
 }
@@ -1802,7 +1794,6 @@ main #useCase .wrap .right .box .write {
   position: relative;
 }
 
-
 /* case2*/
 main #useCase .wrap .right .box .write .case2 {
   position: absolute;
@@ -1823,8 +1814,6 @@ main #useCase .wrap .right .box .write .case2 .resize .thumb {
   position: relative;/*追加*/
   width: 45%;
 }
-
-/*******assahuisahuisahsasasasasassaassasasasaaaaaaaaaaaaaauiashuishiuashsauhasiuhasiusahassssasasaassaassasaassassasaiusahuas*****/
 
 
 main #useCase .wrap .right .box .write .case2 .resize .thumb .gradation {
@@ -1852,7 +1841,9 @@ main #useCase .wrap .right .box .write .case2 .resize .thumb .gradation .name {
 }
 @media screen and (max-width: 768px) {
   main #useCase .wrap .right .box .write .case2 .resize .thumb .gradation .name {
-    font-size: 14px;
+    font-size: 12px;
+    bottom:8px;
+    left:8px;
   }
 }
 
@@ -1869,14 +1860,6 @@ main #useCase .wrap .right .box .write .case2 .resize .thumb .thumb_link {
   top:0;
   right:0;
 }
-
-
-/*******assahuisahuisahuiashuishiuashsauhasiuhasiusahiusahuas*****/
-
-
-
-
-
 
 
 main #useCase .wrap .right .box .write .case2 .resize .txt {
@@ -1913,14 +1896,13 @@ main #useCase .wrap .right .box .write .case2 .resize .txt p.shopname {
   main #useCase .wrap .right .box .write .case2 .resize .txt p {
     font-size: 3vw;
     line-height: 1.4;
+    padding: 0;
   }
   main #useCase .wrap .right .box .write .case2 .resize .txt p.shopname {
     font-size: 2vw;
     line-height: 1.4;
   }
 }
-
-
 
 /*case3*/
 
@@ -1943,9 +1925,6 @@ main #useCase .wrap .right .box .write .case3 .resize .thumb {
   position:relative;
   width: 45%;
 }
-
-/*aahsusahuashusahsahsauhsauihsauisa*/
-
 
 
 main #useCase .wrap .right .box .write .case3 .resize .thumb .gradation {
@@ -1973,7 +1952,9 @@ main #useCase .wrap .right .box .write .case3 .resize .thumb .gradation .name {
 }
 @media screen and (max-width: 768px) {
   main #useCase .wrap .right .box .write .case3 .resize .thumb .gradation .name {
-    font-size: 14px;
+    font-size: 12px;
+    bottom:8px;
+    left:8px;
   }
 }
 
@@ -1987,11 +1968,6 @@ main #useCase .wrap .right .box .write .case3 .resize .thumb .thumb_link {
   top:0;
   right:0;
 }
-
-
-
-
-/*sasahgyusagyusaguyasguyasgsauygsauygsauysagyusaguysagyusa*/
 
 
 main #useCase .wrap .right .box .write .case3 .resize .txt {
@@ -2028,6 +2004,7 @@ main #useCase .wrap .right .box .write .case3 .resize .txt p.shopname {
   main #useCase .wrap .right .box .write .case3 .resize .txt p {
     font-size: 3vw;
     line-height: 1.4;
+    padding: 0;
   }
   main #useCase .wrap .right .box .write .case3 .resize .txt p.shopname {
     font-size: 2vw;
@@ -2035,9 +2012,6 @@ main #useCase .wrap .right .box .write .case3 .resize .txt p.shopname {
   }
 }
 
-
-
-/***************************************************************/
 
 main #useCase .wrap .right .box .write .img {
   position: relative;
@@ -2049,17 +2023,10 @@ main #useCase .wrap .right .box .write .img img {
   height: auto;
 }
 
-/***************************************************************/
-
-
-
 main #useCase .reset {
   clear: both;
   padding-top: 40px;
 }
-
-
-
 
 
 /*interview*/
@@ -2153,7 +2120,6 @@ main #interview ul li a .thumb .photo img {
   border-radius: 8px;
 }
 
-
 main #interview ul li a .txt {
   margin-top:16px;
   font-size: 16px;
@@ -2168,8 +2134,6 @@ main #interview ul li a .name {
   color: #777;
   line-height: 1.4;
 }
-
-
 
 main #interview .btn_interviewList {
   clear: both;
@@ -2228,19 +2192,9 @@ main #interview #interview_movie {
 }
 
 
-
-
-
-
-
-
 main #interview_movie {
 
 }
-
-
-
-
 
 /*application*/
 main #application {

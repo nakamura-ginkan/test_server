@@ -47,9 +47,7 @@ header {
   z-index: 10;
   /* 背景色を黒にする */
   background:transparent;
-  /* headerに余白を作る */
   padding: 24px 0;
-  /* アニメーションの変化時間 */
   transition: 0.5s;
   z-index: 10;
 }
@@ -72,7 +70,6 @@ header .headerStage #logo a img {
     padding-left:24px;
   }
   header .headerStage #logo a img {
-    fill:fff000;
     height: 40px;
     width: auto;
     transition: 0.5s;
@@ -164,14 +161,11 @@ header .headerStage .btn_read a:hover {
 
 /* スクロールして「scroll-navクラス」がついたときのヘッダーデザイン */
 header.scroll-nav {
-  /* 余白を狭くする */
   padding: 16px 0;
-  /* 背景を白にする */
   background-color: rgba(255, 255, 255, .72);
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
   -moz-backdrop-filter: blur(40px);
-  /* コンテンツの背景が白でもナビゲーションだと分かりやすいように影をつける */
   border-bottom:1px solid rgba(0, 0, 0, 0.16);
 }
 
@@ -187,7 +181,6 @@ header.scroll-nav .headerStage #sp_menu .hamburger span {
   background: var(--color-txt);
 }
 
-/****************************************/
 
 .header-logo.headerLogoScroll.-before {
   display : none;
@@ -210,9 +203,6 @@ header .headerStage #sp_menu {
   padding: 0;
   margin: 7px 24px 0 0;
 }
-
-
-
 
 footer {
   margin-top:120px;
@@ -374,8 +364,6 @@ footer .copy .box p {
   color: var(--color-txt);
   padding: 16px 0;
 }
-
-
 
 /* sp menu */
 .hamburger {
