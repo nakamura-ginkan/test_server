@@ -193,12 +193,11 @@ main .sst_txt {
   }
 }
 
-
 /*feature*/
 main #feature {
   overflow: hidden;
   padding-top: 80px;/*anchor*/
-  margin-top: -80px;
+  margin-top: -80px;/*anchor*/
 
   width: 100%;
   position: relative;
@@ -321,13 +320,12 @@ main #feature figure.ex3_main img {
   }
 }
 
-
-/*service*/
+/* service */
 main #service {
   position: relative;
   width: 100%;
   padding-top: 80px;/*anchor*/
-  margin-top: -80px;
+  margin-top: -80px;/*anchor*/
 }
 main #service .st_service {
   position: relative;
@@ -390,7 +388,6 @@ main #service .service_set #service01 {
 }
 
 main #service .service_set #service01 .service_wrap {
-  /* 800を1000に */
   max-width: 1000px;
   padding-right:80px;
 }
@@ -538,7 +535,6 @@ main #service .service_set #service01 .service_wrap ul li .servise_item p {
     letter-spacing: 0.05em;
   }
 }
-
 
 /*02*/
 main #service #service02 {
@@ -881,7 +877,7 @@ main #price {
   width: 100%;
   background: var(--color-thin);
   padding-top: 80px;/*anchor*/
-  margin-top: -80px;
+  margin-top: -80px;/*anchor*/
 }
 @media screen and (max-width: 768px) {
   main #price {
@@ -988,14 +984,13 @@ main #price .price_annotation {
   }
 }
 
-
-/*ahievement*/
+/* ahievement */
 main #ahievement {
   clear: both;
   position: relative;
   width: 100%;
   padding-top: 80px;/*anchor*/
-  margin-top: -80px;
+  margin-top: -80px;/*anchor*/
 }
 @media screen and (max-width: 768px) {
   main #ahievement {
@@ -1189,95 +1184,6 @@ main #ahievement #ahievement_box .achievement_list figure img {
   height: auto;
 }
 
-/*review*/
-/*
-main #ahievement #ahievement_box .achievement_list .review1 {
-  width: 100%;
-  padding-top:8px;
-  display: flex;
-  align-items: center;
-}
-@media screen and (max-width: 999px) {
-  main #ahievement #ahievement_box .achievement_list .review1 {
-    display: none;
-  }
-}
-main #ahievement #ahievement_box .achievement_list .review1 .com {
-  width: calc(100% - 44px);
-  border-radius: 0 8px 8px 0;
-  background: var(--color-verythin);
-  text-align: left;
-}
-
-main #ahievement #ahievement_box .achievement_list .review1 .com .shop_thumb {
-  float: left;
-  width: 10vw;
-  margin-right:16px;
-}
-
-main #ahievement #ahievement_box .achievement_list .review1 .com .shop_thumb p {
-  padding-left:8px;
-}
-main #ahievement #ahievement_box .achievement_list .review1 .com .shop_thumb img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px 0 0 8px;
-}
-
-main #ahievement #ahievement_box .achievement_list .review1 .com .review_box {
-  margin: 8px 16px 8px 0;
-}
-main #ahievement #ahievement_box .achievement_list .review1 .com .review_box .star {
-  width: 100%;
-  padding: 0 0 4px 0;
-}
-
-main #ahievement #ahievement_box .achievement_list .review1 .com .review_box .star .my {
-  padding-top:8px;
-}
-
-main #ahievement #ahievement_box .achievement_list .review1 .com .review_box .star .my img {
-  width: 16px;
-  height: auto;
-  float: left;
-	display: block;
-}
-
-main #ahievement #ahievement_box .achievement_list .review1 .com .review_box .star p {
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 16px;
-  color: #f37d00;
-  padding-left:8px;
-}
-
-main #ahievement #ahievement_box .achievement_list .review1 .com .review_box .txt {
-  font-size: calc(0.02vw + 5 * (100vw - 768px) / 500);
-  line-height: 1.4;
-}
-*{
-    min-height: 0vw;
-}
-
-main #ahievement #ahievement_box .achievement_list .review1 .com .review_box .review_time {
-  font-size: 0;
-  color: #aaa;
-  padding-top: 4px;
-}
-
-main #ahievement #ahievement_box .achievement_list .review1 .user_thumb {
-  margin-left:8px;
-  width: 40px;
-  height: 40px;
-}
-
-main #ahievement #ahievement_box .achievement_list .review1 .user_thumb img {
-  border-radius: 80px;
-  width: 100%;
-  height: auto;
-}
-*/
-
 /*sns*/
 main #ahievement #ahievement_box .ahievement_sns {
   float: left;
@@ -1307,8 +1213,7 @@ main #ahievement #ahievement_box .ahievement_sns .sns_wrap {
   }
 }
 
-
-/*加盟店*/
+/* 加盟店 */
 main #ahievement #ahievement_box .ahievement_store {
   float: left;
   width: 50%;
@@ -1326,7 +1231,7 @@ main #ahievement #ahievement_box .ahievement_sns .store_wrap {
   }
 }
 
-/*店舗実績*/
+/* 店舗実績 */
 main #ahievement #introduction_store {
   overflow: hidden;
   max-width: 960px;
@@ -1374,8 +1279,7 @@ main #ahievement #introduction_store ul li img {
   height: auto;
 }
 
-
-/*メディア*/
+/* media */
 main #ahievement #media {
   overflow: hidden;
   max-width: 800px;
@@ -1416,14 +1320,14 @@ main #ahievement #media ul li img {
   height: auto;
 }
 
-/*flow*/
+/* flow */
 main #flow {
   overflow: hidden;
   position: relative;
   width: 100%;
   background: var(--color-thin);
   padding-top: 80px;/*anchor*/
-  margin-top: -80px;
+  margin-top: -80px;/*anchor*/
 }
 @media screen and (max-width: 768px) {
   main #flow {
@@ -1579,13 +1483,13 @@ main #flow .flow_annotation {
   }
 }
 
-/*use case*/
+/* use case */
 main #useCase {
   overflow: hidden;
   position: relative;
   width: 100%;
   padding-top: 80px;/*anchor*/
-  margin-top: -80px;
+  margin-top: -80px;/*anchor*/
 }
 main #useCase .st_useCase {
   position: relative;
@@ -1766,9 +1670,6 @@ main #useCase .wrap .left .box .write .gradation .shopname {
   }
 }
 
-
-
-
 /*right*/
 main #useCase .wrap .right {
   float: left;
@@ -1794,7 +1695,7 @@ main #useCase .wrap .right .box .write {
   position: relative;
 }
 
-/* case2*/
+/* case2 */
 main #useCase .wrap .right .box .write .case2 {
   position: absolute;
   top:0;
@@ -1811,7 +1712,7 @@ main #useCase .wrap .right .box .write .case2 .resize .thumb img {
   vertical-align: bottom;
 }
 main #useCase .wrap .right .box .write .case2 .resize .thumb {
-  position: relative;/*追加*/
+  position: relative;
   width: 45%;
 }
 
@@ -1904,8 +1805,7 @@ main #useCase .wrap .right .box .write .case2 .resize .txt p.shopname {
   }
 }
 
-/*case3*/
-
+/* case3 */
 main #useCase .wrap .right .box .write .case3 {
   position: absolute;
   bottom:0;
@@ -1925,7 +1825,6 @@ main #useCase .wrap .right .box .write .case3 .resize .thumb {
   position:relative;
   width: 45%;
 }
-
 
 main #useCase .wrap .right .box .write .case3 .resize .thumb .gradation {
   position: absolute;
@@ -1969,7 +1868,6 @@ main #useCase .wrap .right .box .write .case3 .resize .thumb .thumb_link {
   right:0;
 }
 
-
 main #useCase .wrap .right .box .write .case3 .resize .txt {
   position: absolute;
   right: 0;
@@ -2012,7 +1910,6 @@ main #useCase .wrap .right .box .write .case3 .resize .txt p.shopname {
   }
 }
 
-
 main #useCase .wrap .right .box .write .img {
   position: relative;
   z-index: -1;
@@ -2029,8 +1926,7 @@ main #useCase .reset {
 }
 
 
-/*interview*/
-
+/* interview */
 main #interview {
   clear: both;
 }
@@ -2070,7 +1966,6 @@ main #interview ul li a:hover {
   border-radius: 8px;
 }
 
-
 main #interview ul li a .thumb {
   position: relative;
 }
@@ -2103,7 +1998,6 @@ main #interview ul li a .thumb .gradation .shopname {
     font-size: 14px;
   }
 }
-
 
 main #interview ul li a .thumb .thumb_link {
   position: absolute;
@@ -2191,12 +2085,10 @@ main #interview #interview_movie {
   border-radius: 8px;
 }
 
-
 main #interview_movie {
-
 }
 
-/*application*/
+/* application */
 main #application {
   width: 100%;
   position: relative;
@@ -2301,12 +2193,12 @@ main #application .cover .box .btn_contact a:hover {
 }
 
 
-/*news*/
+/* news */
 main #news {
   width: 100%;
   position: relative;
   padding-top: 80px;/*anchor*/
-  margin-top: -80px;
+  margin-top: -80px;/*anchor*/
 }
 main #news .st_news {
   position: relative;
