@@ -97,6 +97,7 @@ header .headerStage nav ul li {
 }
 
 header .headerStage nav ul li a {
+  position: relative;
   display:block;
   padding:0;
   color: var(--color-base);
@@ -105,6 +106,23 @@ header .headerStage nav ul li a {
   text-decoration: none;
   transition: 0.5s;
 }
+header .headerStage nav ul li a::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: var(--color-base);
+  bottom: 12px;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.5s;
+}
+
+header .headerStage nav ul li a:hover::after {
+  transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
+}
+
 @media screen and (max-width: 1239px) {
   header .headerStage nav ul li {
     float: left;
@@ -119,6 +137,10 @@ header .headerStage nav ul li a {
     line-height: 64px;
     text-decoration: none;
     transition: 0.5s;
+  }
+  header .headerStage nav ul li a::after {
+    background: var(--color-base);
+    bottom: 16px;
   }
 }
 @media screen and (max-width: 999px) {
@@ -172,6 +194,9 @@ header.scroll-nav {
 /*一定スクロール時のヘッダーの設定*/
 header.scroll-nav .headerStage nav ul li a {
   color: var(--color-txt);
+}
+header.scroll-nav .headerStage nav ul li a::after {
+  background: var(--color-txt);
 }
 header.scroll-nav .headerStage #sp_menu nav ul li a {
   color: var(--color-txt);
