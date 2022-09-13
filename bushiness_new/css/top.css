@@ -292,13 +292,13 @@ main #feature figure.ex3_shop img {
 @media screen and (max-width: 769px) {
   main #feature figure.ex3_shop {
     position: absolute;
-  	top: -15%;
+  	top: -10%;
   	left: 50%;
     transform: translateX(-50%);
     padding: 0;
   }
   main #feature figure.ex3_shop img {
-    max-width: 64%;
+    width: 24vw;
     height: auto;
   }
 }
