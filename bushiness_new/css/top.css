@@ -364,6 +364,7 @@ main #service .service_set .figure_wrap figure {
 main #service .service_set .figure_wrap figure img {
   width: 100%;
   height: auto;
+  border-radius: 40px;
   margin-bottom:80px;
 }
 
@@ -453,6 +454,7 @@ main #service .service_set #service01 .service_wrap .sp_pic {
 main #service .service_set #service01 .service_wrap .sp_pic img {
   width: 100%;
   height: auto;
+  border-radius:20px;
 }
 
 main #service .service_set #service01 .service_wrap ul {
@@ -775,6 +777,7 @@ main #service .service_set .figure_wrap3 figure {
 main #service .service_set .figure_wrap3 figure img {
   width: 100%;
   height: auto;
+  border-radius: 40px;
   margin-bottom:80px;
 }
 
@@ -848,6 +851,7 @@ main #service .service_set #service03 .service_wrap .sp_pic {
 main #service .service_set #service03 .service_wrap .sp_pic img {
   width: 100%;
   height: auto;
+  border-radius: 20px;
 }
 
 main #service .service_set #service03 .service_wrap .synchroPay {
