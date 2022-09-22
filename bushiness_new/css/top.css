@@ -262,7 +262,7 @@ main #feature figure.ex2 img {
 }
 @media screen and (max-width: 767px) {
   main #feature figure.ex2 {
-    margin: 32px 0 132px 0;
+    margin: 32px 0 80px 0;
   }
   main #feature figure.ex2 img {
     width: 100%;
@@ -292,10 +292,11 @@ main #feature figure.ex3_shop img {
 @media screen and (max-width: 767px) {
   main #feature figure.ex3_shop {
     position: absolute;
-  	top: -10%;
+  	top: 0;
   	left: 50%;
     transform: translateX(-50%);
     padding: 0;
+    margin-top:-48px;
   }
   main #feature figure.ex3_shop img {
     width: 24vw;
@@ -316,7 +317,7 @@ main #feature figure.ex3_main img {
   main #feature figure.ex3_main {
     max-width: 768px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 24px 16px 0 16px;
   }
 }
 
@@ -661,6 +662,7 @@ main #service #service02 ul li a {
   display: flex;
   width: 100%;
   overflow: hidden;
+  text-decoration: none;
   transition: 0.3s ease-in-out;
   color: var(--color-txt);
   background: url(../img/arrow_news.svg) no-repeat  right 0 center;
@@ -676,6 +678,7 @@ main #service #service02 ul li a:visited {
 
 main #service #service02 ul li a .service02_news_thumb {
   float: left;
+  position: relative;
   box-sizing:content-box;
   width: 200px;
   height: 104px;
@@ -683,11 +686,17 @@ main #service #service02 ul li a .service02_news_thumb {
   border:1px solid rgba(0, 0, 0, 0.04);
   border-radius: 8px;
 }
+@media screen and (min-width: 768px) {
+  main #service #service02 ul li a .service02_news_thumb .thumb_link {
+    display: none;
+  }
+}
 
-main #service #service02 ul li a .service02_news_thumb img {
+main #service #service02 ul li a .service02_news_thumb .photo img {
   width: 100%;
   border-radius: 8px;
   height: auto;
+  vertical-align:top;
 }
 
 main #service #service02 ul li a .service02_news_txt {
@@ -729,17 +738,18 @@ main #service #service02 ul li a .service02_news_txt p {
   }
   main #service #service02 ul li a .service02_news_thumb {
     float: left;
+    position: relative;
     width: 100%;
     height: auto;
     margin:0;
+    padding: 0;
     border:1px solid rgba(0, 0, 0, 0.04);
-    border-radius: 8px;
+    box-sizing: border-box;
   }
-
-  main #service #service02 ul li a .service02_news_thumb img {
-    width: 100%;
-    border-radius: 8px;
-    height: auto;
+  main #service #service02 ul li a .service02_news_thumb .thumb_link {
+    position:absolute;
+    top:0;
+    right:0;
   }
 
   main #service #service02 ul li a .service02_news_txt {
@@ -1581,6 +1591,7 @@ main #useCase .wrap .left .box .write .img img {
   border-radius: 40px;
   width: 100%;
   height: auto;
+  vertical-align:top;
 }
 
 main #useCase .wrap .left .box .write .appeal1 {
@@ -2016,6 +2027,7 @@ main #interview ul li a .thumb .photo img {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  vertical-align:top;
 }
 
 main #interview ul li a .txt {
@@ -2239,6 +2251,7 @@ main #news ul li a {
   overflow: hidden;
   transition: 0.3s ease-in-out;
   color: var(--color-txt);
+  text-decoration: none;
   background: url(../img/arrow_news.svg) no-repeat  right 0 center;
   /*justify-content: center;*/
   align-items: center;
@@ -2261,11 +2274,24 @@ main #news ul li a .news_thumb {
   border-radius: 8px;
 }
 
-main #news ul li a .news_thumb img {
+
+
+@media screen and (min-width: 768px) {
+  main #news ul li a .news_thumb .thumb_link {
+    display: none;
+  }
+}
+
+main #news ul li a .news_thumb .photo img {
   width: 100%;
   border-radius: 8px;
   height: auto;
+  vertical-align:top;
 }
+
+
+
+
 
 main #news ul li a .news_txt {
   float: left;
@@ -2306,17 +2332,18 @@ main #news ul li a .news_txt p {
   }
   main #news ul li a .news_thumb {
     float: left;
+    position: relative;
     width: 100%;
     height: auto;
     margin:0;
     border:1px solid rgba(0, 0, 0, 0.04);
     border-radius: 8px;
+    box-sizing: border-box;
   }
-
-  main #news ul li a .news_thumb img {
-    width: 100%;
-    border-radius: 8px;
-    height: auto;
+  main #news ul li a .news_thumb .thumb_link {
+    position:absolute;
+    top:0;
+    right:0;
   }
 
   main #news ul li a .news_txt {
